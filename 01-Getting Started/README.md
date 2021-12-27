@@ -30,8 +30,8 @@ trackpad-another term for touchpad
 
 inline-having parts arranged in a line
 ## Referencing CSS
->-There are three different methods for referencing CSS including 1-External 2-inline 3-internal  
->-External CSS which refers to using a separate CSS file and must be saved with the `.css` file extension. There are two ways to load the external CSS file into the HTML, with a `<link>` tag or using the `@import` method. 
+>-There are three different methods for referencing CSS including External ,inline and internal  
+>-❶ **External CSS** which refers to using a separate CSS file and must be saved with the `.css` file extension. There are two ways to load the external CSS file into the HTML, with a `<link>` tag or using the `@import` method. 
 >1. The `<link>` tag is added to the head of the document with two attributes, `rel` and `href`. `rel` stands for the relationship and uses the value of > stylesheet, the `href` value is the path to the CSS file.  
 >```html
 ><head> 
@@ -68,3 +68,4 @@ if at all-it is often used to make negatives stronger. [more example](https://ww
 upcoming-about to happen; forthcoming
 
 inefficient-not organized, skilled, or able to work in a satisfactory way
+
