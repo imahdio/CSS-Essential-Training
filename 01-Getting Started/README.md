@@ -43,7 +43,7 @@ inline-having parts arranged in a line
 ><table>
 ><tr><th>pros</th><th>cons</th>
 ></tr>
-><tr><td><ul><li>Using an external stylesheet is recommended because it separates the CSS from the HTML making it easier to manage.</li><li>one CSS file can be linked to any HTML files and any changes made to the CSS file will be reflected on all the HTML pages that it's being loaded into.</li><li>You can use more than one CSS file</li></ul><td><ul><li>for larger projects and code bases , using too many .css files may defeat the purpose of having separate stylesheets and having one giant CSS file can also become unruly , the @import method can be used to import all the smaller CSS files into a single CSS file, which is then loaded into the HTML document. <img src="https://user-images.githubusercontent.com/64577273/147507302-31d1d408-91e9-4a07-a7f7-63dbcaecc7fd.png"></li></ul></td>
+><tr><td><ul><li>Using an external stylesheet is recommended because it separates the CSS from the HTML making it easier to manage.</li><li>one CSS file can be linked to any HTML files and any changes made to the CSS file will be reflected on all the HTML pages that it's being loaded into.</li><li>You can use more than one CSS file</li></ul><td><ul><li>for larger projects and code bases , using too many .css files may defeat the purpose of having separate stylesheets and having one giant CSS file can also become unruly , the @import method can be used to import all the smaller CSS files into a single CSS file, which is then loaded into the HTML document. <img src="https://user-images.githubusercontent.com/64577273/147507302-31d1d408-91e9-4a07-a7f7-63dbcaecc7fd.png" width="500"></li></ul></td>
 ></tr>
 ></table>
 >
