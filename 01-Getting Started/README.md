@@ -64,7 +64,7 @@ inline-having parts arranged in a line
 ><table>
 ><tr><th>pros</th><th>cons</th>
 ></tr>
-><tr><td>The CSS style rules are added as the value, which applies style directly to the HTML element.<br><img src="https://user-images.githubusercontent.com/64577273/147554724-7ca7cb53-025f-4341-a2c3-49a8fb540a3a.png"></td><td><li>The inline method should be used sparingly, if at all, because it is hard to manage.</li><li>CSS added by any other method is overwritten by the inline styles, creating more potential for conflict with other CSS style rules.</li><li> The inline method is also not reusable since it's applied directly to each element.</li></td>
+><tr><td>The CSS style rules are added as the value, which applies style directly to the HTML element.<br><br><img src="https://user-images.githubusercontent.com/64577273/147554724-7ca7cb53-025f-4341-a2c3-49a8fb540a3a.png"></td><td><li>The inline method should be used sparingly, if at all, because it is hard to manage.</li><li>CSS added by any other method is overwritten by the inline styles, creating more potential for conflict with other CSS style rules.</li><li> The inline method is also not reusable since it's applied directly to each element.</li></td>
 ></tr>
 ></table>
 >
