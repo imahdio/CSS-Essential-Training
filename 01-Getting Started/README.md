@@ -109,3 +109,27 @@ upcoming-about to happen; forthcoming
 
 inefficient-not organized, skilled, or able to work in a satisfactory way
 ## Project overview and setup
+ >-in this course we'll be learning CSS by applying each concept to the HTML template included in the exercise files. And for some context, [here's how the final project will look.](https://christinatruong.github.io/css-essential-training/css-portfolio/)  
+-you can customize the content however you wish by updating the text, copy in images but keep the HTML structure the same so you could follow along with the exercises.  
+-When naming folders and files, use lowercase letters and avoid using spaces or special characters just to ensure that everything displays properly.  
+-the html homepage is always named index.html  
+-[let's open the index.html file to see what we can customize in here](Project-overview-and-setup\index.html) and start by updating the `<title>` tag to describe your page. throughout the body section there are organizational comments as well as instructions for how to customize the HTML content while maintaining the page structure.  
+-[meettheipsums.com](https://meettheipsums.com/) links to various text generators that you can use to add some realistic text.
+
+for context-for(in order to provide) additional related facts which can give you some **perspective** on the length of time involved. Similar to putting a person next to a very large object in a photo so you can sense how big it actually is in real life.
+
+potfolio-It's a compilation of materials that exemplifies your beliefs, skills, qualifications, education, training and experiences. It provides insight into your personality and work ethic.
+
+resume-a written statement of your educational and work experience
+
+descriptive-describing something, especially in a detailed, interesting way
+
+whichever-any one from a limited set
+
+Hands on learning-learning by doing
+
+versus-used to compare two things or ideas, especially when you have to choose between them
+
+upcoming-happening soon, about to happen
+
+revise-to change or correct something, esp. a piece of writing
