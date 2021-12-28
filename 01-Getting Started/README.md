@@ -30,9 +30,9 @@ trackpad-another term for touchpad
 
 inline-having parts arranged in a line
 ## Referencing CSS
->-There are three different methods for referencing CSS including External ,inline and internal  
+>-There are three different methods for referencing CSS including External ,inline and internal.  
 >-❶ **External CSS** which refers to using a separate CSS file and must be saved with the `.css` file extension. There are two ways to load the external CSS file into the HTML, with a `<link>` tag or using the `@import` method. 
->1. The `<link>` tag is added to the head of the document with two attributes, `rel` and `href`. `rel` stands for the relationship and uses the value of > stylesheet, the `href` value is the path to the CSS file.  
+>1. The `<link>` tag is added to the head of the document with two attributes, `rel` and `href`. `rel` stands for the relationship and uses the value of  `stylesheet`, the `href` value is the path to the CSS file.  
 >```html
 ><head> 
 >   <link rel="stylesheet" href="css/styles.css">
@@ -43,11 +43,51 @@ inline-having parts arranged in a line
 ><table>
 ><tr><th>pros</th><th>cons</th>
 ></tr>
-><tr><td><ul><li>Using an external stylesheet is recommended because it separates the CSS from the HTML making it easier to manage.</li><li>one CSS file can be linked to any HTML files and any changes made to the CSS file will be reflected on all the HTML pages that it's being loaded into.</li><li>You can use more than one CSS file</li></ul><td><ul><li>for larger projects and code bases , using too many .css files may defeat the purpose of having separate stylesheets and having one giant CSS file can also become unruly , the @import method can be used to import all the smaller CSS files into a single CSS file, which is then loaded into the HTML document. <img src="https://user-images.githubusercontent.com/64577273/147507302-31d1d408-91e9-4a07-a7f7-63dbcaecc7fd.png"></li></ul></td>
+><tr><td><ul><li>Using an external stylesheet is recommended because it separates the CSS from the HTML making it easier to manage.</li><li>one CSS file can be linked to any HTML files and any changes made to the CSS file will be reflected on all the HTML pages that it's being loaded into.</li><li>You can use more than one CSS file</li></ul><td><ul><li>for larger projects and code bases , using too many .css files may defeat the purpose of having separate stylesheets<br>and having one giant CSS file can also become unruly therefore<br>the <code>@import</code> method can be used to combine the files.</li></ul></td>
 ></tr>
 ></table>
 >
-> 2. text
+> 2. The `@import` rule as second external method imports one or more stylesheets into HTML files or into another CSS file. This method can be used to import all the smaller CSS files into a single CSS file, which is then loaded into the HTML document between a style tag in the `<head>` of the document.  
+>![image](https://user-images.githubusercontent.com/64577273/147550967-d31e84da-38e6-47c6-b32a-fd995748fa6b.png) 
+>
+><table>
+><tr><th>pros</th><th>cons</th>
+></tr>
+><tr><td><ul><li>The <code>@import</code> method is however, commonly used with CSS preprocessors such as SASS or LESS</li><li>or when CSS files are compiled into one file before loading it into the page.</li></ul><img src="https://user-images.githubusercontent.com/64577273/147537202-5d55381a-4463-40e2-9b12-7341189fd8a0.png"></td><td>This method isn't used often these days because the downside to using <code>@import</code> is the potential for slowing down your page speed. <code>@import</code> does not allow for parallel downloads, meaning the page must download an entire stylesheet before it loads the rest of the page.<br><a href="https://www.stevesouders.com/blog/2009/04/09/dont-use-import/">for more info , check detailed blog posts in here</a><br>that's why we'll be using the link method for our projects. </td>
+></tr>
+></table>
+>
+>-❷ **inline CSS** uses a style attribute which is added to the opening HTML tag.
+>```html
+><p style="color:red;">red paragraph</p>
+>```
+><table>
+><tr><th>pros</th><th>cons</th>
+></tr>
+><tr><td>The CSS style rules are added as the value, which applies style directly to the HTML element.<br><img src="https://user-images.githubusercontent.com/64577273/147553119-13c9c14a-a7a7-4c03-8c33-c1c938ce0e15.png"></td><td><li>The inline method should be used sparingly, if at all, because it is hard to manage.</li><li>CSS added by any other method is overwritten by the inline styles, creating more potential for conflict with other CSS style rules.</li><li> The inline method is also not reusable since it's applied directly to each element.</li></td>
+></tr>
+></table>
+>
+>-❸ **internal CSS** is added between the `<style>` tag in the head of the document.  
+>```html
+><head>
+>    <style>
+>        h1 {
+>            color: green;
+>        }
+>        h2 {
+>            color: blue;
+>        }
+>    </style>
+></head>
+>```
+><table>
+><tr><th>pros</th><th>cons</th>
+></tr>
+><td>This method is more flexible than the inline method because instead of adding styles to each individual element, CSS selectors are used to apply a style to all the matched elements.</td><td>If you had multiple HTML pages, you would have to copy this style block to every single page to duplicate the styles. The internal method is best for short blocks of CSS that only need to be applied to one page.</td>
+></tr>
+></table>
+>
 
 void element or empty element-container elements consists of `opening tag+content+closing tag` While void or empty element is an element without content and closing tag
 
@@ -68,4 +108,4 @@ if at all-it is often used to make negatives stronger. [more example](https://ww
 upcoming-about to happen; forthcoming
 
 inefficient-not organized, skilled, or able to work in a satisfactory way
-
+## Project overview and setup
