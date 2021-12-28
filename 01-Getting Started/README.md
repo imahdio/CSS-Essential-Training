@@ -48,12 +48,12 @@ inline-having parts arranged in a line
 ></table>
 >
 > 2. The `@import` rule as second external method imports one or more stylesheets into HTML files or into another CSS file. This method can be used to import all the smaller CSS files into a single CSS file, which is then loaded into the HTML document between a style tag in the `<head>` of the document.  
->![image](https://user-images.githubusercontent.com/64577273/147550967-d31e84da-38e6-47c6-b32a-fd995748fa6b.png) 
+>![image](https://user-images.githubusercontent.com/64577273/147554441-49acc81e-0369-451f-9345-0835826f844b.png)
 >
 ><table>
 ><tr><th>pros</th><th>cons</th>
 ></tr>
-><tr><td><ul><li>The <code>@import</code> method is however, commonly used with CSS preprocessors such as SASS or LESS</li><li>or when CSS files are compiled into one file before loading it into the page.</li></ul><img src="https://user-images.githubusercontent.com/64577273/147537202-5d55381a-4463-40e2-9b12-7341189fd8a0.png"></td><td>This method isn't used often these days because the downside to using <code>@import</code> is the potential for slowing down your page speed. <code>@import</code> does not allow for parallel downloads, meaning the page must download an entire stylesheet before it loads the rest of the page.<br><a href="https://www.stevesouders.com/blog/2009/04/09/dont-use-import/">for more info , check detailed blog posts in here</a><br>that's why we'll be using the link method for our projects. </td>
+><tr><td><ul><li>The <code>@import</code> method is however, commonly used with CSS preprocessors such as SASS or LESS</li><li>or when CSS files are compiled into one file before loading it into the page.</li></ul><img src="https://user-images.githubusercontent.com/64577273/147554580-f87ffb81-6054-4dcf-947e-71cb31cd2fbb.png"></td><td>This method isn't used often these days because the downside to using <code>@import</code> is the potential for slowing down your page speed. <code>@import</code> does not allow for parallel downloads, meaning the page must download an entire stylesheet before it loads the rest of the page.<br><a href="https://www.stevesouders.com/blog/2009/04/09/dont-use-import/">for more info , check detailed blog posts in here</a><br>that's why we'll be using the link method for our projects. </td>
 ></tr>
 ></table>
 >
@@ -64,7 +64,7 @@ inline-having parts arranged in a line
 ><table>
 ><tr><th>pros</th><th>cons</th>
 ></tr>
-><tr><td>The CSS style rules are added as the value, which applies style directly to the HTML element.<br><img src="https://user-images.githubusercontent.com/64577273/147553119-13c9c14a-a7a7-4c03-8c33-c1c938ce0e15.png"></td><td><li>The inline method should be used sparingly, if at all, because it is hard to manage.</li><li>CSS added by any other method is overwritten by the inline styles, creating more potential for conflict with other CSS style rules.</li><li> The inline method is also not reusable since it's applied directly to each element.</li></td>
+><tr><td>The CSS style rules are added as the value, which applies style directly to the HTML element.<br><img src="https://user-images.githubusercontent.com/64577273/147554724-7ca7cb53-025f-4341-a2c3-49a8fb540a3a.png"></td><td><li>The inline method should be used sparingly, if at all, because it is hard to manage.</li><li>CSS added by any other method is overwritten by the inline styles, creating more potential for conflict with other CSS style rules.</li><li> The inline method is also not reusable since it's applied directly to each element.</li></td>
 ></tr>
 ></table>
 >
