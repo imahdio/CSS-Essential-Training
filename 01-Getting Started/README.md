@@ -158,3 +158,41 @@ coin-invent (a new word or phrase)
 crisp-a crisp sound or image is very clear
 
 apparent-able to be seen or understood
+## Project: Relative paths
+>-Building websites often involves linking different files together, such as embedding an image in the html, or referencing a css file. When linking to files within the same project, use a relative path.  
+-in following image, the index file is in the same folder as the css and image files. So, from index.html, the file path can map directly to the corresponding file names.  
+![image](https://user-images.githubusercontent.com/64577273/147644997-f484cf98-5dfa-4ed4-8766-8d6bfa8227cd.png)  
+-if the file you're linking to is contained within a folder, like the following image, the folder name must also be included in the file path.  
+![image](https://user-images.githubusercontent.com/64577273/147645180-4acba4ed-5435-4bfb-aa66-5a1177ba2501.png)  
+-in this lesson , we do the following modifications
+>* from [index.html](Project-Relative-paths\index.html) update the image `src` value and `alt` attribute as well to provide a description for screen readers and make the images accessible.  
+>```html
+><img src="images/project-courses.jpg" alt="Lynda & LinkedIn Learning course list">
+>```
+>Notice: Once your file path is updated to point to the correct image file, open it in your browser.  
+Notice: By default, images are displayed in the same dimensions as the file size which is currently 600 pixels wide.
+>* create a css file to resize the images. It can be named anything, but some common conventions are simply styles, or global, or the project name, like portfolio. I'm going to call mine `styles.css` and save it to CSS folder.
+>* let's add a `<link>` tag in the `<head>` section of [index.html](Project-Relative-paths\index.html). It can go anywhere in the `<head>` section, but I like to put mine just before the closing tag like this:
+>```html
+><link rel="stylesheet" href="Project-Relative-paths\css\styles.css">
+>```
+>Notice: There is this autocomplete feature for writing html. Type in the element you want to add, in this case it's `link`, but without the angled brackets, and press tab. The editor completes the tag, and all I have to do is update the `href` value to point to our css file.
+>* add the style in `styles.css`
+>```html
+>img {
+>    width: 300px;
+>}
+>```
+>
+>Notice: in above code snippet , `img` select the images in [index.html](Project-Relative-paths\index.html)
+
+embed-to include text, sound, images, video, etc. in a computer file, email message, or on a website
+
+declaration-when you declare something, you just tell what it is. [Check here for more info](https://stackoverflow.com/a/48892360)
+
+definition-when you provide how it actually works, that's the definition of it. [Check here for more info](https://stackoverflow.com/a/48892360)
+
+miss-to not see or hear something or someone , to not notice someone or something
+
+there we go-We have performed an action successfully
+## Absolute paths
