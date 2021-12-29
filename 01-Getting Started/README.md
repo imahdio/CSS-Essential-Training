@@ -133,3 +133,28 @@ versus-used to compare two things or ideas, especially when you have to choose b
 upcoming-happening soon, about to happen
 
 revise-to change or correct something, esp. a piece of writing
+## Optimizing images and retina displays
+>-*based on my point of view , this lesson has some incomplete concepts which incompatible with [this lesson](https://github.com/imahdio/HTML-Essential-Training/blob/ddf4faedd53a8157ce1037e28706f01821649c7e/05-Images%20and%20Graphics/README.md#responsive-images) , that's why I try to gather my own assumptions based the instructor clues.*  
+>-when using images within your websites, there are many ways to optimize for performance and search engine optimization. [for more info read this post with 10 must known image optimization tips](https://christinatruong.github.io/css-essential-training/css-portfolio/)  
+-there are 2 ways to fit a 4000 x 3000 pixels image into an image area with 300 pixels width:
+>1. resize it to 300 pixels width with CSS, which would take an unnecessary load on the webpage.
+>2. cropping image to appropriate size width
+>
+>-apple's Retina display is a trademarked term coined by Apple, and is used to describe their high pixel density screens. Other manufacturers have their own high pixel density screens.  
+-pixel density refers to how many pixels are contained within a space , usually measured by pixels per inch, or PPI for short (**which determine actual resolution**), and sometimes referred to as dots per inch or DPI. 
+>- [more info about PPI calculation method is in here](https://www.calculatorsoup.com/calculators/technology/ppi-calculator.php)
+>- [this source demonstrate PPI(actual resolution) vs DPI(*in my point of view , common or general resolution*) concepts for each specific mobile phone.](https://devhints.io/resolutions)
+>
+>-2X Retina displays have double the number of pixels per inch and can fit two pixels within the same width and height of a non-Retina display.  
+-The more pixels there are within the same area, the smaller the pixels are, which is how text and images appear smoother, clearer, and show more detail.  
+-there are 2 ways to support retina and non-retina screens simultaneously:
+>1. to use an image twice the size. For example, in our project if we use an image file that is 600 pixels wide, then resize it to 300 pixels with CSS, we are adding double the amount of pixels within the same dimension, just like Retina displays. For both Retina and non-Retina screens, the image will display as 300 pixels wide. But in the Retina display, the image will appear more crisp.
+>2. list the images with screen density, like 2X, 3X, 4X. the browser will swap out one version of this image for another based on what it thinks is best. [for more info check the related lesson in here](https://github.com/imahdio/HTML-Essential-Training/blob/ddf4faedd53a8157ce1037e28706f01821649c7e/05-Images%20and%20Graphics/README.md#responsive-images)  
+>
+>-The placeholder images included in the exercise files are already sized accordingly. But if you want to use your own images, resize the thumbnails to 600 pixel width. For the background image, anywhere between 1400 pixels to about 2000 pixels wide should work. 
+
+coin-invent (a new word or phrase)
+
+crisp-a crisp sound or image is very clear
+
+apparent-able to be seen or understood
