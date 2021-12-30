@@ -196,3 +196,32 @@ miss-to not see or hear something or someone , to not notice someone or somethin
 
 there we go-We have performed an action successfully
 ## Absolute paths
+>-absolute paths refers to a resource located on a server so the entire URL, including the HTTP and full domain name must be referenced. we can use this technique either for linking to pages outside of your website or within your own project files (root relative path)
+>```html
+><a href="http://website.com"></a>
+><a href="http://website.com/posts/"></a>
+><a href="http://website.com/posts/page.html"></a>
+>```
+>-embedding external image resources into your own pages is called hotlinking and should be avoided. Hotlinking is known as the act of stealing someone's bandwidth by linking directly to their website's assets, such as images or videos. The only time it is acceptable is when services are created for the purpose of hosting web resources for people to use.
+>```html
+><a href="http://notmywebsite.com"></a> //common linking is OK
+><img src="http://notmywebsite.com/images/photo.jpg"></a> //Hot linking , Not Ok!
+>```
+>-with placeholder image services Instead of using a relative path that references a file in your project directory, an absolute path can be used to link directly to a hosted image.  
+-most placeholder services will include options and usage instructions for setting the width and height, picking a specific image and more.  
+-placeholders are meant to be temporary. So if you want to use a more permanent option, use your own images or a stock photo.  
+-you can use something similar to an absolute path within your own project files. It's also sometimes called a root relative path. By adding a forward slash at the beginning of the href value, it assumes the URL is the same as whatever your current URL is, but you need to view your website on a local server during development.  
+![image](https://user-images.githubusercontent.com/64577273/147727197-01a7f71d-897c-4508-8edd-f6c7d1529084.png)
+>absolute path|root relative path|relative path
+>-|-|-
+>link directly to an external hosted files|similar to an absolute path but link within your own project files|references a file in your project directory
+
+image placeholder service-designers can use it for quick and efficient display of custom image
+
+Stock photos-they're professional grade photographs that are already taken, edited, and ready to be used
+## Chapter Quiz
+>-You have a large image that needs to fit into a 400 x 200 pixel area. I should crop the image to 800 x 400 pixels if your users are using 2X Retina displays.  
+-In Chrome's Developer Tools view, the default styles listed under the User Agent Stylesheet section on the right.  
+-While HTML controls document structure, CSS controls content appearance.  
+-`images` is the recommended name you should give the folder that holds your project's images.  
+-inline CSS can be used to quickly test local CSS overrides.
