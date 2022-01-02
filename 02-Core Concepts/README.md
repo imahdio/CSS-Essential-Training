@@ -180,3 +180,48 @@ descendant element-an element that is contained (at any level) within another el
 syntax-the structure of statements or elements in a computer language
 
 in a nutshell-very briefly, giving only the main points
+## The color and property values
+>-the `color` property can be used with many different types of values:
+>- use keyword values to define colors
+![image](https://user-images.githubusercontent.com/64577273/147875804-443e0cf6-1b31-4d36-8ac7-f01968eca4c0.png)
+>
+>Notice: [colours.neilorangepeel.com](https://colours.neilorangepeel.com/) is a great visual reference and lists all of the available keywords, including the corresponding color value type.
+>- either use  
+>    1. RGB values to define colors according to it's red, green, and blue components using a **hexadecimal value** or a **functional value**
+>    2. HSL values which defines a color by its hue, saturation, and lightness and also includes an optional alpha component.
+>
+>RGB values<br>using a hexadecimal value|RGB values<br>using a functional value|HSL values <br> another functional value
+>-|-|-
+>they are prefixed with a number sign # followed by six characters using a combination of numbers from zero to nine and the letters A to F|The RGB function is defined using three comma-separated numbers between 0-255 or 0%-100%|it defines a color by its hue, saturation, and lightness ![image](https://user-images.githubusercontent.com/64577273/147877886-597bed21-fc2c-49e1-b010-3509e8b1a02a.png) <br> ![image](https://user-images.githubusercontent.com/64577273/147877872-6fb357fa-6ec6-49dd-aa17-9ac75500dcef.png)
+>The first two values represent the red, followed by the green and blue values.<br>![image](https://user-images.githubusercontent.com/64577273/147876298-bc04341e-cf8d-4229-a4ed-7d6a76b7c3bc.png)|to set the red, green, and blue color channels.<br>![image](https://user-images.githubusercontent.com/64577273/147884132-9fd30219-dfb9-4dec-9699-63c397b720ee.png)<br>![image](https://user-images.githubusercontent.com/64577273/147876756-e90c6591-8b1c-4f4d-a515-d17be728c5a8.png)|● [The Hue is specified as an angle within the color wheel, relative to red.](https://upload.wikimedia.org/wikipedia/commons/f/f7/Hsv-hues-cf-lch-hues.png) So red equals zero degrees or 360 degrees and the other colors are spread around the circle. Green equals 120 degrees and so on. <br>● Saturation is the second value, and is represented with a percentage. 100% is full saturation and 0% is a shade of gray.<br>● Lightness is the third value and is also represented as a percentage. 100% lightness is white, 0% lightness is black, and 50% lightness is normal.<br>[compare HSL parameters in 1 diagram](https://vanseodesign.com/web-design/hue-saturation-and-lightness/)
+>-|use `rgba()` and a fourth value (alpha channel) to change the opacity of the color. Zero or 0% is no opacity, one or 100% is full opacity. [check it practically at all over down side of this article](https://www.w3schools.com/html/html_colors_rgb.asp)<br>![image](https://user-images.githubusercontent.com/64577273/147877001-34cf731a-cc18-443e-b691-aea579a8f57f.png)|also includes an optional alpha component. The Alpha Channel can be represented as a decimal or a percentage.<br>![image](https://user-images.githubusercontent.com/64577273/147878074-cd6ffda2-7702-4b0d-9dc8-5dc98a9d262b.png)
+>The hex value can also be abbreviated if the RGB pairs or all the values are the same. [check it practically](https://www.rapidtables.com/web/color/RGB_Color.html)<br>![image](https://user-images.githubusercontent.com/64577273/147876626-7e7486b0-4824-41d2-8279-f4f10976e1aa.png)||
+>The letters in the hexadecimal notation are case-insensitive.<br>![image](https://user-images.githubusercontent.com/64577273/147876354-c6a6ee84-f422-4315-a184-e93ccf517c4b.png)||
+>
+>-[This tool on css-tricks.com](https://css-tricks.com/examples/HSLaExplorer/) is a good one for both HSL and RGB colors.  
+>-[Randoma11y.com](https://www.randoma11y.com/) is great for creating color combinations that provide high contrast for those with color blindness.  
+>-[coolors.co generates projects' color palette.](https://coolors.co/generate) You can press the space bar to generate new color palettes. You can click on the colors that you want to use to lock it, and press the space bar to get more colors.
+
+quite often-Used for things that happen less frequently than "very often", but more frequently than "sometimes" or "occasionally"
+
+lace-a fine cloth made with patterns of many very small holes
+
+old lace-a very pale yellowish orange like the color of an old lace tablecloth
+
+corresponding-analogous or equivalent in character, form, or function; comparable
+
+number sign-the sign # is known variously as the number sign, hash, or pound sign, used to introduce a number (as in question #2)
+
+hexadecimal-often shortened to "hex", is a numeral system made up of 16 symbols. The standard numeral system is called decimal (base 10) and uses ten symbols: 0,1,2,3,4,5,6,7,8,9. Hexadecimal uses the decimal numbers and six extra symbols.(A, B, C, D, E and F)
+
+opacity-the quality of lacking transparency
+
+relative to-in comparison with
+
+ally-someone who helps and supports someone else
+
+palette-the range of colours used in the decoration of a house, etc.
+
+textile-it refers to any material made of interlacing fibres
+
+upcoming-about to happen; forthcoming
