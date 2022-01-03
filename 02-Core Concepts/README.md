@@ -315,6 +315,7 @@ get good-or GIT GUD , improve yourself
 >  background: black;
 >}</code></pre><td><img src="https://user-images.githubusercontent.com/64577273/147921306-801daffc-7191-4b64-820e-f2d57a22e404.png">
 ></table>
+>
 >4. apply a style to both classes. So it'll only apply if both classes are present.
 ><table>
 >    <tr><th>html</th><th>css</th><th>result</th>
