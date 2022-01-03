@@ -225,3 +225,51 @@ palette-the range of colours used in the decoration of a house, etc.
 textile-it refers to any material made of interlacing fibres
 
 upcoming-about to happen; forthcoming
+## Type and universal selectors
+>-CSS uses different types of selectors to create pattern matching rules to determine which element to apply the style to.  
+![image](https://user-images.githubusercontent.com/64577273/147886355-33c26665-42f9-4ae4-95bb-295b63a0e0a6.png)
+>-Type selectors are the most basic kind of selector. They match to HTML elements by using the element name. For example, to apply a style to the h1 tags, h1 is the selector.  
+![image](https://user-images.githubusercontent.com/64577273/147886492-4cf6c526-a783-4a32-8146-3cd75bc40121.png)  
+>-The universal selector selects every single element in the whole document. The syntax is expressed as a single asterisk.  
+![image](https://user-images.githubusercontent.com/64577273/147886538-9aa746fe-a372-414b-8171-936344b86878.png)  
+>-[experiment both above selectores in here practically](https://codepen.io/imahdio/pen/wvrmNOm?editors=1100)
+
+best practice-a working method, or set of working methods, that is officially accepted as being the best to use in a particular business or industry
+
+sparingly-in an economical or limited way,in a restricted or infrequent manner; in small quantities
+
+too general-not specific enough
+## Class and ID selectors
+>-class and ID are two attributes that can be used to attach extra information to any HTML element.
+>
+>class selector|ID selector
+>-|-
+>add the class attribute to the opening HTML tag of the element you want to apply the style to. its value is defined by you.<br>![image](https://user-images.githubusercontent.com/64577273/147904753-6a161132-7c52-497a-942b-b66abacc7ecb.png)|add the ID attribute to the HTML element with a custom value.<br>![image](https://user-images.githubusercontent.com/64577273/147906271-8acbf88c-11ff-4215-bb5f-4afff2a3b6ca.png)
+>The value of the class becomes the selector and must begin with a leading period.<br>![image](https://user-images.githubusercontent.com/64577273/147904902-6ffc26b8-7b9b-4eed-9f64-df50a1c9f641.png)|the CSS selector for IDs has a different syntax. ID selectors begin with a number sign (#) symbol.<br>![image](https://user-images.githubusercontent.com/64577273/147906427-c411042c-7414-4410-ae3b-6110cd65c2fd.png)
+>Class selectors can be reused throughout the document. Add the class to any element to apply the style.<br>![image](https://user-images.githubusercontent.com/64577273/147905302-1fd476dd-67c5-4d01-85fe-37b7f9b71b13.png)|there is a good convention that ID selectors are not reusable and highly recommend only be used once per page.<br>![image](https://user-images.githubusercontent.com/64577273/147906510-4d201e93-0426-464a-ac44-df7ed8f71933.png)
+>You can also use more than one class in the same element by adding another class name to the value. The values must be separated with a space and contained within the quotes.<br>![image](https://user-images.githubusercontent.com/64577273/147905536-37605ca9-c13b-40f4-a8a6-ecf354ae6bd8.png)|`id` is a global attribute that is similar to `class` but we’re only allowed to use one specific id in each HTML element. <br>[for more example check here](https://github.com/imahdio/HTML-Essential-Training/blob/ddf4faedd53a8157ce1037e28706f01821649c7e/03-Understanding%20the%20Power%20of%20HTML/README.md#html-attributes)
+>With multiple classes, you can apply styles to each class independent of each other or apply a style only when all of the classes are included.<br>![image](https://user-images.githubusercontent.com/64577273/147905811-d8231f80-5e07-4594-b42b-d555681c7e4e.png)|
+>
+>-IDs can be used for in-page linking by using the ID value in the link's href attribute. When you click the link it will automatically scroll down or up to the matching element on the page.  
+![image](https://user-images.githubusercontent.com/64577273/147907489-b3ad864b-4c7c-4d9f-9128-a5098c7dbbe4.png)
+Notice: You can use the same ID value for both in-page linking and for CSS but, for organization, it's recommended to keep these functions separate.  
+Notice: Some prefer not to use IDs at all for CSS and reserve it just for in-page linking.  
+-use the following naming conventions When choosing a class or ID name:
+>* don't use spaces. If you want to choose a certain value that is more than one word use an underscore or dash to separate the words.  
+![image](https://user-images.githubusercontent.com/64577273/147907843-9c2ee088-118d-42ef-910b-4cb3b0627f55.png)
+>* use meaningful and descriptive names that describe the purpose of the style, that can make it easier to read and understand why it's being used.  
+![image](https://user-images.githubusercontent.com/64577273/147908021-923428df-66cb-4e29-a33f-0208ff7f8644.png)
+>* use easily undrstood abbreviations which fairly common or pretty self-explanatory  
+![image](https://user-images.githubusercontent.com/64577273/147908147-1559e254-8c91-4a6d-b708-17e11f40b5c5.png)
+
+leading-in the first position
+
+hyphen-the mark (-) used in writing to join two words together, or between the syllables of a word when it is divided at the end of a line of text
+
+underscore-to underline ;the character (_) on a computer keyboard, used to draw a line under a letter or word, and also used in file names where a space is not allowed
+
+corresponding-similar to, connected with
+
+explanatory-serving to explain something; giving an explanation about something
+
+get good-or GIT GUD , improve yourself
