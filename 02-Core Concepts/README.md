@@ -329,7 +329,7 @@ get good-or GIT GUD , improve yourself
 >}</code></pre><td><img src="https://user-images.githubusercontent.com/64577273/147922208-9318cbd0-9bad-4e7a-8dfe-341b29357e1f.png">
 ></table>
 >
->5. add example ID to the `h1`. We use the same name with its class value.
+>5. add example ID to the `h1`. let's use the same name with its class value.
 ><table>
 >    <tr><th>html</th><th>css</th><th>result</th>
 >    </tr>
@@ -343,7 +343,7 @@ get good-or GIT GUD , improve yourself
 >}</code></pre><td><img src="https://user-images.githubusercontent.com/64577273/147922943-7419758a-147d-4370-8c2a-656ba77c6e6e.png">
 ></table>
 >
+>Notice: So while it's possible to use the same name for classes and IDs, it might get a bit confusing so it's probably better to give them different names.  
 >-[check full code example in here](https://codepen.io/imahdio/pen/dyVmxQL)
 
 even though-despite the fact that
-
