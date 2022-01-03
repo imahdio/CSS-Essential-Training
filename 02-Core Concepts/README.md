@@ -273,3 +273,76 @@ corresponding-similar to, connected with
 explanatory-serving to explain something; giving an explanation about something
 
 get good-or GIT GUD , improve yourself
+## Class and ID selector exercise 
+>-Using the previous pen, [let's practice using class and ID selectors](https://codepen.io/imahdio/pen/dyVmxQL?editors=1100):
+>1. make a change to just the first h2 element by adding a class attribute
+><table>
+>    <tr><th>html</th><th>css</th><th>result</th>
+>    </tr>
+>    <tr><td>
+>    <pre><code>...
+>&lt;h2 class="example">Sub-heading&lt;/h2>
+>...</code></pre><td><pre><code>...
+>.example {
+>  color: orange;
+>}</code></pre><td><img src="https://user-images.githubusercontent.com/64577273/147919829-e0c86c8b-bbb6-4519-a8e3-f777489a6d15.png">
+></table>
+>
+>2. Since classes can be reused and applied to any HTML element, Let's put it in the `h1`.
+><table>
+>    <tr><th>html</th><th>css</th><th>result</th>
+>    </tr>
+>    <tr><td>
+>    <pre><code>
+>&lt;h1 class="example">Heading&lt;/h1>
+>&lt;h2 class="example">Sub-heading&lt;/h2>
+>...</code></pre><td><pre><code>...
+>.example {
+>  color: orange;
+>}</code></pre><td><img src="https://user-images.githubusercontent.com/64577273/147920410-6d2f3684-e14c-438a-ae0c-ed5764a13230.png">
+></table>
+>
+>3. add example2 class in the `h2` element and add another CSS style using the example2 selector.
+><table>
+>    <tr><th>html</th><th>css</th><th>result</th>
+>    </tr>
+>    <tr><td>
+>    <pre><code>
+>&lt;h1 class="example">Heading&lt;/h1>
+>&lt;h2 class="example example2">Sub-heading&lt;/h2>
+>...</code></pre><td><pre><code>...
+>.example2 {
+>  background: black;
+>}</code></pre><td><img src="https://user-images.githubusercontent.com/64577273/147921306-801daffc-7191-4b64-820e-f2d57a22e404.png">
+></table>
+>4. apply a style to both example and example2 classes.  So it'll only apply if both classes are present.
+><table>
+>    <tr><th>html</th><th>css</th><th>result</th>
+>    </tr>
+>    <tr><td>
+>    <pre><code>
+>&lt;h1 class="example">Heading&lt;/h1>
+>&lt;h2 class="example example2">Sub-heading&lt;/h2>
+>...</code></pre><td><pre><code>...
+>.example.example2 {
+>  font-size: 50px;
+>}</code></pre><td><img src="https://user-images.githubusercontent.com/64577273/147922208-9318cbd0-9bad-4e7a-8dfe-341b29357e1f.png">
+></table>
+>
+>5. add example ID to the `h1`. We use the same name with its class value.
+><table>
+>    <tr><th>html</th><th>css</th><th>result</th>
+>    </tr>
+>    <tr><td>
+>   <pre><code>
+>&lt;h1 id="example" class="example">Heading&lt;/h1>
+>&lt;h2 class="example example2">Sub-heading&lt;/h2>
+>...</code></pre><td><pre><code>...
+>#example {
+>  font-size: 100px;
+>}</code></pre><td><img src="https://user-images.githubusercontent.com/64577273/147922943-7419758a-147d-4370-8c2a-656ba77c6e6e.png">
+></table>
+>-[check full code example in here](https://codepen.io/imahdio/pen/dyVmxQL)
+
+even though-despite the fact that
+
