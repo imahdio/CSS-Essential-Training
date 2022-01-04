@@ -274,7 +274,7 @@ explanatory-serving to explain something; giving an explanation about something
 
 get good-or GIT GUD , improve yourself
 ## Class and ID selector exercise 
->-Using the previous pen, [let's practice using class and ID selectors](https://codepen.io/imahdio/pen/dyVmxQL?editors=1100):
+>-Using the previous code pen exercise, [let's practice using class and ID selectors](https://codepen.io/imahdio/pen/dyVmxQL?editors=1100):
 >1. make a change to just the first h2 element by adding a class attribute
 ><table>
 >    <tr><th>html</th><th>css</th><th>result</th>
@@ -348,3 +348,91 @@ get good-or GIT GUD , improve yourself
 >-[check full code example in here](https://codepen.io/imahdio/pen/dyVmxQL)
 
 even though-despite the fact that
+## Descendant selectors
+>-Document object model (DOM) represents the relationship between HTML elements.  
+>1. The first level creates a parent child relationship
+>2. anything nested further is referred to as an ancestor descendant relationship.
+>3. The relationship between elements nested within the same parent are referred to as sibling elements.  
+![image](https://user-images.githubusercontent.com/64577273/147952160-88d8c5bf-5bee-4a82-8c05-5ad5ceea14e8.png)  
+>
+>-Descendant selectors are used to apply styles specifically to elements nested within other elements. To select a descendant element, use a space between the selectors to denote the nested relationship.
+>
+>2 selectores|more than 2 selectores to match two descendant elements|mix different selector types or even skip levels
+>-|-|-
+>The selector on the left is the ancestor element. The selector on the right is the descendant element.<br>![image](https://user-images.githubusercontent.com/64577273/147975861-abea93f7-f12d-42e9-af6e-ee1795fc300f.png)|In this example, `section p a` will select a link nested inside of a paragraph inside of a `section` element. the outside links will not be affected.<br>![image](https://user-images.githubusercontent.com/64577273/147976501-7b46cd57-2789-4eb9-9c84-a57e026e0c1e.png)|You're not required to follow the exact nested path of the HTML structure to select a descendant element.<br>![image](https://user-images.githubusercontent.com/64577273/147976858-1a81d8d3-fc27-4118-b448-aa5c48bdfd10.png)
+>
+>-[In this example](https://codepen.io/christinatruong/pen/KEyzNo?editors=1100), we'll look at different ways to select the links depending where they are in the HTML.  
+>Notice: control forward slash <img src="https://user-images.githubusercontent.com/64577273/148019766-3887ed26-c958-4dbc-add5-bb14e6621a5d.jpg"> is keyboard shortcut for comment or uncomment  to the selected lines of code.
+>1. uncomment the color value in the `a` type selector. This will apply to all the links anywhere in the document.
+>2. `section a` is a descendant selector and we'll select only links nested within a section element. this selector skip levels and match to the link within the paragraph which within the section element.
+>3. `.container a` use different types of selectors together. this is similar to `section a`, except it uses the class name instead of the element name.
+>4. `section p a` descendant selectors go more than two levels to be even more specific. It select links contained within a paragraph within a section element. but it not change color and still showing the color declared in `.container a` because of specificity concept which refers to how to determine which styles will take precedence when the selectors conflict.
+>5. `.container p a` select the link in the paragraph whithin container class.
+><table>
+>    <tr><th>html</th><th>css</th><th>results</th>
+>    </tr>
+>    <tr><td rowspan=6><pre><code>
+>&lt;section class="container">
+>	&lt;p>&lt;a href="#">Link inside a paragraph.&lt;/a>&lt;/p>
+>	&lt;a href="#">Link outside of a paragraph.&lt;/a>
+>&lt;/section>
+
+>&lt;a href="#">Link outside of section.&lt;/a>
+></code></pre>
+>    </tr>
+>    <tr><td><pre><code>
+>a {
+>  color: black;
+>}
+></code></pre></td><td><img src="https://user-images.githubusercontent.com/64577273/148023590-902eeff2-5ec1-4c91-96d7-0ab3e9819219.png"></td>
+>    </tr>
+>    <tr><td><pre><code>
+>section a {
+>  color: green;
+>}
+></code></pre></td><td><img src="https://user-images.githubusercontent.com/64577273/148023663-8aca6936-d157-4379-9c04-fe4bea74ebb2.png"></td>
+>    </tr>
+>    <tr><td><pre><code>
+>.container a {
+>  color: orange;
+>}
+></code></pre></td><td><img src="https://user-images.githubusercontent.com/64577273/148023773-860f6b24-bc6e-4ae0-be26-28be2b16a7ea.png"></td>
+>    </tr>
+>    <tr><td><pre><code>
+>section p a {
+>  color: pink;
+>}
+></code></pre></td>
+>    </tr>
+>    <tr><td><pre><code>
+>.container p a {
+>  color: green;
+>}
+></code></pre></td><td><img src="https://user-images.githubusercontent.com/64577273/148023873-56caa320-4755-4b8b-b6ac-e83c77291fd3.png"></td>
+>    </tr>
+></table>
+>
+>-With descendant selectors, you can go as many levels as you need, but it's a good rule of thumb to stick to a maximum of two or three levels to avoid making your selectors more specific than it needs to be
+
+ancestor-a person related to you who lived a long time ago
+
+ancestor element-an element that contains (at any level) other elements is an ancestor of the elements that it contains. [check here for more info](https://www.littlewebhut.com/css/info_element_relationships/)
+
+descendant-a person who is related to you and who lives after you, such as your child or grandchild
+
+descendant element-an element that is contained (at any level) within another element is a descendant of the element that contains it. [check here for more info](https://www.littlewebhut.com/css/info_element_relationships/)
+
+mesh with something-to fit with something
+
+specificity-the quality of being specific (= clear and exact)
+
+precedent-an action or event in the past that is used as an example or reason for a present action or event
+
+precedence-priority in importance, order, or rank
+
+upcoming-about to happen; forthcoming
+
+determine-to control or influence something directly, or to decide what will happen
+
+rule of thumb-a broadly accurate guide or principle, based on practice rather than theory
+
