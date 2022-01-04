@@ -435,4 +435,31 @@ upcoming-about to happen; forthcoming
 determine-to control or influence something directly, or to decide what will happen
 
 rule of thumb-a broadly accurate guide or principle, based on practice rather than theory
+## Grouping selectors
+>-❶ individual selector
+>1. id: apply styles to 1 element conventionally  
+>2. class: apply styles to diffrent elements  
+![image](https://user-images.githubusercontent.com/64577273/148045468-8d094c5f-e0ff-48ca-8195-b983883b6050.png)
+>3. element: apply style to all same elements
+![image](https://user-images.githubusercontent.com/64577273/148045377-9a18b50e-fdbc-4c53-acc5-6732c2727d08.png)  
+>
+>-❷ Group selectors: it group multiple selectors into one declaration block, separating each selector with a comma. This will apply the styles to all of the matched independent elements in the list. The spaces are optional, but the comma is not.  
+![image](https://user-images.githubusercontent.com/64577273/148046651-256538ae-0f2d-4e6a-ada4-00b534db333a.png)  
+Notice: when using descendant selectors, make sure to declare the full combination.
+>grouping selectors|➜|expand to
+>-|-|-
+>`section h1, h2 {}`|➜|<code>section h1 {}<br>h2 {}</code>
+>`section h1, section h2 {}`|➜|`section h1 {}`<br>`section h2 {}`
+>
+>-❸ combining Selectors
+>1. combining multiple classes by declaring the class names together with no space  
+>![image](https://user-images.githubusercontent.com/64577273/148056273-511519c0-a7cf-460c-b88b-7df3d6f50ab0.png)
+>2. combining with different types of selectors. For example, to apply a style specific to a class and an element, combine the type and class selector together with no space.  
+![image](https://user-images.githubusercontent.com/64577273/148056639-71fb2f70-25c5-47a0-b4f6-bbb6d5ac63b5.png)
+>
+>-remember you always want to start with general styles first, and then if you find that you need to be more specific, then this is one way to achieve that. 
 
+
+combination-the mixture you get when two or more things are combined
+
+whereas-compared with the fact that; but
