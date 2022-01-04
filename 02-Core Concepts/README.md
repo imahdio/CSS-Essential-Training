@@ -363,10 +363,10 @@ even though-despite the fact that
 >
 >-[In this example](https://codepen.io/christinatruong/pen/KEyzNo?editors=1100), we'll look at different ways to select the links depending where they are in the HTML.  
 >Notice: control forward slash <img src="https://user-images.githubusercontent.com/64577273/148019766-3887ed26-c958-4dbc-add5-bb14e6621a5d.jpg"> is keyboard shortcut for comment or uncomment  to the selected lines of code.
->1. uncomment the color value in the `a` type selector. This will apply to all the links anywhere in the document.
+>1. `a` type selector will apply the color value to all the links anywhere in the document.
 >2. `section a` is a descendant selector and we'll select only links nested within a section element. this selector skip levels and match to the link within the paragraph which within the section element.
 >3. `.container a` use different types of selectors together. this is similar to `section a`, except it uses the class name instead of the element name.
->4. `section p a` descendant selectors go more than two levels to be even more specific. It select links contained within a paragraph within a section element. but it not change color and still showing the color declared in `.container a` because of specificity concept which refers to how to determine which styles will take precedence when the selectors conflict.
+>4. `section p a` descendant selectors go more than two levels to be even more specific. It select links contained within a paragraph within a section element. but it not change color and still showing the color declared in `.container a` because of [CSS specificity concept which refers to how to determine which styles will take precedence when the selectors conflict](https://www.w3schools.com/css/css_specificity.asp).
 >5. `.container p a` select the link in the paragraph whithin container class.
 ><table>
 >    <tr><th>html</th><th>css</th><th>results</th>
@@ -402,7 +402,7 @@ even though-despite the fact that
 >section p a {
 >  color: pink;
 >}
-></code></pre></td><td>because of <a href="https://www.w3schools.com/css/css_specificity.asp">CSS specificity concept</a> it doesn't take effect until comment the <code>.container a</code> descendant selector in perivous step.
+></code></pre></td><td>because of <a href="https://www.w3schools.com/css/css_specificity.asp">CSS specificity concept</a> it doesn't take effect until comment out the <code>.container a</code> descendant selector in perivous step.
 >    </tr>
 >    <tr><td><pre><code>
 >.container p a {
