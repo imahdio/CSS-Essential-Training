@@ -402,7 +402,7 @@ even though-despite the fact that
 >section p a {
 >  color: pink;
 >}
-></code></pre></td><td>because of [CSS specificity concept](https://www.w3schools.com/css/css_specificity.asp) it doesn't take effect until comment the <code>.container a</code> descendant selector in perivous step.
+></code></pre></td><td>because of <a href="https://www.w3schools.com/css/css_specificity.asp">CSS specificity concept</a> it doesn't take effect until comment the <code>.container a</code> descendant selector in perivous step.
 >    </tr>
 >    <tr><td><pre><code>
 >.container p a {
