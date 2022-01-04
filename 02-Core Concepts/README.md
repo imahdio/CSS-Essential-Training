@@ -376,7 +376,7 @@ even though-despite the fact that
 >	&lt;p>&lt;a href="#">Link inside a paragraph.&lt;/a>&lt;/p>
 >	&lt;a href="#">Link outside of a paragraph.&lt;/a>
 >&lt;/section>
-
+>
 >&lt;a href="#">Link outside of section.&lt;/a>
 ></code></pre>
 >    </tr>
