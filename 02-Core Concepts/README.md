@@ -439,8 +439,8 @@ rule of thumb-a broadly accurate guide or principle, based on practice rather th
 >-❶ individual selector
 >1. id: apply styles to 1 element conventionally  
 >2. class: apply styles to diffrent elements  
-![image](https://user-images.githubusercontent.com/64577273/148045468-8d094c5f-e0ff-48ca-8195-b983883b6050.png)
->3. element: apply style to all same elements
+![image](https://user-images.githubusercontent.com/64577273/148045468-8d094c5f-e0ff-48ca-8195-b983883b6050.png)  
+>3. element: apply style to all same elements  
 ![image](https://user-images.githubusercontent.com/64577273/148045377-9a18b50e-fdbc-4c53-acc5-6732c2727d08.png)  
 >
 >-❷ Group selectors: it group multiple selectors into one declaration block, separating each selector with a comma. This will apply the styles to all of the matched independent elements in the list. The spaces are optional, but the comma is not.  
