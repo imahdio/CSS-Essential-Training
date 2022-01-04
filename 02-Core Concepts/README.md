@@ -402,7 +402,7 @@ even though-despite the fact that
 >section p a {
 >  color: pink;
 >}
-></code></pre></td>
+></code></pre></td><td>because of specificity concept it doesn't take effect unless comment out the <code>.container a</code>in perivous step.
 >    </tr>
 >    <tr><td><pre><code>
 >.container p a {
