@@ -526,3 +526,27 @@ less is more-smaller quantity could be of higher quality
 
 bear on sth-to be connected or related to something
 ## The cascade and importance
+>-The cascade in Cascading Style Sheets refer to how style rules are applied based on source order , specificity and `!important` keyword.
+>1. source order: if two rules are applied to the same element and have the same specificity value, the declaration that was loaded last , will take precedence.
+><table>
+>    <tr><td><img src="https://user-images.githubusercontent.com/64577273/148253691-8d609862-6911-47d1-a525-5bb52bf26f44.png"></td><td><img src="https://user-images.githubusercontent.com/64577273/148253815-b1596c8c-a50d-4b11-93c6-51467c154fa9.png"></td>
+>    </tr>
+></table>
+>
+>2. specificity: Styles with a higher specificity value will take precedence regardless of the order.  
+![image](https://user-images.githubusercontent.com/64577273/148254471-4b526a4b-d0f9-44f9-a343-b164e3c55e8c.png)  
+>3. `!important` keyword overrides source order and specificity. it's useful to know how `!important` works but it's generally considered bad practice because it doesn't really adhere to any rules.  
+>![image](https://user-images.githubusercontent.com/64577273/148255261-e4590a42-7086-4ecc-91e0-0ab002fe0c2f.png)
+The only way you can override a style declaration with `!important` is to use a selector with a higher specificity and the `!important` keyword.  
+![image](https://user-images.githubusercontent.com/64577273/148255474-f1af5cd8-cb2e-4ed0-99fb-df54b86a5a65.png)  
+>
+>Notice:  There are some special use cases listed [here in this MDN article](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#the_!important_exception). Aside from some rare cases, following best practices and the rules of the cascade and specificity will go a long way.
+
+
+messy-dirty, unpleasant, or lacking order
+
+override-to take control over something, especially in order to change the way it operates
+
+aside from-except for
+
+go a long way-it is an important factor in achieving something
