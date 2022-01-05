@@ -459,7 +459,70 @@ Notice: when using descendant selectors, make sure to declare the full combinati
 >
 >-remember you always want to start with general styles first, and then if you find that you need to be more specific, then this is one way to achieve that. 
 
-
 combination-the mixture you get when two or more things are combined
 
 whereas-compared with the fact that; but
+## Inheritance and specificity
+>-CSS styles can be inherited from the ancestor to descendant elements. So defining some broad styles as the base font color can be added using the `body` selector. All of the descendant elements nested within the `<body>` tag will inherit this style.  
+![image](https://user-images.githubusercontent.com/64577273/148176447-8ff0d94b-11ba-45a7-90b7-fedeedd60664.png)  
+-[The W3C has a list of which properties can and can't be inherited.](https://www.w3.org/TR/CSS21/propidx.html)  
+-Specificity determines how browsers decide which [CSS rule](https://djnmarti.com/foothill/coin65/week_02/basicsReview_rulesAnatomy.html) takes precedence when there are conflicting declarations.The hierarchy is based on the selector type. [check how they rank from lowest to highest in here.](https://www.w3schools.com/css/css_specificity.asp)  
+-[experiment with the following code snippet](https://codepen.io/imahdio/pen/ZEXoqBo) to see how specificity affects these selectors.
+>```html
+><section>
+>  <p id="example" class="example">A paragraph.</p>
+>  <a href="#">sample link</a>
+>  <h1>header text</h1>
+></section>
+>```
+>1. The universal selector has the lowest specificity value and can only override the inherited styles. In this example, the color declared by the universal selector overrides the color inherited from the `section` selector.  
+![image](https://user-images.githubusercontent.com/64577273/148213327-59e66efd-6916-4379-9bda-853f1583301a.png)
+>2. type selector, will override the universal selector.  
+![image](https://user-images.githubusercontent.com/64577273/148213406-56402c30-2668-4d05-b56c-2a517a041883.png)
+>3. the class selector will override both the universal and the type selector.  
+![image](https://user-images.githubusercontent.com/64577273/148213462-c948b497-1b2a-407e-b24b-2d2cfb1fa0ae.png)
+>4. the ID selector overrides them all  
+![image](https://user-images.githubusercontent.com/64577273/148213508-6ce1c61c-ccca-4dec-8053-910ffc717cd9.png)
+>5. the specificity of `section P` selector is 2 because contains two type selectors and it's not going to override the class and ID selectors. But it will override the type selector.  
+![image](https://user-images.githubusercontent.com/64577273/148213564-f4100122-7840-4602-9b42-73616502c6b6.png)
+>
+>-there are 2 ways to Calculate Specificity:  
+>1. in my point of view , [this is most reasonabe and easy to use method with great examples on w3school](https://www.w3schools.com/css/css_specificity.asp)  
+>2. The count is broken down into three buckets:  
+![image](https://user-images.githubusercontent.com/64577273/148215712-3fd3877f-6806-4aca-b00f-92b1c7e33109.png)  
+a, count the number of ID selectors.  
+b, count the number of class, attribute and pseudo-class selectors.  
+c, count the number of type and pseudo-element selectors.  
+The universal selector has a value of zero and does not affect this calculation.  
+The numbers in the final count for each bucket are then concatenated or joined together which results in a final specificity value. The higher the value, the higher the specificity.
+>
+>-[this is an online specificity calculation tool](https://specificity.keegan.st/).  
+
+specificity-the quality of being specific
+
+specific-relating to one particular thing and not others
+
+rather than-used for saying that one thing is preferred to another or happens instead of another. for example , We want the matter settled sooner rather than later.
+
+broad-including a wide range of things; general
+
+look up-search for and find a piece of information in a book or database
+
+test sth out-to test something, especially a theory or an idea, to find out how it works in a practical situation or how people react to it
+
+CSS rule-it consists of a selector and a declaration and tells a browser how to render a specified element on a HTML page. [check this article for more info](https://djnmarti.com/foothill/coin65/week_02/basicsReview_rulesAnatomy.html)
+
+precedence-priority in importance, order, or rank
+
+take precedence over-to be more important (than something else)
+
+last but not least-important, despite being mentioned at the end
+
+concatenate-link (things) together in a chain or series
+
+Something overwhelming-It is very intense and hard to deal with
+
+less is more-smaller quantity could be of higher quality
+
+bear on sth-to be connected or related to something
+## The cascade and importance
