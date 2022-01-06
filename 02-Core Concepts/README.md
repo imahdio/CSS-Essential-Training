@@ -609,7 +609,38 @@ underneath-under or below
 
 moves back and forth-move in one direction and then in the opposite direction
 ## Pseudo-class selectors and links
->-ss
+>-pseudo class selectors are often dynamic, meaning they require some action from the person interacting with your webpage.  
+-pseudo classes are combined with other selectors using a colon and no spaces.  in this lesson, we're just going to focus on the ones that can be used with hyperlinks.  
+-By default, unvisited links are styled as blue, and previously visited links are purple.  
+-once click on a link in [this code snippet](https://codepen.io/christinatruong/pen/MxrVOd) all the links change to purple. that's because they all have the same `href` value.  
+>-[in this code snippet:](https://codepen.io/christinatruong/pen/MxrVOd)
+>1. `a:link` pseudo class change default blue color of unvisited links
+>2. `a:visited` pseudo class change default purple color of visited links
+>
+>Notice: `a:link` and `a:visited` will only select anchor tags that have an `href` value. So there is no style applied to anchor tag without href value.  
+Notice: Styling a visited state are useful for search results and help you filter through the results a little more quickly.
+>
+>3. `a` style will be applied to all anchor tags, regardless of whether it has an href attribute or not. if `a:link` and `a:visited` states don't specifically declare , it changes **default colors** of both href and visited links.
+>4. `focus` pseduo class is applied when the element comes into focus, usually when navigating a website with the keyboard <kbd>Tab</kbd> key but in some browsers when the user clicks or taps on an element. by default It's displayed as either a glowing blue outline, or a dotted line. you can change this style using the outline property Which takes a value of the **outline width**, the **outline style**, as well as the **outline color**.
+>```css
+>a:focus {
+>  outline: 1px solid black;
+>}
+>```
+>Notice: `focus` pseduo class can also be used on form elements like text inputs.
+>
+>5. `hover` styles are applied when the mouse pointer hovers over an element. in code snippet of this lesson, `a:hover` pseduo class change the background color when I hover over any anchor link (with or without href value).
+>
+>Notice: `hover` style can be used on any other elements as well.  
+>Notice: although touch devices don't support hover interactions, but if you do set a `hover` style, it may show for a split second when the element is tapped.
+>
+>6. the `active` pseudo class, applies the style at the moment the element is being activated by the user, such as the time between pressing the mouse button and releasing it. As soon as you release the mouse, the active state is over.
+>
+>Notice: unlike `a:link` and `a:visited` the `focus`, `hover`, and `active` pseudo classes can be used with other elements as well as links.
 
-outline-the main shape or edge of something, without any details
+outline-the main shape or edge of something, without any details.
+
+split second-a very brief moment of time
+## Project: Styling links
+>-aa
 
