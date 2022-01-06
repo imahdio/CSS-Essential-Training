@@ -550,3 +550,66 @@ override-to take control over something, especially in order to change the way i
 aside from-except for
 
 go a long way-it is an important factor in achieving something
+## Project: Adding colors
+>-we're going to add [this color pallette](https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7) to [CSS file of our project](Project-Adding-colors/css/styles.css).
+>1. add some comments to organize the CSS into related blocks.  
+>```css
+>/* Global styles
+>--------------------------*/
+>img {
+>  width: 300px;
+>}
+>
+>/* Profile
+>--------------------------*/
+>
+>/* Projects
+>--------------------------*/
+>
+>/* Work Experience
+>--------------------------*/
+>
+>/* Education
+>--------------------------*/
+>
+>/* Contact Info
+>--------------------------*/
+>``` 
+>2. add dark gray as the base font color for all the text on the page. **This style will be inherited by all the nested elements, except for links, since they have their own default color.**
+>```css
+>/* Global styles
+>--------------------------*/
+>body {
+>    color: #343434;
+>}
+>img {
+>  width: 300px;
+>}
+>```
+>3. add a dark blue as background color to header area.
+>```css
+>/* Profile
+>--------------------------*/
+>body {
+>    color: #2F3061;
+>}
+>```
+>4. we can't use `section` as our CSS selector because it's used for the 1-project, 2-work experience, and 3-education areas. By adding classes to related sections of [index.html](Project-Adding-colors/index.html) , we'll be able to create some custom selectors for each section in [style.css](Project-Adding-colors/css/styles.css).
+>5. there is one footer element on html page. So use the type selector to add a color to footer.
+>6. change the font color of header and footer by add the following declaration to each area
+>```css
+>color {
+>    color: #F7FFF7;
+>}
+>```
+
+subtle-small but important
+
+underneath-under or below
+
+moves back and forth-move in one direction and then in the opposite direction
+## Pseudo-class selectors and links
+>-ss
+
+outline-the main shape or edge of something, without any details
+
