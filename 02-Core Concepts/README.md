@@ -643,7 +643,7 @@ outline-the main shape or edge of something, without any details.
 
 split second-a very brief moment of time
 ## Project: Styling links
->-[In this project update](Project-Styling-links/css/styles.css), change the color of the initial state of the link.
+>-[In this project update](Project-Styling-links/css/styles.css), let's change the color of the initial state of the links.
 >1. add yellow color to all links on the page  
 ![image](https://user-images.githubusercontent.com/64577273/148499478-4af3effc-3870-4924-9b5d-d387b25c7330.png)  
 >
@@ -655,7 +655,7 @@ split second-a very brief moment of time
 >    text-decoration: none;
 >}
 >```
->3. use a descendant selector to change the **link color** and **background color** and **remove underline** and **add padding** and **add rounded corners** just for project section to make its links look like a button. Basically padding will add space inside an element.  
+>3. use a descendant selector to change the **link color** and **background color** and remove **underline** and add **padding** and **rounded corners** just for project section to make its links look like a button. Basically padding will add space inside an element.  
 ![image](https://user-images.githubusercontent.com/64577273/148508297-5f344bfe-a5de-44dc-a8cb-57f163b5704c.png)
 >4. change the opacity of project section buttons on hover by adding an alpha channel. you can use online tools to convert hex values into RGB or vice versa.
 >```css
@@ -664,7 +664,7 @@ split second-a very brief moment of time
 >}
 >```
 >5. button styles are being applied to all the links of projects section, including the links inside paragraphs. So, let's update the selector so we can apply it to more specific instances.
->[Project-Styling-links/css/styles.css](Project-Styling-links/css/styles.css)
+>
 ><table>
 >    <tr><th colspan=2>❶ instead of using <code>a</code> as the selector, create <code>.btn</code> class just for the button styles in <a href="Project-Styling-links/css/styles.css">styles.css</a></th>
 >    </tr>
@@ -674,25 +674,20 @@ split second-a very brief moment of time
 >    </tr>
 ></table>
 >
+>Notice: in above code snippet , `a` style only apply to links in the project section that does not have the button class.
 ><table>
->    <tr><th colspan=2>❷ add <code>btn</code> class only to the links that point towards a project or a case study in HTML.</th>
+>    <tr><th colspan=2>❷ add <code>btn</code> class only to the links that point towards a project or a case study in <a href="Project-Styling-links/index.html">index.html</a></th>
 >    </tr>
 >    <tr><td>Before</td><td>After</td>
 >    </tr>
 >    <tr><td><img src="https://user-images.githubusercontent.com/64577273/148551896-dd6b522f-c233-4898-9fea-b56e26df6821.png"></td><td><img src="https://user-images.githubusercontent.com/64577273/148551744-f7126d41-3f68-4bcf-9b6e-72747568a7dc.png"></td>
 >    </tr>
 ></table>
->qwqw
-
-
-
-
-
-
-
 
 in due time-eventually at the right time
 
 works fine-it is working well enough
 
 case study-It is a detailed study of a specific subject, such as a person, group, place, event, organization, or phenomenon.
+
+<a href="index.html">index.html</a>
