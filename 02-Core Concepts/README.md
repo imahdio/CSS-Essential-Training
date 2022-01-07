@@ -620,7 +620,8 @@ moves back and forth-move in one direction and then in the opposite direction
 >Notice: `a:link` and `a:visited` will only select anchor tags that have an `href` value. So there is no style applied to anchor tag without href value.  
 Notice: Styling a visited state are useful for search results and help you filter through the results a little more quickly.
 >
->3. `a` style will be applied to all anchor tags, regardless of whether it has an href attribute or not. if `a:link` and `a:visited` states don't specifically declare , it changes **default colors** of both href and visited links.
+>3. `a` style will be applied to all anchor tags, regardless of whether it has an href attribute or not. if `a:link` and `a:visited` states don't specifically declare , it changes **default colors** of both href and visited links.  
+![image](https://user-images.githubusercontent.com/64577273/148502404-d0d29d54-dfd8-484c-b669-54042286c376.png)
 >4. `focus` pseduo class is applied when the element comes into focus, usually when navigating a website with the keyboard <kbd>Tab</kbd> key but in some browsers when the user clicks or taps on an element. by default It's displayed as either a glowing blue outline, or a dotted line. you can change this style using the outline property Which takes a value of the **outline width**, the **outline style**, as well as the **outline color**.
 >```css
 >a:focus {
@@ -642,5 +643,56 @@ outline-the main shape or edge of something, without any details.
 
 split second-a very brief moment of time
 ## Project: Styling links
->-aa
+>-[In this project update](Project-Styling-links/css/styles.css), change the color of the initial state of the link.
+>1. add yellow color to all links on the page  
+![image](https://user-images.githubusercontent.com/64577273/148499478-4af3effc-3870-4924-9b5d-d387b25c7330.png)  
+>
+>Notice: We could've used the `a:link` pseudo selector which specifically applies to links with an `href` attribute but it's not very common to use an anchor tag without the `href`. So generally, using `a` selector works fine to style the initial state.
+>
+>2. add hover style underneath above anchor tag. it removes the default underline.
+>```css
+>a:hover {
+>    text-decoration: none;
+>}
+>```
+>3. use a descendant selector to change the **link color** and **background color** and **remove underline** and **add padding** and **add rounded corners** just for project section to make its links look like a button. Basically padding will add space inside an element.  
+![image](https://user-images.githubusercontent.com/64577273/148508297-5f344bfe-a5de-44dc-a8cb-57f163b5704c.png)
+>4. change the opacity of project section buttons on hover by adding an alpha channel. you can use online tools to convert hex values into RGB or vice versa.
+>```css
+>.projects a:hover {
+>    background: rgba(47,48,79,80%);
+>}
+>```
+>5. button styles are being applied to all the links of projects section, including the links inside paragraphs. So, let's update the selector so we can apply it to more specific instances.
+>[Project-Styling-links/css/styles.css](Project-Styling-links/css/styles.css)
+><table>
+>    <tr><th colspan=2>❶ instead of using <code>a</code> as the selector, create <code>.btn</code> class just for the button styles in <a href="Project-Styling-links/css/styles.css">styles.css</a></th>
+>    </tr>
+>    <tr><td>Before</td><td>After</td>
+>    </tr>
+>    <tr><td><img src="https://user-images.githubusercontent.com/64577273/148549094-3cdb1b00-69ef-497e-bac7-64a7350c3474.png"></td><td><img src="https://user-images.githubusercontent.com/64577273/148549642-e30b4af5-92e7-4f96-9976-89f131affb9e.png"></td>
+>    </tr>
+></table>
+>
+><table>
+>    <tr><th colspan=2>❷ add <code>btn</code> class only to the links that point towards a project or a case study in HTML.</th>
+>    </tr>
+>    <tr><td>Before</td><td>After</td>
+>    </tr>
+>    <tr><td><img src="https://user-images.githubusercontent.com/64577273/148551896-dd6b522f-c233-4898-9fea-b56e26df6821.png"></td><td><img src="https://user-images.githubusercontent.com/64577273/148551744-f7126d41-3f68-4bcf-9b6e-72747568a7dc.png"></td>
+>    </tr>
+></table>
+>qwqw
 
+
+
+
+
+
+
+
+in due time-eventually at the right time
+
+works fine-it is working well enough
+
+case study-It is a detailed study of a specific subject, such as a person, group, place, event, organization, or phenomenon.
