@@ -690,4 +690,39 @@ works fine-it is working well enough
 
 case study-It is a detailed study of a specific subject, such as a person, group, place, event, organization, or phenomenon.
 
-<a href="index.html">index.html</a>
+be hung up on sth-to be extremely interested in or worried by a particular subject and spend an unreasonably large amount of time thinking about it
+## Chapter Quiz
+>-the following CSS cause your links to have a solid blue background that changes to semitransparent on hover.
+>```css
+>a:link { background: #0000ff; }
+>a:hover { background: rgba(0,0,255,0.5); }
+>```
+>-if the body of your page includes some HTML sections , it will look **blue sections on a white background** with the following CSS.
+>```css
+>body {
+>  background: #ffffff; /* white */
+>}
+>section {
+>  background: 0000ff; /*blue*/
+>  height: 200px;
+>}
+>```
+>-`!important` CSS keyword override standard source order and specificity rules.  
+>-`a:visited` pseudo-class sets a different color on a link if it was clicked on.  
+-`.header.clear` CSS selector select all elements on page associated with the two classes `header` and `clear`  
+-a universal selector is specified using a "*" character.  
+-In the following CSS code, `h1` is the selector while `color` is the property.
+>```css
+>h1 {
+>  color: red;
+>}
+>```
+>-Recommendation is one of W3C status code which represents a CSS specification that is fully implemented by modern browsers.  
+-All the following declarations are valid.
+>```css
+>color: red;   /* declaration A */
+>font-size: 1em;   /* declaration B */
+>padding: 10px 0;   /* declaration C */
+>```
+
+semi transparent-partially or imperfectly transparent
