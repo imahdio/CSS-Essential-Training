@@ -63,6 +63,39 @@ container-*in my point of view* viewport
 >it's defined by the size of its containing element. If you change the width of the container, then inside-container width will change as well.|most types of absolute units, are used for print, so for websites stick with pixels.|It dependents on the length of another element.
 >![image](https://user-images.githubusercontent.com/64577273/148678538-f5a0d555-7ea4-470f-a125-cbd9f694287a.png)|![image](https://user-images.githubusercontent.com/64577273/148678719-d7966f63-333a-4408-9a93-680d59537069.png)|<ul><li><code>em</code> is defined by the font size of the parent element</li><li><code>rem</code> is defined by the font size of the root element</li></ul>![image](https://user-images.githubusercontent.com/64577273/148679161-0224c4f1-df86-4ab3-a7a6-5468ca9db267.png)
 ## The box properties syntax and usage
->-aa
+>-let's take a closer look at each of the box properties, syntax and usage.  
+-the `width` and `height` properties for:
+>
+>block and inline-block elements|inline elements
+>-|-
+>change the size of the content box|width and height have no effect unless we use the display property set to block or inline block
+>![image](https://user-images.githubusercontent.com/64577273/148683366-16c97c46-af56-40a5-9a06-c1d80bd5190d.png)|![image](https://user-images.githubusercontent.com/64577273/148683385-c544da2b-0190-4db6-ae56-0a1f3927cd72.png)
+>
+>-the `padding` and `margine` properties:
+>
+>`padding` property|`margine` property
+>-|-
+>add or remove space inside of the element but around the content box|add or remove space around an element
+>The longhand properties can be used to specify just a particular side to add the padding to.<br>![image](https://user-images.githubusercontent.com/64577273/148684088-e1f566c9-1b0f-4fd8-a32e-dbcab191d1d1.png)|The longhand syntax rules are the same as padding<br>![image](https://user-images.githubusercontent.com/64577273/148696685-0c8e6ec6-f486-4368-91fe-59198414c1e2.png)
+>with the shorthand property all four sides can be defined. The values always follow a clockwise order, starting from the top, the second value is always the right, then the bottom, then the left.<br>![image](https://user-images.githubusercontent.com/64577273/148684258-c023f190-9c83-490e-b8f0-f8535cd76942.png)<br><br>The shorthand syntax can be shortened even further<br>![image](https://user-images.githubusercontent.com/64577273/148684588-6bd75870-90f1-474f-a13b-60fcbf43523e.png)|The shorthand syntax rules are the same as padding<br>![image](https://user-images.githubusercontent.com/64577273/148696946-22c9fd0e-9739-429e-bc9e-8b4027dc3ec4.png)
+>You can also mix different types of length units<br>![image](https://user-images.githubusercontent.com/64577273/148684638-42ce46ce-3d84-4591-a5bc-8ee98f824b90.png)|mix different types the same as padding
+>|<ul><li>zero values will remove the padding space</li><li>if the value is zero you can omit the unit</li><li>all values must be a positive number</li></ul><br>![image](https://user-images.githubusercontent.com/64577273/148684785-176af65e-a5a1-4955-86f5-7b4957c53192.png)|<ul><li>zero values will remove the margine space</li><li>if the value is zero you can omit the unit</li><li>**values can be negative numbers**</li><li>**can also be used with the keyword `auto`**</li></ul><br>
+>
+>-the `border` property:
+>* displays a border between the margin and padding of an element.
+>* When using the shorthand syntax for border the order of the values do not matter.
+>![image](https://user-images.githubusercontent.com/64577273/148697614-720bca1a-08f2-4c27-8cb7-97b04540f72c.png)
+>
+>`border-width` property|`border-color` property|`border-style` property
+>-|-|-
+>Only the following values can be used<br><ul><li>absolute length unit</li><li>the keywords `thin`, `medium`, and `thick`</li></ul>![image](https://user-images.githubusercontent.com/64577273/148697879-eff21279-071c-48e7-a400-0db2cf4a427d.png)|any of the color values available<br>![image](https://user-images.githubusercontent.com/64577273/148697917-8352a4b1-0306-40e4-83e6-1314c03f0faf.png)|there are quite a range of options<br>![image](https://user-images.githubusercontent.com/64577273/148697948-fb4f93b1-b75f-4df7-a0a2-e9f5e3b427d6.png)<br>Notice: for more ways to declare the border values, refers to [this MDN documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
+>
+>-The dimensions of all of these properties can contribute to the total amount of space an element occupies.  
+Notice: Margin does not contribute to the total size of the element since it adds space around the element but it does effect the amount of space that the element takes up.  
+![image](https://user-images.githubusercontent.com/64577273/148698384-5eb8d7a2-ab5f-4083-8b3b-48802bc5dd09.png)  
+>-when we start creating layouts with columns, and sidebars, and grids, understanding how these box properties take up space will be necessary
+![image](https://user-images.githubusercontent.com/64577273/148698533-eb573cca-379c-4565-9af3-898b1c750826.png)
 
 omit-leave out or exclude (someone or something), either intentionally or forgetfully
+
+contribute-If something contributes to an event or situation, it is one of the causes of it
