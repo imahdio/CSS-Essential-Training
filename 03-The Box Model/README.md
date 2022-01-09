@@ -47,5 +47,18 @@ span-the full extent of something from end to end
 
 container-*in my point of view* viewport
 ## The box model properties
->-aa
-
+>-The CSS box model describes the rectangular boxes that are generated for each HTML element.
+>1. content box: contains the actual content added between the HTML tags, such as text or an image includes 2 following properties:
+>    1. `width` property: sets the width of the content area
+>    2. `height` property: sets the height of the content area
+>2. `padding` property: adds or removes the space within the element. It surrounds the content area, and this space is included inside of the element.
+>3. `border` property: adds between padding and margin. It surrounds the padding area.
+>4. `margin` property: adds or removes space around the element. it surrounds the entire element.  
+>![image](https://user-images.githubusercontent.com/64577273/148678117-77a2a113-8464-4571-872b-1a0e7eb0967e.png)
+>
+>-for box properties, the percentage and length data types are used.
+>
+>percentage unit|absolute length unit|relative length unit
+>-|-|-
+>it's defined by the size of its containing element. If you change the width of the container, then inside-container width will change as well.|most types of absolute units, are used for print, so for websites stick with pixels.|It dependents on the length of another element.
+>![image](https://user-images.githubusercontent.com/64577273/148678538-f5a0d555-7ea4-470f-a125-cbd9f694287a.png)|![image](https://user-images.githubusercontent.com/64577273/148678719-d7966f63-333a-4408-9a93-680d59537069.png)|<ul><li><code>em</code> is defined by the font size of the parent element</li><li><code>rem</code> is defined by the font size of the root element</li></ul>![image](https://user-images.githubusercontent.com/64577273/148679161-0224c4f1-df86-4ab3-a7a6-5468ca9db267.png)
