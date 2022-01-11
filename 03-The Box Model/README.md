@@ -139,7 +139,7 @@ margine collapsing- The top and bottom margins of blocks are sometimes combined 
 >1. if we put `<span>` tags on the same line, that will remove the space. [result](https://codepen.io/ma400/pen/poWxprq)
 >2. use `margin-left` on second `<span>` tag with a negative value. Just to nudge it over. this technique will only work with `margin` because `padding` does not accept negative values. [result](https://codepen.io/ma400/pen/RwLexjg)
 >3. make a container just around `<span>` elements. set `font-size: 0;` in parent container. so it reduces all the characters down to zero, including the space. But `font-size` is an inheritable style. So we'll have to re-declare the `font-size` for the child elements to override this inherited style. [result](https://codepen.io/ma400/pen/xxXypME)
->4. But now there are newer layout techniques that will work better for this scenario and will be discussed later on in this course
+>4. But now there are newer layout techniques that will work better for this scenario and will be discussed later on, in this course
 
 quirk-an unusual habit or type of behavior, or something that is strange and unexpected
 
@@ -151,5 +151,5 @@ as if-in such a way that something seems to be true
 
 would need to-*in my point of view* only expressing hope and wish
 
-So aside from aesthetics, another time you would need to remove the space as if you were using inline elements that were a specific width within a specific container size-*in my point of view* another time you want to remove the space of inline elements with a specific width and container size , regradless of attending to appreciation of beauty , use the taught direction of this lesson.
-
+So aside from aesthetics, another time you would need to remove the space as if you were using inline elements that were a specific width within a specific container size-*in my point of view* another time you want to remove the space of inline elements with a specific width and container size , regradless of attending to appreciation of beauty , use the taught direction of this lesson. [check here for more info](https://github.com/imahdio/CSS-Essential-Training/issues/10)
+## 
