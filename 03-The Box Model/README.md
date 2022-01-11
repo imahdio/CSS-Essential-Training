@@ -152,4 +152,32 @@ as if-in such a way that something seems to be true
 would need to-*in my point of view* only expressing hope and wish
 
 So aside from aesthetics, another time you would need to remove the space as if you were using inline elements that were a specific width within a specific container size-*in my point of view* another time you want to remove the space of inline elements with a specific width and container size , regradless of attending to appreciation of beauty , use the taught direction of this lesson. [check here for more info](https://github.com/imahdio/CSS-Essential-Training/issues/10)
-## 
+## Margin and layouts
+>-Here are 2 ways that margin can be used for layouts:  
+>1. use negative margine values to nudge block element just a little bit outside of its default stacking position.  
+>Notice: if you need to move an element to a completely different position on the document, reorder the HTML or use another layout technique.
+>
+>2. center align block level elements horizontally with defining a width for the element and the margins left and right values are set to auto. this technique is often used to keep the page content from spanning all the way across viewport. try it out on [this example](https://codepen.io/ma400/pen/oNGaRPd) with these steps:
+>    1. add a width. Any value to make it smaller than the container. If the element spans all the way across, then there would be no need to center align it.
+>    2. top and bottom margin can be any value. then set the left and right values to auto. The remaining space is split evenly between the left and right margins which will center align it.  
+>Notice: if set the top and bottom to auto as well, it will not align the element vertically. aligning elements vertically can be achieved with flexbox.
+>
+>-with the following steps , set background color to expand the entire width of the page, but keep the page content from spanning all the way across viewport
+>1. for aligning content, add a `<div>` container with a class around the html content then add `width` and `margin` styles.  
+Notice: `<div>` is used here because it has no semantic meaning. It's just being used as a hook for styling purposes.
+>2. add `background` style to the whole section  
+![image](https://user-images.githubusercontent.com/64577273/148997511-c6a30501-f390-4fd5-b2f6-db95d696f7ab.png)
+
+stack of things-a pile of them
+
+nudge-the act of pushing someone or something gently
+
+all the way across-as much as possible or completely, you reach the end of something. [Great definition](https://englishlogica.com/spoken-vocab/go-all-the-way-idiom-meaning-examples-k3r6mg8kkyg)
+
+split evenly-split into equal amounts [Great definition](https://www.mathsisfun.com/definitions/divide-evenly.html)
+
+pose-to cause something, especially a problem or difficulty
+
+hook-something intended to attract and ensnare
+
+ensnare-to catch or get control of something or someone
