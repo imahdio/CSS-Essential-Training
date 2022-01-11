@@ -15,18 +15,18 @@ incorporate-take in or contain (something) as part of a whole
 >-❶ inline elements like `<a> `, `<span>` , `<strong>`
 >1. take up the same space as the content contained within their tags.
 >2. are displayed in a line, side by side, starting from the left.
->3. The element's content will only wrap to the next line if the content can't fit on the same line within its container(viewport).
+>3. The element's content will only wrap to the next line if the content can't fit on the same line within its container(parent element or viewport).
 >
 >-❷ block elements like `<p>` , `<h1>` , `<article>` , `<section>`
->1. same height as content , same width as container(viewport)
+>1. same height as content , same width as container(parent element or viewport)
 >2. always starts on a new line and stack on top of each other
 >3. the majority of elements are block-level.
 >
 >-check if an element is block or inline ([experiment with example code in here](https://codepen.io/christinatruong/pen/zXvQZE?editors=1100)):
 ><table>
->    <tr><th>add two elements next to each other</th><th>add a background color to the element</th><th>add width and height</th>
+>    <tr><th>add two elements next to each other</th><th>add a background color to the element</th><th>add<code>width</code>and<code>height</code>or<code>margine</code></th>
 >    </tr>
->    <tr><td><ul><li>if start another line is block level</li><li>if it displays on the same line is inline level</li></ul></td><td><ul><li>if the color stretches all the way across the container(viewport), it's a block element</li><li>If it only spans the width of the actual content, then it's an inline element.</li></ul></td><td><ul><li>it changes the size of the element for block elements</li><li>adding width and height has no effect for inline elements</li></ul></td>
+>    <tr><td><ul><li>if start another line is block level</li><li>if it displays on the same line is inline level</li></ul></td><td><ul><li>if the color stretches all the way across the container(parent element or viewport), it's a block element</li><li>If it only spans the width of the actual content, then it's an inline element.</li></ul></td><td><ul><li><code>width</code>and<code>height</code>change the size of the element for block elements and<code>margine</code>take effect absolutly</li><li>adding<code>width</code>and<code>height</code>has no effect for inline elements ,<code>margine</code>only take effect on right and left side of the inline elements</li></ul></td>
 >    </tr>
 ></table>
 >
@@ -45,7 +45,7 @@ majority-the larger number or part of something
 
 span-the full extent of something from end to end
 
-container-*in my point of view* viewport
+container-*in my point of view* parentelement or viewport
 ## The box model properties
 >-The CSS box model describes the rectangular boxes that are generated for each HTML element which consist of:
 >1. content box: contains the actual content added between the HTML tags, such as text or an image includes 2 following properties:
@@ -91,11 +91,65 @@ container-*in my point of view* viewport
 >Only the following values can be used<br><ul><li>absolute length unit</li><li>the keywords `thin`, `medium`, and `thick`</li></ul>![image](https://user-images.githubusercontent.com/64577273/148697879-eff21279-071c-48e7-a400-0db2cf4a427d.png)|any of the color values available<br>![image](https://user-images.githubusercontent.com/64577273/148697917-8352a4b1-0306-40e4-83e6-1314c03f0faf.png)|there are quite a range of options<br>![image](https://user-images.githubusercontent.com/64577273/148697948-fb4f93b1-b75f-4df7-a0a2-e9f5e3b427d6.png)<br>Notice: for more ways to declare the border values, refers to [this MDN documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
 >
 >-The dimensions of all of these properties can contribute to the total amount of space an element occupies.  
-Notice: Margin does not contribute to the total size of the element since it adds space around the element but it does effect the amount of space that the element takes up.  
-![image](https://user-images.githubusercontent.com/64577273/148698384-5eb8d7a2-ab5f-4083-8b3b-48802bc5dd09.png)  
->-when we start creating layouts with columns, and sidebars, and grids, understanding how these box properties take up space will be necessary
-![image](https://user-images.githubusercontent.com/64577273/148698533-eb573cca-379c-4565-9af3-898b1c750826.png)
+Notice: Margin does not contribute to the total size of the element since it adds space around the element but it does effect the amount of space that the element takes up. [check one example in here](https://user-images.githubusercontent.com/64577273/148698384-5eb8d7a2-ab5f-4083-8b3b-48802bc5dd09.png)    
+>-when we start creating layouts with columns, and sidebars, and grids, understanding how these box properties take up space will be necessary, [check examples in here](https://user-images.githubusercontent.com/64577273/148698533-eb573cca-379c-4565-9af3-898b1c750826.png)
 
 omit-leave out or exclude (someone or something), either intentionally or forgetfully
 
 contribute-If something contributes to an event or situation, it is one of the causes of it
+## Debugging the box model
+>-there are 2 ways to experiment with the size or spacing of the elements:
+>1. change setting the box properties on various elements in CSS file
+>2. use the browser developer tools to inspect the element to show the corresponding CSS
+>
+>-there are 3 ways to inspect a specific element:
+>1. hover over on that element in webpage, right-click to open the menu and select inspect.
+>2. just select that element from the HTML panel of developer tools to be highlited
+>3. use [this pointer icon](https://user-images.githubusercontent.com/64577273/148725918-6e1757b3-fd47-469b-b3c5-9946e1dc8d49.png), hover over the element you want to select and click on it.  
+>
+>-the box model representation is under the Styles or Layout tab in google chrome or firefox respectively. experiment with it through developer tools on [this html](Debugging-the-box-model/box-model.html) file.
+![image](https://user-images.githubusercontent.com/64577273/148728367-a6a4be08-a4a7-458e-9eee-5bf71316e4b3.png)  
+**Notice:** there is no default margin space on the left and right side of above demonstrated margin box, and that's why the values say zero in it.  
+**Notice:** You can even edit CSS properties values to experiment right in the browser. Refresh the browser to reset the changes that you made in the Dev tool.  
+-if you hover over the various properties on visual demonstartion of box model, it will highlight the color-coded corresponding areas, which is super helpful when debugging.  
+-<a name="margin-collapsing"></a>margin collapsing **only affects on the top and the bottom margins**. [When I hover over the `H1` in the HTML panel](https://user-images.githubusercontent.com/64577273/148741291-3cf926bc-f48c-4ab2-96d5-b70dc2b4c2a7.png), you can see that there is margin on the top and bottom of the element. The margin bottom space stops right above the content box of the `H2`, but [if I hover over the `H2` element](https://user-images.githubusercontent.com/64577273/148741731-02a093d1-aebf-4347-9b15-47b70b447bbe.png), the margin top stops right below the content box of `H1`. Both of these margins are occupying the same space, even though they're coming from two different elements.
+
+collapse-the process of hiding something or reducing its size, so it's not visible
+
+margine collapsing- The top and bottom margins of blocks are sometimes combined (collapsed) into a single margin. [check MDN documentation for more info](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
+## Padding, margin, and border
+>-there are 2 ways to distinguish between margin and padding
+>1. inspecting each element with developer tools
+>2. adding a background color or border to each element
+>
+>-experiment with [this code snippet](https://codepen.io/ma400/pen/RwLeowy):
+>* the space between the first and second paragraph is created by margin collapsing.
+>* following CSS declarations remove any margine between first 2 paragraphs:
+>```css
+>.first {
+>  margin-bottom: 0;
+>}
+>.second {
+>  margin-top: 0;
+>}
+>```
+>-add `padding` in `span` tag as inline element. the padding space has been added to the element, but the horizontal position of the element remains.  
+-add `margin` in `span` tag as inline element. it actually will only apply to the left and right side [without margin collapsing](#margin-collapsing). if add `display: inline-block`, to the `span` selector, the margin is applied horizontally and vertically.  
+-add `margin: 0;` to `span` selector. there's still some space between the inline elements which actually coming from the line break in the html. these solutions are available if you would need to remove the space:
+>1. if we put `<span>` tags on the same line, that will remove the space. [result](https://codepen.io/ma400/pen/poWxprq)
+>2. use `margin-left` on second `<span>` tag with a negative value. Just to nudge it over. this technique will only work with `margin` because `padding` does not accept negative values. [result](https://codepen.io/ma400/pen/RwLexjg)
+>3. make a container just around `<span>` elements. set `font-size: 0;` in parent container. so it reduces all the characters down to zero, including the space. But `font-size` is an inheritable style. So we'll have to re-declare the `font-size` for the child elements to override this inherited style. [result](https://codepen.io/ma400/pen/xxXypME)
+>4. But now there are newer layout techniques that will work better for this scenario and will be discussed later on in this course
+
+quirk-an unusual habit or type of behavior, or something that is strange and unexpected
+
+nudge-the act of pushing someone or something gently
+
+aesthetic-concerned with beauty or the appreciation of beauty
+
+as if-in such a way that something seems to be true
+
+would need to-*in my point of view* only expressing hope and wish
+
+So aside from aesthetics, another time you would need to remove the space as if you were using inline elements that were a specific width within a specific container size-*in my point of view* another time you want to remove the space of inline elements with a specific width and container size , regradless of attending to appreciation of beauty , use the taught direction of this lesson.
+
