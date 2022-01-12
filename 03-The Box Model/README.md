@@ -30,12 +30,19 @@ incorporate-take in or contain (something) as part of a whole
 >    </tr>
 ></table>
 >
->-the `display` property change the default behavior of inline and block-level elements, using a value of `block`, `inline`, or `inline-block`.
->* add `display: block` to an inline element will make it display just like block elements
->* add `display: inline` to a block element will give it the characteristics of inline elements.
->* add `inline-block` apply the characteristics of both. it means:
->   1. the width and height values will be applied, just like block elements, but
->   2. the items are displayed side by side, and they only wrap when there's no longer any space in the container, just like inline elements.
+>-the `display` property change the default behavior of inline and block-level elements, using a value of `block`, `inline`, or `inline-block`.  
+>* [common characteristics of each display property](https://codepen.io/ma400/pen/gOGQjgV)
+>* [horizontal center alignment](https://codepen.io/ma400/pen/vYeQajq)
+>
+>-|`display: inline;`|`display: inline-block;`|`display: block;`
+>-|-|-|-
+>line wrapping|element's content will only wrap to the next line|whole element will wrap to the next line|not defined
+>width|❌|✔️|✔️
+>height|❌|✔️|✔️
+>padding|✔️|✔️|✔️
+>margin|only take effect on right and left side|✔️|✔️
+>margin collapsing|not defined vertical margin|❌|✔️
+>horizontal center alignment|❌|❌|✔️
 >
 >-separating content from style means instead of picking an HTML element that looks a particular way, choose the most semantic element for the content, and then change the display with CSS.
 
@@ -71,9 +78,9 @@ container-*in my point of view* parentelement or viewport
 >change the size of the content box|width and height have no effect unless we use the display property set to block or inline block
 >![image](https://user-images.githubusercontent.com/64577273/148683366-16c97c46-af56-40a5-9a06-c1d80bd5190d.png)|![image](https://user-images.githubusercontent.com/64577273/148683385-c544da2b-0190-4db6-ae56-0a1f3927cd72.png)
 >
->-the `padding` and `margine` properties:
+>-the `padding` and `margin` properties:
 >
->`padding` property|`margine` property
+>`padding` property|`margin` property
 >-|-
 >add or remove space inside of the element but around the content box|add or remove space around an element
 >The longhand properties can be used to specify just a particular side to add the padding to.<br>![image](https://user-images.githubusercontent.com/64577273/148684088-e1f566c9-1b0f-4fd8-a32e-dbcab191d1d1.png)|The longhand syntax rules are the same as padding<br>![image](https://user-images.githubusercontent.com/64577273/148696685-0c8e6ec6-f486-4368-91fe-59198414c1e2.png)
@@ -122,6 +129,7 @@ margine collapsing- The top and bottom margins of blocks are sometimes combined 
 >1. inspecting each element with developer tools
 >2. adding a background color or border to each element
 >
+><a name="element-total-size"></a>**IMPORTANT Notice**: margin isn't included in the total size of the element. It does push all the surrounding elements away, so it is included in the total area that the element occupies.
 >-experiment with [this code snippet](https://codepen.io/ma400/pen/RwLeowy):
 >* the space between the first and second paragraph is created by margin collapsing.
 >* following CSS declarations remove any margine between first 2 paragraphs:
@@ -209,3 +217,28 @@ line up someone or something-arrange a number of people or things in a straight 
 ## Project: Margin and padding
 >aa
 
+-*based on my test and tries* padding increase the size of element by decreasing the size of margin while keep constant the size of content.
+`padding: 1px;` with `margin: 0 auto;`|`padding: 150px;`with `margin: 0 auto;`
+-|-
+![image](https://user-images.githubusercontent.com/64577273/149151077-54625289-329b-4ec5-b019-b8e3324f8d41.png)|![image](https://user-images.githubusercontent.com/64577273/149151303-b983f4e5-ae21-4f37-a964-1e243f3cc842.png)
+
+-*based on my test and tries* every html element has default margine in top and bottom directions of it which can be manipulated by assigning any custom margin. the comparison of paragraph element in different states:
+default margin|`margin: 10px 0;`|`padding: 20px 0;`
+-|-|-
+![image](https://user-images.githubusercontent.com/64577273/149141398-fd5e354d-3b0d-4491-894a-599e30c6343d.png)|![image](https://user-images.githubusercontent.com/64577273/149141467-3e6fab75-df50-4c8c-aa94-019816581aa8.png)|![image](https://user-images.githubusercontent.com/64577273/149141534-8c4a9867-56a7-47b1-bd4f-b9357ada55aa.png)
+
+[as mentioned already](#element-total-size), margin only determine total area that the element occupies but if add any amount of padding to a parent element , padding start right after total occupied area of nested elements. try it out on [this code example](https://codepen.io/ma400/pen/YzrRxvp) or check the results in here:
+without padding|with padding
+-|-
+![image](https://user-images.githubusercontent.com/64577273/149145660-5bc53d49-f504-4a4f-9bfe-38b61ec7e6ea.png)|![image](https://user-images.githubusercontent.com/64577273/149145755-61db9fd7-7ad2-4c71-89aa-321d26bb3b1c.png)
+![image](https://user-images.githubusercontent.com/64577273/149145900-81f3f90c-92f9-49fa-ad05-f87b3603eba9.png)|![image](https://user-images.githubusercontent.com/64577273/149145822-3cc0a9ec-d906-4a88-a47e-09f8d1f728ef.png)
+
+
+
+squish-to crush something that is soft
+
+crush-compress or squeeze forcefully so as to break, damage, or distort in shape
+
+inward-directed or proceeding towards the inside; coming in from outside
+
+consistent-not varying, always happening or behaving in a similar way
