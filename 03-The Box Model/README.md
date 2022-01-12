@@ -181,3 +181,31 @@ pose-to cause something, especially a problem or difficulty
 hook-something intended to attract and ensnare
 
 ensnare-to catch or get control of something or someone
+## Project: Adding content wrappers
+>-autocomplete feature write the HTML syntax a little faster. for example, just type in the element name div, without the angled brackets and press <kbd>Tab</kbd>, it will complete it as well as add a class attribute.  
+-code collapsing feature is useful for temporarily hiding long blocks of code in IDE to make the file easier to read. click the caret symbol beside line number of any code block, to collapse to code and click to open it again.  
+Notice: the feature only works when the code is indented properly.  
+-to expand content block only to a width of 800 pixels and stays aligned in the center of the page, while the background color still spans all the way across , follow these steps:
+>1. go over to [index.html](Project-adding-content-wrappers/index.html) and add `<div>` content wrapper with the `content-wrap` class inside of header and all sections but around the content. I'm using a `<div>` here because this container has no semantic meaning. We're just adding it for styling purposes in [styles.css](Project-adding-content-wrappers/css/styles.css)  
+**Notice:** you can use any other descriptive class name if you'd like.  
+**Notice:** Make sure to put the `<div>` just inside of the `<header>` and `<section>` tag and close it just before their closing tag.  
+**Notice:** Make sure to indent the content to be nested inside the content wrap.
+>2. go over to [styles.css](Project-adding-content-wrappers/css/styles.css) and add `content-wrap` style to global section, since it's going to be reused throughout the page.
+>```css
+>.content-wrap {
+>    width: 800px;
+>    margin: 0 auto;
+>}
+>```
+>3. fix up some space around the left and right edge of the page. That's actually coming from the `<body>` element. add `margin: 0` to the body selector to remove that space.  It's also convention to also set `padding: 0` on the body, just to reset the default style.
+
+there you go (there you are)-this is what you wanted
+
+caret-the symbol ^ , found on a keyboard and used in marking text
+
+narrower-to reduce in width or extent
+
+line up someone or something-arrange a number of people or things in a straight row
+## Project: Margin and padding
+>aa
+
