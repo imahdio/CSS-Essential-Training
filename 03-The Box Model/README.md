@@ -215,25 +215,39 @@ narrower-to reduce in width or extent
 
 line up someone or something-arrange a number of people or things in a straight row
 ## Project: Margin and padding
->aa
-
--*based on my test and tries* padding increase the size of element by decreasing the size of margin while keep constant the size of content.
-`padding: 1px;` with `margin: 0 auto;`|`padding: 150px;`with `margin: 0 auto;`
--|-
-![image](https://user-images.githubusercontent.com/64577273/149151077-54625289-329b-4ec5-b019-b8e3324f8d41.png)|![image](https://user-images.githubusercontent.com/64577273/149151303-b983f4e5-ae21-4f37-a964-1e243f3cc842.png)
-
--*based on my test and tries* every html element has default margine in top and bottom directions of it which can be manipulated by assigning any custom margin. the comparison of paragraph element in different states:
-default margin|`margin: 10px 0;`|`padding: 20px 0;`
--|-|-
-![image](https://user-images.githubusercontent.com/64577273/149141398-fd5e354d-3b0d-4491-894a-599e30c6343d.png)|![image](https://user-images.githubusercontent.com/64577273/149141467-3e6fab75-df50-4c8c-aa94-019816581aa8.png)|![image](https://user-images.githubusercontent.com/64577273/149141534-8c4a9867-56a7-47b1-bd4f-b9357ada55aa.png)
-
-[as mentioned already](#element-total-size), margin only determine total area that the element occupies but if add any amount of padding to a parent element , padding start right after total occupied area of nested elements. try it out on [this code example](https://codepen.io/ma400/pen/YzrRxvp) or check the results in here:
-without padding|with padding
--|-
-![image](https://user-images.githubusercontent.com/64577273/149145660-5bc53d49-f504-4a4f-9bfe-38b61ec7e6ea.png)|![image](https://user-images.githubusercontent.com/64577273/149145755-61db9fd7-7ad2-4c71-89aa-321d26bb3b1c.png)
-![image](https://user-images.githubusercontent.com/64577273/149145900-81f3f90c-92f9-49fa-ad05-f87b3603eba9.png)|![image](https://user-images.githubusercontent.com/64577273/149145822-3cc0a9ec-d906-4a88-a47e-09f8d1f728ef.png)
-
-
+>**Notice:** *based on my test and tries* padding increase the size of element by decreasing the size of margin while keep constant the size of content.
+>`padding: 1px;` with `margin: 0 auto;`|`padding: 150px;`with `margin: 0 auto;`
+>-|-
+>![image](https://user-images.githubusercontent.com/64577273/149151077-54625289-329b-4ec5-b019-b8e3324f8d41.png)|![image](https://user-images.githubusercontent.com/64577273/149151303-b983f4e5-ae21-4f37-a964-1e243f3cc842.png)
+>
+>**Notice:** *based on my test and tries* every html element has default margine in top and bottom directions of it which can be manipulated by assigning any custom margin. the comparison of paragraph element in different states:
+>default margin|`margin: 10px 0;`|`padding: 20px 0;`
+>-|-|-
+>![image](https://user-images.githubusercontent.com/64577273/149141398-fd5e354d-3b0d-4491-894a-599e30c6343d.png)|![image](https://user-images.githubusercontent.com/64577273/149141467-3e6fab75-df50-4c8c-aa94-019816581aa8.png)|![image](https://user-images.githubusercontent.com/64577273/149141534-8c4a9867-56a7-47b1-bd4f-b9357ada55aa.png)
+>
+>**Notice:** [as already mentioned](#element-total-size) margin only determine total area that the element occupies. *based on my test and tries* if add any amount of padding to a parent element , padding start right after total occupied area of nested elements. try it out on [this code example](https://codepen.io/ma400/pen/YzrRxvp) or check the results in here:
+>
+>without padding|with padding
+>-|-
+>![image](https://user-images.githubusercontent.com/64577273/149145660-5bc53d49-f504-4a4f-9bfe-38b61ec7e6ea.png)|![image](https://user-images.githubusercontent.com/64577273/149145755-61db9fd7-7ad2-4c71-89aa-321d26bb3b1c.png)
+>![image](https://user-images.githubusercontent.com/64577273/149145900-81f3f90c-92f9-49fa-ad05-f87b3603eba9.png)|![image](https://user-images.githubusercontent.com/64577273/149145822-3cc0a9ec-d906-4a88-a47e-09f8d1f728ef.png)
+>
+>-there are 2 ways to get rid of spacing issues between and within the sections that coming from default margin of html elements:
+>1. remove the margins from those html elements, But everything looks a little squished because:
+>    * the content is now right up to the edge of the section
+>    * the elements within the sections don't have any space in between them either
+>
+>CSS style solution|result
+>-|-
+>![image](https://user-images.githubusercontent.com/64577273/149281635-eabfbe4e-66eb-4e53-b365-bbd3e56ae1af.png)|![image](https://user-images.githubusercontent.com/64577273/149284931-819c4668-33e7-4245-855d-e6c917911b54.png)
+>
+>2. add padding to the container element, to `content-wrap` style. So it pushes all the content inward including the margin space of the elements.
+>
+>CSS style solution|result
+>-|-
+>![image](https://user-images.githubusercontent.com/64577273/149285224-c7a607ff-bf85-4b3d-a138-f27f217a253e.png)|![image](https://user-images.githubusercontent.com/64577273/149285291-765766da-95a3-44b3-8c77-7f32f444239b.png)
+>
+>-aa
 
 squish-to crush something that is soft
 
