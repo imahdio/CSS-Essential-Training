@@ -31,8 +31,9 @@ incorporate-take in or contain (something) as part of a whole
 ></table>
 >
 >-the `display` property change the default behavior of inline and block-level elements, using a value of `block`, `inline`, or `inline-block`.  
->* [element characteristics with line wrapping, width, height, padding, margin, margin collapsing (sample code 1)](https://codepen.io/ma400/pen/gOGQjgV)
->* [element characteristics with horizontal center alignment (sample code 2)](https://codepen.io/ma400/pen/vYeQajq)
+>* [characteristics of different element types with line wrapping, width, height, padding, margin, margin collapsing (sample code 1)](https://codepen.io/ma400/pen/gOGQjgV)
+>* [characteristics of different element types with horizontal center alignment (sample code 2)](https://codepen.io/ma400/pen/vYeQajq)
+><a name="characteristic-table-of-diffrent-element-types"></a>
 >
 >-|`display: inline;`|`display: inline-block;`|`display: block;`
 >-|-|-|-
@@ -241,13 +242,26 @@ line up someone or something-arrange a number of people or things in a straight 
 >-|-
 >![image](https://user-images.githubusercontent.com/64577273/149281635-eabfbe4e-66eb-4e53-b365-bbd3e56ae1af.png)|![image](https://user-images.githubusercontent.com/64577273/149284931-819c4668-33e7-4245-855d-e6c917911b54.png)
 >
->2. add padding to the container element, to `content-wrap` style. So it pushes all the content inward including the margin space of the elements.
+>2. add padding to container elements style. So it pushes all the content inward including the margin space of nested elements.
 >
 >CSS style solution|result
 >-|-
 >![image](https://user-images.githubusercontent.com/64577273/149285224-c7a607ff-bf85-4b3d-a138-f27f217a253e.png)|![image](https://user-images.githubusercontent.com/64577273/149285291-765766da-95a3-44b3-8c77-7f32f444239b.png)
 >
->-aa
+>-add `display: inline-block;` to the button style to fix button overlapping into surrounded area.  
+Notice: although `padding` takes effect visually on all sides of inline elements but padding top and bottom not be considered as size of element and be overlapped in vertical direction with surrounded area. [for more info, check the characteristic table of diffrent element types](#characteristic-table-of-diffrent-element-types)
+>
+>before|after
+>-|-
+>![image](https://user-images.githubusercontent.com/64577273/149312662-4bf8e0d4-642e-46c9-ae83-c4ace1524d4d.png)|![image](https://user-images.githubusercontent.com/64577273/149312514-b34bdaf7-20ad-4c20-98e3-ab60b62a6425.png)
+>
+>-*in my point of view, it's better to keep spacing of every elements in its natural flow*, but due to instruction of this lesson, to make the `content-wrapper` padding space look more consistent all the way around, remove the margin from the `h2` heading
+>```css
+>h2 {
+>    margin: 0;
+>}
+>```
+>-reset style sheet removes the default spaces and styles and lets us starting with a clean slate. [for more info , check out cssreset.com](https://cssdeck.com/blog/what-is-a-css-reset/)
 
 squish-to crush something that is soft
 
@@ -256,3 +270,5 @@ crush-compress or squeeze forcefully so as to break, damage, or distort in shape
 inward-directed or proceeding towards the inside; coming in from outside
 
 consistent-not varying, always happening or behaving in a similar way
+
+a clean slate-a state in which you are starting an activity or process again, not considering what has happened in the past at all, If you start with a clean slate, you do not take account of previous mistakes or failures and make a fresh start
