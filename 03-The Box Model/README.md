@@ -31,15 +31,15 @@ incorporate-take in or contain (something) as part of a whole
 ></table>
 >
 >-the `display` property change the default behavior of inline and block-level elements, using a value of `block`, `inline`, or `inline-block`.  
->* [common characteristics of each display property (Code snippet 1)](https://codepen.io/ma400/pen/gOGQjgV)
->* [horizontal center alignment (Code snippet 2)](https://codepen.io/ma400/pen/vYeQajq)
+>* [element characteristics with line wrapping, width, height, padding, margin, margin collapsing (sample code 1)](https://codepen.io/ma400/pen/gOGQjgV)
+>* [element characteristics with horizontal center alignment (sample code 2)](https://codepen.io/ma400/pen/vYeQajq)
 >
 >-|`display: inline;`|`display: inline-block;`|`display: block;`
 >-|-|-|-
 >line wrapping|element's content will only wrap to the next line|whole element will wrap to the next line|not defined
 >width|❌|✔️|✔️
 >height|❌|✔️|✔️
->padding|Although visually take effect on all sides but padding top and bottom not be considered as size of element and may overlapped in vertical direction with surrounded area|✔️|✔️
+>padding|Although it takes effect visually on all sides but padding top and bottom not be considered as size of element and [be overlapped in vertical direction with surrounded area](https://codepen.io/ma400/pen/zYEMMvE) |✔️|✔️
 >margin|only take effect on right and left side|✔️|✔️
 >margin collapsing|not defined vertical margin|❌|✔️
 >horizontal center alignment|❌|❌|✔️
