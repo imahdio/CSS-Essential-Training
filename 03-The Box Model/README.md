@@ -272,3 +272,37 @@ inward-directed or proceeding towards the inside; coming in from outside
 consistent-not varying, always happening or behaving in a similar way
 
 a clean slate-a state in which you are starting an activity or process again, not considering what has happened in the past at all, If you start with a clean slate, you do not take account of previous mistakes or failures and make a fresh start
+## Chapter Quiz
+>-`vw` is a relative length unit which Relative to 1% of the width of the viewport. [Check CSS Units in here](https://www.w3schools.com/cssref/css_units.asp)  
+-Your page has two consecutive `<div>` elements styled per the CSS below.
+>```css
+>div {
+>  display: inline-block;
+>  height: 80px;
+>}
+>```   
+>The second `<div>` will show to the right of the first `<div>`.  
+-if you change a certain CSS rule in your browser's Developer Tools view, The change is seen immediately.  
+-the vertical size of a `<div>` element styled with the CSS below is 200px, assuming that this `<div>` resides within a container whose height is 1000px. [check sample code](https://codepen.io/ma400/pen/qBPLbgO)
+>```css
+>div {
+>  height: 15%;
+>  width: 80%;
+>  border: 10px dotted red;
+>  padding: 10px 30px 20px;
+>  margin: 50px 20px;
+>}
+>```  
+>-you have two consecutive span elements on your page, and you see a small gap between them. the gap can be eliminated by changing the font size of the container element to zero.  
+-`margin: 0 auto;` is a valid usage of the `auto` value in a CSS rule.  
+-CSS reset are a set of CSS rules that resets all styles to a clean and consistent baseline.
+
+Viewport-the browser window size
+
+consecutive-following each other continuously
+
+per-through, for each
+
+reside-to live, or stay in a place
+
+consistent-always behaving or happening in a similar way
