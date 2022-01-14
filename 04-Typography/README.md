@@ -8,7 +8,7 @@
 >
 >-Times New Roman is often used for legal documents. they're thought to convey a traditional formality  
 -Comic Sans was designed to be a casual font. It's childlike with fun appearance  
--There are five categories of typefaces
+-<a name="five-categories-of-typefaces"></a>There are five categories of typefaces
 ><table>
 >    <tr><td>script</td><td>decorative</td><td>monospace</td><td>serif</td><td>sans-serif</td>
 >    </tr>
@@ -81,3 +81,4 @@ trend-a fashion
 rise-to increase in number, amount, or value
 
 legible-(of writing or print) able to be read easily
+## Changing the font-family
