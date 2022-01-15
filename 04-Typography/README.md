@@ -8,7 +8,7 @@
 >
 >-Times New Roman is often used for legal documents. they're thought to convey a traditional formality  
 -Comic Sans was designed to be a casual font. It's childlike with fun appearance  
--<a name="five-categories-of-typefaces"></a>There are five categories of typefaces
+-<a name="five-categories-of-typefaces"></a>**Here are five categories of typefaces**
 ><table>
 >    <tr><td>script</td><td>decorative</td><td>monospace</td><td>serif</td><td>sans-serif</td>
 >    </tr>
@@ -82,3 +82,38 @@ rise-to increase in number, amount, or value
 
 legible-(of writing or print) able to be read easily
 ## Changing the font-family
+>-To set the typeface in CSS, use the `font-family` property. The first value is your first choice. The following options are fallback alternatives. This list is referred to as a **font stack**.
+>```css
+>body {
+>    font-family: Helvetica, Arial, sans-serif;
+>}
+>```
+>-There's no limit to the number of font options to include but two or three is pretty standard. You should at least have your preferred font, followed by a generic font last. If the user's OS doesn't have a particular font-family installed, it will default to the next item on the list.  
+>-<a name="five-categories-of-generic-typefaces"></a>**here are five categories of generic typefaces**
+><table>
+>    <tr><td>cursive</td><td>fantasy</td><td>monospace</td><td>serif</td><td>sans-serif</td>
+>    </tr>
+>    <tr><td>usually matches to script or decorative fonts</td><td>usually matches to more unconventional decorative fonts</td><td colspan=3>match up to the typefaces within the same category</td>
+>    </tr> 
+></table>
+>
+>-web safe fonts are a number of fonts that are generally pre-installed on the majority of computers and devices, such as Arial and Times New Roman.  
+-[cssfontstack.com](https://www.cssfontstack.com/) lists all of the web-safe fonts and also categorizes them by typeface.  
+-CSS expand font options using web fonts with `@font-face` or online web services.  
+>-If font-family names contain numbers or characters, other than a hyphen, do either of the following:
+>* wrap the font-family name in single or double quotes (recommended)
+>* escape character must be used before those invalid characters. [more example](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#valid_family_names)  
+![image](https://user-images.githubusercontent.com/64577273/149621608-1474bfc7-b777-44e2-aa7d-aaced7186efd.png)
+>
+>-it's not required, but recommended to add quotes to font-family names that contain spaces.  
+>-generic font names must always be declared without quotes
+![image](https://user-images.githubusercontent.com/64577273/149621753-f5a18d5e-7b1e-4d04-b477-9e9e1d32c14b.png)
+
+generic-shared by, relating to a whole group of similar things, rather than to any particular thing
+
+fallback-something that can be done if the original plan does not succeed, or that can be used if the thing that you want is not available
+
+hyphen-a short line sign (-) used to join words and to separate syllables of a single word
+
+escape character-It's a backslash \ followed by the character you want to insert [more info](https://www.w3schools.com/python/gloss_python_escape_characters.asp)
+## Font-weight and font-style
