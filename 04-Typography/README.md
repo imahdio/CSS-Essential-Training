@@ -60,7 +60,7 @@ sans-without
 
 sans serif-a style of type without serifs
 
-script fonts-they are beautiful typefaces that resemble handwritten and calligraphic lettering styles
+script fonts-they are beautiful typefaces that resemble handwritten and calligraphic lettering styles; It's written with rounded letters that are joined together in a flowing manner(also know as cursive)
 
 sparingly-in a restricted or infrequent manner
 
@@ -111,9 +111,71 @@ legible-(of writing or print) able to be read easily
 
 generic-shared by, relating to a whole group of similar things, rather than to any particular thing
 
+cursive-It's written with rounded letters that are joined together in a flowing manner(also known as script)
+
 fallback-something that can be done if the original plan does not succeed, or that can be used if the thing that you want is not available
 
 hyphen-a short line sign (-) used to join words and to separate syllables of a single word
 
 escape character-It's a backslash \ followed by the character you want to insert [more info](https://www.w3schools.com/python/gloss_python_escape_characters.asp)
 ## Font-weight and font-style
+>-The `font-weight` property sets the weight (or boldness) of the font through following values ([great explanations on W3C](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/#propdef-font-weight)):
+>* numbers, ranging from 100 to 900
+>```css
+>font-weight: 100;  /* lightest or thinnest */
+>font-weight: 200;
+>font-weight: 300;
+>font-weight: 400;
+>font-weight: 500;
+>font-weight: 600;
+>font-weight: 700;
+>font-weight: 800;
+>font-weight: 900;  /* darkest or thickest */
+>```
+>Notice: Quite often there are only a few weights available for a particular typeface. When you use a value to specify a weight for which no font file exists, the face with the nearby weight is used.
+>* in CSS, there are only two keyword values that correspond to a specific number:
+>    * `normal` is equal to 400, and is also the default for body text
+>    * `bold` is equal to 700, and is the default for headings and other bolded styles like strong text
+>   ```css
+>   font-weight: normal;
+>   font-weight: bold;
+>   ```
+>* keyword values that relative to the inherited font-weight from a parent element according the following table:
+>    * `bolder` specifies a bolder weight than the inherited value
+>    * `lighter` specifies a lighter weight than the inherited value
+>    ```css
+>    font-weight: lighter;
+>    font-weight: bolder;
+>    ```
+>![image](https://user-images.githubusercontent.com/64577273/149636999-7a0b98e4-7dbf-4769-8219-6ede3dcb3d2b.png)  
+>-`font-style` property includes three values:
+>* `italic` tend to appear slightly more cursive
+>* `oblique` are generally sloped versions of the regular face.  
+>Notice: it's often hard to see these differences and vary among typefaces.
+>* `normal`value will remove the italic or oblique style
+>```css
+>p {
+>    font-style: italic; /* add italic style */
+>}
+>em {
+>    font-style: normal; /* removes italic style */
+>}
+>```
+>-both of these properties are inheritable. experiment with them [in here](https://codepen.io/christinatruong/pen/drQeqa) through the following steps:
+>1. add `font-weight: bold` to the `header` selector:
+>    * the paragraph will be bolded
+>    * The `<h1>` looks the same because it's already bold by default
+>2. add `font-weight: 400;` to `header h1`:
+>    * remove the bold style from the heading
+>    * because the `normal` keyword is 400, so if I change this to "normal", it will look the same.
+>3. add `font-style: normal;` to `i` selector
+>    * remove the default italic style from its element by setting it to "normal"
+>
+>-above sample code is another example of separating semantic html content from style and CSS properties to add or remove any styles.
+
+roughly-approximately
+
+correspond-to match or be similar or equal
+## Web fonts with @font-face
+>-aa
+
