@@ -177,5 +177,35 @@ roughly-approximately
 
 correspond-to match or be similar or equal
 ## Web fonts with @font-face
->-aa
-
+>-font files can be downloaded along with the website to expand typeface options.  
+-add any font to your webpages with `@font-face` rule within 2 steps:
+>1. declare font files in stylesheet
+>```css
+>@font-face {
+>    font-family: "My Font";
+>    src: url(my-font.woff); /* relative path */
+>    /* or */
+>    src: url(http://example.com/fonts/my-font.woff); /* absolute path */
+>}
+>```
+>Notice: if `url` functional datatype contains any special characters like the parenthesis, commas, white space, single quotes, or double quotes it must be enclosed in quotes or escaped with a backslash.  
+![image](https://user-images.githubusercontent.com/64577273/150672242-a2673faf-3ad0-49b0-a917-b6c7fbd4e3a0.png)
+>
+>2. set specified font-family name to the html elements
+>```html
+>body {
+>    font-family: "My Font", Helvetica, sans-serif;
+>}
+>```
+>-review relative path formats through the 2 following examples:
+>1. When we linked to our CSS file, the file path was relative to the location of the HTML file.  
+![image](https://user-images.githubusercontent.com/64577273/150676805-1010ec65-35d8-424e-b1a3-4df243d83517.png)
+>
+>2. Since the `@font-face` declaration is made in the CSS file, the font file path must be relative to location of styles.css  
+![image](https://user-images.githubusercontent.com/64577273/149827073-a77d644f-f1c8-4643-8385-ded9a725746a.png)  
+Notice: Use `../` to move up and out of the CSS folder first, then `fonts/` to move into the folder, then the font file name.
+>
+>-although the `woff` and `woff2` formats are supported in most modern browsers but for some older browsers, different formats are required. To list multiple font files, add a comma between each `url` value. if curious about the reason of 2 `src` in following `@font-face` declaration, [check this clarifications](https://teamtreehouse.com/community/why-there-is-two-src-in-a-fontface).
+![image](https://user-images.githubusercontent.com/64577273/150681161-4521bd0c-fd28-4566-814a-b1405615eb03.png)  
+-[Font Squirrel](https://www.fontsquirrel.com/tools/webfont-generator) has a free font generator that can create different file types. [based this guidance](https://www.fontsquirrel.com/blog/2010/12/how-to-use-the-generator) it only allow to upload TrueType (.ttf) or OpenType (.otf) fonts.  
+-to learn more about `@font-face` and support for older browsers, [check out this article by CSS-Tricks.](https://css-tricks.com/snippets/css/using-font-face-in-css/)
