@@ -209,3 +209,15 @@ Notice: Use `../` to move up and out of the CSS folder first, then `fonts/` to m
 ![image](https://user-images.githubusercontent.com/64577273/150681161-4521bd0c-fd28-4566-814a-b1405615eb03.png)  
 -[Font Squirrel](https://www.fontsquirrel.com/tools/webfont-generator) has a free font generator that can create different file types. [based this guidance](https://www.fontsquirrel.com/blog/2010/12/how-to-use-the-generator) it only allow to upload TrueType (.ttf) or OpenType (.otf) fonts.  
 -to learn more about `@font-face` and support for older browsers, [check out this article by CSS-Tricks.](https://css-tricks.com/snippets/css/using-font-face-in-css/)
+
+## Web fonts with Google Fonts
+>-with web font online services you don't need to download any font files or use the `@font-face` rule. Instead, you link directly to their CSS font files, which are hosted on their servers.  
+-[Adobe Fonts](https://fonts.adobe.com/) require subscription service and [Google Fonts](https://fonts.google.com/) is a free alternative.
+
+caveat-a warning or caution; admonition
+
+flare-to become wider, or to make something wider
+
+drawer-It is a box-shaped container inside a piece of furniture that can be pulled out horizontally to access its contents
+
+drawer component-It is a panel that slides out from the edge of the screen
