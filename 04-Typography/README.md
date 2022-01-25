@@ -221,7 +221,7 @@ drawer-It is a box-shaped container inside a piece of furniture that can be pull
 
 drawer component-It is a panel that slides out from the edge of the screen
 ## Project: Google Fonts
->-to load Google font style sheet, we can use [the standard link option](https://fonts.google.com/specimen/Caveat?standard-styles=&query=cav). the names of the font are at the end of the URL.  
+>-to load Google font style sheet, we can use [the standard link option](https://fonts.google.com/share?selection.family=Caveat|Montserrat:wght@400;600). the names of the font are at the end of the URL.  
 -Under "CSS rules to specify families" section, the example shows the font-family name to be used when referencing the Google fonts.  
 ![image](https://user-images.githubusercontent.com/64577273/150959195-a7e3033e-243c-450b-af5f-3f34221d05d0.png)  
 -when choosing more font styles the web page has to load more resources which slow down your website. Usually a font in a regular weight and a bold or a semi-bold is enough.  
@@ -266,3 +266,4 @@ end up-to reach some conclusion, state, or situation due to a particular course 
 distinct-clearly separate and different (from something else)
 
 upcoming-about to happen; forthcoming
+## 
