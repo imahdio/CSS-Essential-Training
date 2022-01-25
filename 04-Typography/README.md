@@ -120,7 +120,7 @@ hyphen-a short line sign (-) used to join words and to separate syllables of a s
 escape character-It's a backslash \ followed by the character you want to insert [more info](https://www.w3schools.com/python/gloss_python_escape_characters.asp)
 ## Font-weight and font-style
 >-The `font-weight` property sets the weight (or boldness) of the font through following values ([great explanations on W3C](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/#propdef-font-weight)):
->* numbers, ranging from 100 to 900
+>* numbers, ranging from 100 to 900, [like this example font](https://fonts.google.com/specimen/Montserrat?query=montserr)
 >```css
 >font-weight: 100;  /* lightest or thinnest */
 >font-weight: 200;
@@ -209,7 +209,6 @@ Notice: Use `../` to move up and out of the CSS folder first, then `fonts/` to m
 ![image](https://user-images.githubusercontent.com/64577273/150681161-4521bd0c-fd28-4566-814a-b1405615eb03.png)  
 -[Font Squirrel](https://www.fontsquirrel.com/tools/webfont-generator) has a free font generator that can create different file types. [based this guidance](https://www.fontsquirrel.com/blog/2010/12/how-to-use-the-generator) it only allow to upload TrueType (.ttf) or OpenType (.otf) fonts.  
 -to learn more about `@font-face` and support for older browsers, [check out this article by CSS-Tricks.](https://css-tricks.com/snippets/css/using-font-face-in-css/)
-
 ## Web fonts with Google Fonts
 >-with web font online services you don't need to download any font files or use the `@font-face` rule. Instead, you link directly to their CSS font files, which are hosted on their servers.  
 -[Adobe Fonts](https://fonts.adobe.com/) require subscription service and [Google Fonts](https://fonts.google.com/) is a free alternative.
@@ -221,3 +220,49 @@ flare-to become wider, or to make something wider
 drawer-It is a box-shaped container inside a piece of furniture that can be pulled out horizontally to access its contents
 
 drawer component-It is a panel that slides out from the edge of the screen
+## Project: Google Fonts
+>-to load Google font style sheet, we can use [the standard link option](https://fonts.google.com/specimen/Caveat?standard-styles=&query=cav). the names of the font are at the end of the URL.  
+-Under "CSS rules to specify families" section, the example shows the font-family name to be used when referencing the Google fonts.  
+![image](https://user-images.githubusercontent.com/64577273/150959195-a7e3033e-243c-450b-af5f-3f34221d05d0.png)  
+-when choosing more font styles the web page has to load more resources which slow down your website. Usually a font in a regular weight and a bold or a semi-bold is enough.  
+-through the following steps, use a couple of google fonts on our project:
+>1. choose the regular 400 and semi-bold 600 for Montserrat and just regular for Caveat in [google fonts](https://fonts.google.com/)
+>2. add generated `<link>` to the `<head>` section of your [index.html](Project-Google-Fonts/index.html) file. Put it right before the styles.css file so it can load before our style sheet loads.  
+>3. add "Montserrat" as base font family to the `body` selector in [styles.css](Project-Google-Fonts/css/styles.css) so all the elements can inherit the style.
+>4. add "Caveat" for the `h1` and the `h2` headings while stick with the "Montserrat" font for the `<h3>` headings.
+>```css
+>h1, h2 {
+>    font-family: 'Caveat', cursive;
+>}
+>```
+>-When using different font families, the way the default sizing of the characters are rendered will vary.  
+-experiment with font styles in diffrent conditions:
+><table>
+>    <tr><th>condition</th><th>font styles</th><th>sample code example</th><th>hint</th>
+>    </tr>
+>    <tr><td rowspan=2>the default font-weight for:<ul><li>all heading levels and bold texts are 700</li><li>other texts are 400</li></ul>the size of each element vary due to different font size.</td>
+>    <td>Regular 400 + Bold 700</td><td><a href="https://codepen.io/imahdio/pen/ZEazJgG">sample code 1</a></td><td>there is not any significant difference with next sample code, except the typography of italic style due to lack of "Regular 400 italic" style</td>
+>    </tr>
+>    <tr><td>all 9 available styles included</td><td><a href="https://codepen.io/imahdio/pen/jOaNLzd">sample code 2</a></td><td>among all 9 available styles, only 3 styles are used including: regular and italic 400 and regular 700</td>
+>    </tr>
+>    <tr><td>common paragraph, bold, headings map to closest available font weight.</td><td>Thin 100 + Black 900</td><td><a href="https://codepen.io/imahdio/pen/bGYbrPz">sample code 3</a></td><td><ul><li>For all the text, other than the headings and bolds, the default font-weight 400 map to next closest available font-weight of 100.</li><li>For the headings, the default font-weight 700 map to next closest available font-weight of 900.</li></ul></td>
+>    </tr>
+>    <tr><td rowspan=2>when any bold or italic styles are not available, browser will generate a computed bold or italic styles based regular font style.</td><td>Thin 100</td><td><a href="https://codepen.io/imahdio/pen/WNXeOxR">sample code 4</a></td><td>bold and italic styles can be generated based regular style</td>
+>    </tr>
+>    <tr><td>Thin 100 italic</td><td><a href="https://codepen.io/imahdio/pen/jOaNLzd">sample code 5</a></td><td>regular style couldn't be generated based italic style while bold is still generated.</td>
+>    </tr>
+></table>
+
+montserrat-serrated mountain; a British territory in the Caribbean Sea that is an island
+
+serrated-having a row of sharp points along the edge
+
+moderate-being within a middle range in size, amount, or degree; neither great nor little
+
+beforehand-before an action or event; in advance
+
+end up-to reach some conclusion, state, or situation due to a particular course of action
+
+distinct-clearly separate and different (from something else)
+
+upcoming-about to happen; forthcoming
