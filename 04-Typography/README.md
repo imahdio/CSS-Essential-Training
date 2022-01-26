@@ -315,4 +315,24 @@ inconsistently-in a way that does not stay the same
 name after-to give someone or something the same name as someone or something else, especially the same first name as a member of your family
 
 precision-It's the closeness of the measurements to each other.
+## Font shorthand
+>-`font` property is shorthand for:
+><table>
+>    <tr><th><code>font-style</code></th><th><code>font-variant</code></th><th><code>font-weight</code></th><th><code>font-size</code></th><th><code>line-height</code></th><th><code>font-family</code></th>
+>    </tr><td>optionally included</td><td>optionally included</td><td>optionally included</td><td><b>must included</b><br>Order matters!</td><td>optionally included</td><td><b>must included</b><br>Order matters!</td>
+>    <tr><td colspan=3>Must precede <code>font-size</code><br>but the order among themselves do not matter</td><td></td><td>must immediately follow <code>font-size</code>, proceeded by a forward slash</td><td>must be the last value specified</td>
+>    </tr>
+>    <tr><td><ul><li>normal</li><li>italic</li><li><a href="https://www.w3schools.com/cssref/pr_font_font-style.asp">etc</a></li></td><td><ul><li>normal</li><li>small-caps</li><li><a href="https://www.w3schools.com/cssref/pr_font_font-variant.asp">etc</a></li></td><td><ul><li>normal</li><li>bold</li><li>numbers, ranging from 100 to 900</li><li><a href="https://www.w3schools.com/cssref/pr_font_weight.asp">etc</a></li></td><td><ul><li>length (relative or absolute values)</li><li>Percentage</li><li>keyword values</li><li><a href="https://www.w3schools.com/cssref/pr_font_font-size.asp">etc</a></li></ul></td><td><ul><li>number</li><li>length (relative or absolute values)</li><li>Percentage</li><li><a href="https://www.w3schools.com/cssref/pr_dim_line-height.asp">etc</a></li></ul></td><td>family-name</td>
+>    </tr>
+></table>
+>
+>![shorthand-longhand](https://user-images.githubusercontent.com/64577273/151174986-78beed17-3c70-429c-b272-9e4410c17933.jpg)
+>-to find more information, [review the font properties on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font).
 
+precede-to be or go before in order or position
+
+proceed-move forward, to continue as planned
+
+philosophy-the philosophy of a subject is a group of theories and ideas related to the understanding of that subject
+
+get the hang of something-to learn how to do something, esp. when it is not simple or obvious
