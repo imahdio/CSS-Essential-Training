@@ -326,7 +326,7 @@ precision-It's the closeness of the measurements to each other.
 >    </tr>
 ></table>
 >
->![shorthand-longhand](https://user-images.githubusercontent.com/64577273/151174986-78beed17-3c70-429c-b272-9e4410c17933.jpg)
+>![shorthand-longhand](https://user-images.githubusercontent.com/64577273/151174986-78beed17-3c70-429c-b272-9e4410c17933.jpg)  
 >-to find more information, [review the font properties on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font).
 
 precede-to be or go before in order or position
@@ -336,3 +336,4 @@ proceed-move forward, to continue as planned
 philosophy-the philosophy of a subject is a group of theories and ideas related to the understanding of that subject
 
 get the hang of something-to learn how to do something, esp. when it is not simple or obvious
+##
