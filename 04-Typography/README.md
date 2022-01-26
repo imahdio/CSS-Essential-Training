@@ -266,4 +266,53 @@ end up-to reach some conclusion, state, or situation due to a particular course 
 distinct-clearly separate and different (from something else)
 
 upcoming-about to happen; forthcoming
-## 
+## The font-size property
+>-the font size property defines the size of the font. In this lesson we'll focus on two types:
+><table>
+>    <tr><th colspan=2>1-relative</th><th>2-absolute</th>
+>    </tr>
+>    <tr><td colspan=2>it is calculated in relation to the parent's or nearest ancestor's font size</td><td>It's fixed and not affected by any ancestor element</td>
+>    </tr>
+>    <tr><td colspan=3>Both relative and absolute font sizes are inherited by descendant elements.</td>
+>    </tr>
+>    <tr><td>font-size: em</td><td>font-size: rem</td><td>font-size: px</td>
+>    </tr>
+>    <tr><td>it's a size in relation to its closest ancestor element font size.</td><td>rem stands for root em. it's only relative to the <code>&lt;html&gt;</code> root element font size.<br>The sizing of the parent or ancestor element does not affect the rem unit.</td><td>It's an ideal unit for accuracy. computer screens are measured in pixels.</td>
+>    </tr>
+>    <tr><td colspan=2>can use whole numbers or decimal points to calculate more precise font size.</td><td>use whole numbers, avoid decimals because different browsers interpret decimal values inconsistently.</td>
+>    </tr>
+>    <tr><td><b>1em = inherited font-size</b><br>If no font-size is declared anywhere, then 1em is equal to the default browser font size.</td><td><b>1 rem = inherited root element font-size</b></td><td>The default size of the document text is equivalent to 16 pixels, with the exception of headings.<br><a href="https://codepen.io/imahdio/pen/LYOYLvK">inspect elements with developer tools on this example code</a><br><img src="https://user-images.githubusercontent.com/64577273/151112586-66201562-7e56-4006-bf46-4ea293a52db0.png"></td>
+>    </tr>
+></table>
+>
+>Notice: although the em unit was originally based on the width of the letter "M", this is no longer the case, and now the em unit generally refers to the point size of the font.  
+>-experiment with this [example code](https://codepen.io/christinatruong/pen/gEQWMw):
+>1. set `font-size: 2em;` of child element, it will be equivalent to 32 pixels.
+>2. set `font-size: 2em;` of the parent, the child element will now be twice the size of parent value.
+>3. set `font-size: .5em;` of the child, now it will be half the size of the parent element.
+>4. set `font-size: 60px;` of the parent, the child element will be half the size of 60px.
+>5. set `font-size: 1rem;` of the child element, it will be equivalent to 16 pixels.  
+Notce: In tools like CodePen, `<html>` or `<body>` tags are already loaded behind the scenes so we can still use them as selectors.
+>6. set `font-size: 2rem;` of html element, the rem unit in the child element will now be relative to that.
+>
+>-rem is usefull if you want to reduce the font sizes for smaller screens. Instead of changing the size for various elements, you can use rem for these elements and then just change the html value.  
+-see more length and keyword values that can be used for font sizes in [the MDM documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size).
+
+varity-many different types of things or people
+
+ancestor-a person related to you who lived a long time ago
+
+ancestor element-an element that contains (at any level) other elements is an ancestor of the elements that it contains. [check here for more info](https://www.littlewebhut.com/css/info_element_relationships/)
+
+descendant-a person who is related to you and who lives after you, such as your child or grandchild
+
+descendant element-an element that is contained (at any level) within another element is a descendant of the element that contains it. [check here for more info](https://www.littlewebhut.com/css/info_element_relationships/)
+
+accuracy-It is closeness of the measurements to a true value
+
+inconsistently-in a way that does not stay the same
+
+name after-to give someone or something the same name as someone or something else, especially the same first name as a member of your family
+
+precision-It's the closeness of the measurements to each other.
+
