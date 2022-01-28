@@ -336,4 +336,67 @@ proceed-move forward, to continue as planned
 philosophy-the philosophy of a subject is a group of theories and ideas related to the understanding of that subject
 
 get the hang of something-to learn how to do something, esp. when it is not simple or obvious
-##
+## Text-decoration, text-align, and line-height
+>-`text-decoration` actually represents three longhand properties:
+><table>
+>    <tr><th><code>text-decoration-line</code></th><th><code>text-decoration-color</code></th><th><code>text-decoration-style</code></th>
+>    </tr>
+>    <tr><td colspan=3>the order of properties among themselves don't matter</td>
+>    </tr>
+>    <tr><td>experiment with its various values in <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-line">related MDN documentation</a>, including:</td><td>experiment with its various values on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-color">related MDN documentation</a>, including:</td><td>experiment with its various values on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style">related MDN documentation</a>, including:</td>
+>    </tr>
+>    <tr><td><ul><li>none</li><li>underline</li><li>overline</li><li>line-through</li><li>underline overline</li><li>underline line-through</li><li>etc</li></ul></td><td><ul><li>keywords</li><li>rgb()</li><li>hex color codes</li><li>etc</li></ul></td><td><ul><li>solid</li><li>double</li><li>dotted</li><li>dashed</li><li>wavy</li><li>etc</li></ul></td>
+>    </tr>
+></table>
+>
+>![shorthand-longhand](https://user-images.githubusercontent.com/64577273/151306956-da54d182-d36f-48f6-82f0-c606a3f65ed2.jpg)  
+>-the `text-align` property can be used to align content within a block element.You can add it to the HTML element itself, or set the property in the parent element, so the style can be inherited.  
+-`line-height` property sets the amount of space between the lines of the content. It can be used with length values(e.g. px, rem), unitless numeric values, or percentages.  
+>-experiment with [this example](https://codepen.io/christinatruong/pen/YggdKN?editors=1100):
+>1. center align the `<h1>` heading using `h1` selector.  
+Notice: this only works for `block` elements, not `inline` or `inline-block` elements, unless you use the `display` property to change the behavior.
+>2. add `text-align` to the `header` selector and set it to `right`, `center`, `left` or `justify`. all the nested elements will inherit this style, including images, blocks, and inline elements.  
+**Notice:** `justify` add spacing between the words to evenly space the text to the left and right of the containing element. this style is usually used for text displayed in narrower columns. But it can be hard to read for wider blocks of text.
+>3. add `line-height` property. cons of absolute values is problem of no space or overlapping between the lines when font-size vary. So, to be more flexible to changes, use a relative unit, such as a percentage or uniyless values.  
+**Notice:** if I set this value to 150%, it will always be 150% of whatever the font-size is. if I set this value to 1.5, it will also be one and a half times the size of the font size.
+
+evenly-covering or affecting all parts of something equally [Great definition](https://www.mathsisfun.com/definitions/divide-evenly.html)
+
+go to-the best person, thing, or place for a particular purpose or need
+## Project: Typography styles
+>-let's incorporate some CSS properties into [our projects](https://codepen.io/christinatruong/pen/YggdKN?editors=1100):
+>1. set `font-size: 15px;` to the body element  
+Notice: The browser default is 16 pixels, but you can choose to go a little smaller or a little bigger, or keep it as is.
+>2. add `line-height: 1.5;` to body element to increase the spacing between the every lines one and a half times the size of my font size.  
+Notice: based my test and tries on [this example code](https://codepen.io/imahdio/pen/gOXpGQz) and [this table](https://codepen.io/imahdio/pen/eYeNeXE), there are 2 significant differences between `height` and `line-height`.
+><table>
+>    <tr><th><code>height</code></th><th><code>line-height</code></th>
+>    </tr>
+>    <tr><td>not inherited by nested elements</td><td>inherited by nested elements</td>
+>    </tr>
+>    <tr><td>adjust the element area from top of the context and stretch in down side regardless of symmetrical expansion</td><td>adjust the element area from center line of the context and evenly stretch to add proportional space around the top and bottom of each line</td>
+>    </tr>
+>    <tr><td colspan=2>both adjust the height of element content area</td>
+>    </tr>
+></table>
+>
+>3. set `font-size: 100px;` to h1 selector and set `font-size: 45px;` to h2 selector.
+>4. set `font-weight: 400;` to h1, h2 elements. it maps the computed bold style of caviet to the normal weight that I chose for my Caveat Regular 400 font.
+>5. set `margin: 0;` to h1, h2 shared block. it removes the extra space around those 2 headers. so remove the duplicated remained `margin: 0;` from h2 element too.  
+Notice: The bigger the font, cause the bigger margins proportionally.
+>6. set `line-height: 1;` to h1 element to override the inherited line height value from the body styles. It causes h1 to be closer to the h2.
+
+incorporate-take in or contain (something) as part of a whole; include
+
+as is-in the state that something is in at the present time
+
+subtle-not loud, bright, noticeable, or obvious; small but important
+
+make all the difference-to be very important
+
+run small-(especially for clothes)tend to be smaller than most brands with the same label size [Great definition 1](https://hinative.com/questions/2867700?locale=en-US#answer-7422262) | [Great definition 2](https://forum.wordreference.com/threads/run-small-fit-smaller-to-size.3193627/#post-18943187)
+
+bump up-to increase something
+
+quite-absolutely; completely
+## Chapter Quiz
