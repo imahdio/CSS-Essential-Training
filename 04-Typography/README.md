@@ -400,3 +400,42 @@ bump up-to increase something
 
 quite-absolutely; completely
 ## Chapter Quiz
+>-`font-weight: 700;` is an alternate way to define the `font-weight: bold;`  
+-if you want your styling to be based on a font stack consisting of three fonts, the generic font for your font family should be specified the last one on the list.  
+-using a web font is not always a free service.  
+-Your CSS is located in the 'css' folder under the root folder. the 2 following code snippets are the correct code to add the font file 'my font.woff' located in the 'fonts' folder under the root folder.
+><table>
+>    <tr><td><pre><code>
+>@font-face {
+>  font-family: "my font";
+>  src: url("../fonts/my font.woff");
+>}
+>    </code></pre></td>
+>    <td><pre><code>
+>@font-face {
+>  font-family: "my font";
+>  src: url(../fonts/my\ font.woff);
+>}
+>    </code></pre></td>
+></table>
+>
+>-you can add Google fonts to your project by using an HTML link element referring to a Google-provided CSS.  
+>-check the valid and invalid shorthand font specification
+>validation|example code
+>-|-
+>❌|`font: oblique 24px bold "my font", sans-serif;`
+>✔️|`font: small-caps bold 24px/2 "my font", sans-serif;`
+>✔️|`font: oblique bold 24px "my font";`
+>✔️|`font: 24px/2 sans-serif;`
+>
+>-the font size of an element in pixels is 18px, given that this element's parent has a font size set to 32px and the element's font size is set to 0.5625em  
+-Generally speaking, serif, script, and monospace typefaces are used for formal content, decorative details, and code sections, respectively.  
+-the lines of text may overlap with the following CSS rules applied to a paragraph element
+>```css
+>font-size: 16px;
+>line-height: 0.5em
+>```
+
+given that-knowing about or considering a particular thing
+
+generally speaking-in general
