@@ -44,3 +44,55 @@ make room-to provide space for someone or something
 fill up-become completely full
 
 flow across (something)-To move across something in a smooth, fluid manner, as of a liquid
+## Float and collapsed container
+>-clearing the float of a specific element means return the remaining page back to its normal flow.
+>![image](https://user-images.githubusercontent.com/64577273/151829804-a554f94a-ba90-4a53-a4ed-6b2ba232a680.png)  
+>-<i>based my point of view and after many test and tries</i>, self-clearing the float of a specific element means take consider to size of floated elements including:
+><table>
+>    <tr><th>height</th><th>both height and width</th>
+>    </tr>
+>    <tr><td>If all the elements within the parent is floated, the height of the parent container will collapse to zero.<br><img src="https://user-images.githubusercontent.com/64577273/151859367-75204b9f-f8ac-4600-bf74-921512044ac4.png"></td><td><ul><li>The parent does not recognize the height of the floated element, and will only wrap around the non-floated child elements the paragraph, in this example.</li><li>the paragraph area does not fully recognize the weight of the floated elements, and its background stretchs alongside of images. <a href="https://codepen.io/imahdio/pen/PoOPgVZ">codepen example</a><img src="https://user-images.githubusercontent.com/64577273/151862516-f62fe8ec-d110-47c9-9766-0bc00305bce6.png">or<img src="https://user-images.githubusercontent.com/64577273/151858989-874408ad-094d-4b83-b723-7f0c6925ceb5.png"><br>or<br><img src="https://user-images.githubusercontent.com/64577273/151859969-7995fa6d-a5fd-46b2-a1ce-5d21e6698d18.png"></li></ul></td>
+>    </tr>
+>    <tr><td colspan=2><code>overflow: hidden;</code> or <code>overflow: auto;</code> property is a common technique for self-clearing floats.<br><img src="https://user-images.githubusercontent.com/64577273/151918836-78e7d4cf-8294-40f0-b400-eefd29994209.png"></td>
+>    </tr>
+>    <tr><td>add a specific CSS snippet, often referred to as the clearfix hack<br><img src="https://user-images.githubusercontent.com/64577273/151920898-daeb1b22-bf18-480a-9f44-6c60b6d71c87.png"><br>Note: <code>clearfix</code> is just the class name. If you want to use another class name, just make sure it matches in the CSS and the HTML.</td><td>this option only applicable to self clear the height of containers, not suit to clear the width of paragraph area</td>
+>    </tr>
+>    <tr><td colspan=2><code>display: flow-root;</code> property is newer way for self-clearing floats but it's not currently supported by all modern browsers and is still in the draft phase.</td>
+>    </tr>
+></table>
+>
+>-[caniuse.com](https://caniuse.com/) is a great reference to check browser support for any CSS property.  
+>-`overflow` is actually used to specify how to display content that doesn't fit in its container.
+>`overflow: hidden;`|`overflow: auto;`|`overflow: scroll;`|
+>-|-|-
+>clips the overflow of content|Auto adds a scroll bar, but only when there is overflowing content|always show a scroll bar on the X and Y axis, even when the content does not flow outside of its container
+>may be used for decorative content, like an image, but isn't useful for text since clipped content can't be accessed|-|-
+>
+>-try out these 3 self clearing options with [this codepen example](https://codepen.io/christinatruong/pen/dLjeVV):  
+>1. add the `float: left;` to the blue box. This will make the container collapse, since the only child elements are now floated.
+>2. add the `overflow: hidden;` to containing element to self-clear the float of blue boxes.
+>3. hide the `overflow` property and add newest option `display: flow-root;` instead.
+>4. comment on the `display` property and try the clear-fix option. add this class to the parent element.  
+Notice: The `:before` and `:after` pseudo-elements in CSS allows you to insert content onto a page without it needing to be in the HTML. It is often used to add fantasy content to an element with the content property.
+>```css
+>/* Add an arrow after links */
+>a:after {
+>  content: "→";
+>}
+>```
+
+clearing or self-clearing floats mean take considering to size of float elements.
+
+overflow-if a container or a place overflows, whatever is inside it starts coming out because it is too full
+
+overflow property-it specifies what should happen if content overflows an element's box
+
+past-beyond in something, farther than
+
+clip-the act of cutting something in order to make it tidy or shape it
+
+recap-to repeat the main points of an explanation or a description
+
+stack-a pile of objects, typically one that is neatly arranged
+
+underneath-directly under and usually hidden by something else
