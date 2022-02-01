@@ -96,3 +96,41 @@ recap-to repeat the main points of an explanation or a description
 stack-a pile of objects, typically one that is neatly arranged
 
 underneath-directly under and usually hidden by something else
+## Layouts and the box model
+>-`box-sizing` property change how the box model interprets the size of an element based on various box properties
+><table>
+>    <tr><th><code>box-sizing: content-box;</code></th><th><code>box-sizing: border-box;</code></th>
+>    </tr>
+>    <tr><td><ul><li>Width and height values change the size of the content-box.</li><li>padding and border increase the size of the elements</li><li>Margin just adds the space around the element.</li></ul></td><td><ul><li>width and height values set the element dimensions include the padding and border space</li><li>this makes the content-box smaller, but the overall element will maintain the same width and height values without any adjustments.</li></ul></td>
+>    </tr>
+>    <tr><td><img src="https://user-images.githubusercontent.com/64577273/151974218-d67b7850-a653-4910-bc8d-2d15642bcbb3.png"></td><td><img src="https://user-images.githubusercontent.com/64577273/151974359-e1bd7e9d-316f-418c-b198-2a03ea3b23e8.png"></td>
+>    </tr>
+>    <tr><td>it's initial and default box-sizing value, so donot need to be specified.</td><td>Use <b>The Box Model Fix</b> by adding this code snippet to your projects<pre><code>
+/* border box fix */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+</pre></code>Notice: The asterisk (&midast;) is known as the CSS universal selectors. It can be used to select any and all types of elements in an HTML page.</td>
+>    </tr>
+></table>
+>
+>-use floats to create full page layout on [this codepen example](https://codepen.io/christinatruong/pen/OepEEP):
+>1. set `width: 200px;` to sidebar and `width: 600px;` to main content area.  
+Notice: because the wrapper has a width of 800 pixels. So the total of the two sidebar and main content columns has to be equal to 800 pixels or less.
+>2. add `float: left;` to aside element.  
+Notice: see how the main content box moves up underneath floated sidebar area. but its little text that says "main content" wraps next to the edge of the sidebar.
+>3. add `float: left;` to article element to align it next to the sidebar.  
+Notice: see how the footer background is just trying to stack underneath the non-floated element, the header. but its little text that says "footer" wraps around the floated elements.
+>4. add `clear: both;` to the footer to return the layout back to the normal flow.
+>
+><table>
+>    <tr><th><code>box-sizing: content-box;</code></th><th><code>box-sizing: border-box;</code></th>
+>    </tr>
+>    <tr><td><ol start="5"><li>keep adjusting the width and the height of the content box every time we change some padding to account for total box size</li></ol></td><td><ol start="5"><li>add the box model fix. Now if set the height and width back to 600px and 200px values respectively, it will fit within the container even with the padding values.</li></ol>Notice: since margin adds space around the element, It's still not included in the total size of the element in <code>box-sizing: border-box;</code> So if I was to add some margin to <code>&lt;article&gt;</code> element, the box will no longer fit.</td>
+>    </tr>
+></table>
+
+aside-to or toward the side
