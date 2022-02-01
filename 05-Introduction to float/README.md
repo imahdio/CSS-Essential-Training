@@ -134,3 +134,7 @@ Notice: see how the footer background is just trying to stack underneath the non
 ></table>
 
 aside-to or toward the side
+# Project: Float and box model fix
+>-aa
+
+line up-to arrange things in a row
