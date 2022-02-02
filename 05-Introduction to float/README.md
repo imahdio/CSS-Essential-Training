@@ -101,7 +101,7 @@ underneath-directly under and usually hidden by something else
 ><table>
 >    <tr><th><code>box-sizing: content-box;</code></th><th><code>box-sizing: border-box;</code></th>
 >    </tr>
->    <tr><td><ul><li>Width and height values change the size of the content-box.</li><li>padding and border increase the size of the elements</li><li>Margin just adds the space around the element.</li></ul></td><td><ul><li>width and height values set the element dimensions include the padding and border space</li><li>this makes the content-box smaller, but the overall element will maintain the same width and height values without any adjustments.</li></ul></td>
+>    <tr><td><ul><li>Width and height values change the size of the content-box.</li><li>padding and border increase the size of the elements</li><li>Margin just adds the space around the element.</li></ul></td><td><ul><li>width and height values set the element dimensions include the padding and border space</li><li>this makes the content-box smaller, but the overall element will maintain the same width and height values without any adjustments.</li></ul><b>Notice:</b> even in this state, in lack of determination a specific height or weight for an element, add padding or border just increase the size of element and don't make the content-box smaller.</td>
 >    </tr>
 >    <tr><td><img src="https://user-images.githubusercontent.com/64577273/151974218-d67b7850-a653-4910-bc8d-2d15642bcbb3.png"></td><td><img src="https://user-images.githubusercontent.com/64577273/151974359-e1bd7e9d-316f-418c-b198-2a03ea3b23e8.png"></td>
 >    </tr>
@@ -135,6 +135,32 @@ Notice: see how the footer background is just trying to stack underneath the non
 
 aside-to or toward the side
 # Project: Float and box model fix
->-aa
+>-experiment with float and box model fix on our project:
+>1. add box model fix to [styles.css](project-float-and-box-model-fix/css/styles.css)  
+Notice: this should be something that you add as the base CSS for all your projects.
+>2. add `class="project-item"` to each project block in [index.html](project-float-and-box-model-fix/index.html), so that we can float the image to the left and have the text flow around it.
+>3. create a new descendant selector `.project-item img` and add `float: left;`
+>4. to nicely line up each project section, self clear the float of parent element of each project image by adding:
+>```css
+>.project-item {
+>    overflow: hidden;
+>}
+>```
+>5. to add a little space between the project image and surrounded text, add `margin-right: 20px;` to `.project-item img`
+>6. to add a border between the project items, add `border-bottom: 1px dashed #343434;` to `.project-item`
+>7. add `padding: 25px 0;` to `.project-item`
+>8. to put each project title with the rest of the text, switch it around in HTML and put the image before the h3 tag. So, image will float left and everything will follow after it, including the heading.  
+**Notice:** When you're copying, pasting and moving items around, it's easy to get unorganized. So, just make sure that your indentation stays the way it should and delete any extra spaces that you don't need.
+>9. to nicely line up the project heading with the image, create a new descendant selector `.project-item h3` and add `margin-top: 0;`
+>
+>-the Legacy techniques, to create a two column layout with floats, a container would need to be created for the image and the text. Then both containers would be floated to create a two column layout.
+>
+>float|flexbox and grid<br>as newer layout techniques
+>-|-
+>mostly be used for floating text around the image|creating column layouts
+>if your text is longer than your image, the remaining text will flow underneath<br>![image](https://user-images.githubusercontent.com/64577273/152190336-d421c427-9064-4b5f-9530-e8f033ba87ac.png)|To get the image on the left and all the text on the right<br>![image](https://user-images.githubusercontent.com/64577273/152190806-a95808f9-d0eb-4915-9b73-3822ad2b67f1.png)
 
 line up-to arrange things in a row
+
+point out-to direct someone's attention to (someone or something) by pointing
+# 
