@@ -89,7 +89,10 @@ header {
 .project-item {
   overflow: hidden;
   border-bottom: 1px dashed #343434;
-  padding: 500px 0;
+  padding: 25px 0;
+}
+.project-item h3 {
+  margin-top: 0px;
 }
 
 /* Work Experience
