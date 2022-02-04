@@ -178,7 +178,7 @@ point out-to direct someone's attention to (someone or something) by pointing
 >    </tr>
 ></table>
 >
->-experiment with [this codepen example](https://codepen.io/christinatruong/pen/zXLemj):  
+>-experiment with above values on [this codepen example](https://codepen.io/christinatruong/pen/zXLemj):  
 >1. scroll down to the relative class, and add in `position: relative;`. add `top: 10px;` and `right: 30px;` will push the box 10 pixels away from the top of its current position, and 30 pixels away from the right of its current position.
 >2. add `position: absolute;` to the absolute class.
 >
