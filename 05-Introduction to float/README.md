@@ -163,4 +163,23 @@ Notice: this should be something that you add as the base CSS for all your proje
 line up-to arrange things in a row
 
 point out-to direct someone's attention to (someone or something) by pointing
-# 
+# Position
+>-the position property specifies different type of positioning that can also be used to change the flow of the document. there are 5 different values includes:
+><table>
+>    <tr><th>static</th><th>relative</th><th>absolute</th><th>fixed</th><th>sticky</th>
+>    </tr>
+>    <tr><td><ul><li>default and initial value</li><li>elements not positioned</li></ul></td><td>relative to current position</td><td><ol><li>relative to its closest positioned ancestor element</li><li>if a positon not defined, it will be relative to the body element.</li><li>if body element not positioned, relative to initial viewable area (doesn't move along with page scrolling)</li></ol></td><td><ul><li>relative to the view port</li><li>stays in the same spot even on page scroll</li></ul></td><td><ul><li>relative to containing elements and viewport</li><li>it's still in the working draft phase and not recommendation</li><li>partial support in most modern browsers</li></ul></td>
+>    </tr>
+>    <tr><td></td><td colspan=4>any of the the top, right, bottom, or left properties must also be used to specify the placement of the positioned elements.</td>
+>    </tr>
+>    <tr><td></td><td><ul><li>does not affect the flow of the other elements at all</li><li>remain in the same spot until define any offset properties</li></ul></td><td><ul><li>remove from the normal flow once be declared</li><li>remain in the same spot until define any offset properties</li><li>it's relative to its nearest positioned container</li></ul></td><td><ul><li>remove from the normal flow once be declared</li><li>not affected by any positioned ancestor elements</li></td><td><ul><li>does not affect the flow of the other elements at all</li><li>stays in the initial spot until scroll the page then it becomes fixed when the value in the offset property has been met</li><li>will no longer be fixed once you scroll past its containing element</li></ul></td>
+>    </tr>
+>    <tr>
+>    </tr>
+></table>
+>
+>-experiment with [this codepen example](https://codepen.io/christinatruong/pen/zXLemj):  
+>1. 
+
+tempt-to encourage someone to want to have or do something, esp. something unnecessary or wrong
+
