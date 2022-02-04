@@ -179,7 +179,20 @@ point out-to direct someone's attention to (someone or something) by pointing
 ></table>
 >
 >-experiment with [this codepen example](https://codepen.io/christinatruong/pen/zXLemj):  
->1. 
+>1. scroll down to the relative class, and add in `position: relative;`. add `top: 10px;` and `right: 30px;` will push the box 10 pixels away from the top of its current position, and 30 pixels away from the right of its current position.
+>2. add `position: absolute;` to the absolute class.
+>
+>reason|effect
+>-|-
+>the absolute box removes from the normal flow|the fixed box was stacked below the absolute box, but has now moved behind it, to see, add `width: 100px;` to fixed class.
+>The absolute box is currently positioned relative to the non positioned body|add `right:25%` and `bottom: 5%;` to absolute class, so it's 25% from the right, and 5% from the bottom of the initial viewable area (when it was initially loaded).
+>add position to the ancestor of absolute element|add `position: relative;` to wrapper class. Now absolute element is 25% from the right, and 5% from the bottom of the wrapper container.
+>add position to the closest ancestor of absolute element|add `position: relative;` to parent class, Now the absolute box is positioned to the parent container.
+>3. go down to the fixed class and add `position: fixed;` and the offset properties `top: 0;` and `right: 0;`. it stays in the same spot even on scrolling down the page.
+>4. add `position: sticky;` and `top: 10px;`. when scroll the page, sticky element going to stay where it is until it gets to 10 pixels away from the top of the view port. And then it turns into fixed positioning. Once you scroll past its containing element it will no longer be fixed.
+>
+>-based [caniuse.com](https://caniuse.com/) report, `position: sticky;` is still in working draft stage.  
+-it may be tempting to use the position property for page layouts, but positioning shouldn't be used in this way, since it takes the element out of the stacking order and the normal flow, with the exception of relative. Stick to using position for styling smaller page components such as a fixed navigation bar, rather than large page layout blocks.
 
 tempt-to encourage someone to want to have or do something, esp. something unnecessary or wrong
-
+# 
