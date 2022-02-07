@@ -53,11 +53,17 @@ flow across (something)-To move across something in a smooth, fluid manner, as o
 >    </tr>
 >    <tr><td>If all the elements within the parent is floated, the height of the parent container will collapse to zero.<br><img src="https://user-images.githubusercontent.com/64577273/151859367-75204b9f-f8ac-4600-bf74-921512044ac4.png"></td><td><ul><li>The parent does not recognize the height of the floated element, and will only wrap around the non-floated child elements the paragraph, in this example.</li><li>the paragraph area does not fully recognize the weight of the floated elements, and its background stretchs alongside of images. <a href="https://codepen.io/imahdio/pen/PoOPgVZ">codepen example</a><img src="https://user-images.githubusercontent.com/64577273/151862516-f62fe8ec-d110-47c9-9766-0bc00305bce6.png">or<img src="https://user-images.githubusercontent.com/64577273/151858989-874408ad-094d-4b83-b723-7f0c6925ceb5.png"><br>or<br><img src="https://user-images.githubusercontent.com/64577273/151859969-7995fa6d-a5fd-46b2-a1ce-5d21e6698d18.png"></li></ul></td>
 >    </tr>
->    <tr><td colspan=2><code>overflow: hidden;</code> or <code>overflow: auto;</code> property is a common technique for self-clearing floats.<br><img src="https://user-images.githubusercontent.com/64577273/151918836-78e7d4cf-8294-40f0-b400-eefd29994209.png"></td>
+>    <tr><td colspan=2><b>self-clearing option 1:</b><br><code>overflow: hidden;</code> or <code>overflow: auto;</code> property is a common technique for self-clearing floats.<br><img src="https://user-images.githubusercontent.com/64577273/151918836-78e7d4cf-8294-40f0-b400-eefd29994209.png"></td>
 >    </tr>
->    <tr><td>add a specific CSS snippet, often referred to as the clearfix hack<br><img src="https://user-images.githubusercontent.com/64577273/151920898-daeb1b22-bf18-480a-9f44-6c60b6d71c87.png"><br>Note: <code>clearfix</code> is just the class name. If you want to use another class name, just make sure it matches in the CSS and the HTML.</td><td>this option only applicable to self clear the height of containers, not suit to clear the width of paragraph area</td>
+>    <tr><td><b>self-clearing option 2:</b><br>add a specific CSS snippet, often referred to as the clearfix hack<br><pre><code>
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</code></pre><img src="https://user-images.githubusercontent.com/64577273/151920898-daeb1b22-bf18-480a-9f44-6c60b6d71c87.png"><br>Note: <code>clearfix</code> is just the class name. If you want to use another class name, just make sure it matches in the CSS and the HTML.</td><td>this option only applicable to self clear the height of containers, not suit to clear the width of paragraph area</td>
 >    </tr>
->    <tr><td colspan=2><code>display: flow-root;</code> property is newer way for self-clearing floats but it's not currently supported by all modern browsers and is still in the draft phase.</td>
+>    <tr><td colspan=2><b>self-clearing option 3:</b><br><code>display: flow-root;</code> property is newer way for self-clearing floats but it's not currently supported by all modern browsers and is still in the draft phase.</td>
 >    </tr>
 ></table>
 >
@@ -195,4 +201,49 @@ point out-to direct someone's attention to (someone or something) by pointing
 -it may be tempting to use the position property for page layouts, but positioning shouldn't be used in this way, since it takes the element out of the stacking order and the normal flow, with the exception of relative. Stick to using position for styling smaller page components such as a fixed navigation bar, rather than large page layout blocks.
 
 tempt-to encourage someone to want to have or do something, esp. something unnecessary or wrong
-# 
+# Position and z-index
+>-[this article](https://webdesign.tutsplus.com/articles/what-you-may-not-know-about-the-z-index-property--webdesign-16892) provides great definition for stacking context and stacking level  
+-an element with a higher stack level is rendered in front of the element with the lower stack level. to see how the elements stack on the z-index, overlap them on each other.  
+-experiment with [this codepen example](https://codepen.io/imahdio/pen/RwjoJJE):
+>
+>default stacking order|corresponding selector|explanation
+>-|-|-
+>5-positioned elements|`div.position`|
+>4-inline elements, non-positioned|`span.inline`
+>3-floated elements, non-positioned|`div.float`
+>2-block level elements|`div.block 1`, `div.block2`|block 2 displays on top of block 1 because it comes after it in the HTML
+>1-html and body||they are always at the bottom of the stack because all other elements are always nested within these tags. 
+>
+>-`z-index` property changes the default stacking order. it only works if the element has some type of position applied to it.
+>1. add `position: relative;` to `.block1`, changes stacking level while keep it in the natural flow.  
+Notice: The orange positioned element is still displaying on the very top because it comes after block1 in the HTML.
+>2. add `z-index: 1;` property to `.block1`. Now, it's at the top of the stack. It doesn't matter what number you choose, but the higher the value, the higher the stacking level.
+>3. add `z-index: 2;` property to `.position` to back on top of the stack.
+>
+>-Changing the stacking order with `z-index` is most useful for elements that always need to be displayed on top of other elements, such as drop down menus, tool tips, or a pop-up box.
+
+remainder-a part of something that is left over when other parts have been completed, used, or dealt with.
+## Chapter Quiz
+>-`clear` property prevent other elements from floating beside an element.  
+-on sites where the grid property is used, you have little expectation to see that the `float` property is used.  
+-remember box model fix:
+>```css
+>html {
+>  box-sizing: border-box;
+>}
+>*, *:before, *:after {
+>  box-sizing: inherit;
+>}
+>```
+>-the parent container (assigned with the class "parent") of a floating element is showing as collapsed. the available solutions include:
+>state|fix
+>-|-
+>✔️|![image](https://user-images.githubusercontent.com/64577273/152738999-6ff6ac47-a8d9-4430-bac0-914cd8b23ce2.png)
+>✔️|![image](https://user-images.githubusercontent.com/64577273/152739062-d3a3753e-1dee-4e9a-a61f-455c5a33712e.png)
+>✔️|![image](https://user-images.githubusercontent.com/64577273/152739134-d24b6e09-82f7-4dce-a0ab-54e4266f4c11.png)
+>❌|![image](https://user-images.githubusercontent.com/64577273/152739162-db02f2be-d378-4877-bafe-65fa1a0301cf.png)
+>
+>-while an absolute element is positioned **relative to its closest positioned ancestor**, a fixed element is positioned **relative to the viewport**.  
+>-put adjacent text elements in two containers and float them both when you want to show the text elements in two separate columns.
+
+adjacent-very near, or with nothing in between
