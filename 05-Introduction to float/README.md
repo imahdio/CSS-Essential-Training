@@ -188,7 +188,7 @@ point out-to direct someone's attention to (someone or something) by pointing
 >1. scroll down to the relative class, and add in `position: relative;`. add `top: 10px;` and `right: 30px;` will push the box 10 pixels away from the top of its current position, and 30 pixels away from the right of its current position.
 >2. add `position: absolute;` to the absolute class.
 >
->reason|effect
+>affects|instruction
 >-|-
 >the absolute box removes from the normal flow|the fixed box was stacked below the absolute box, but has now moved behind it, to see, add `width: 100px;` to fixed class.
 >The absolute box is currently positioned relative to the non positioned body|add `right:25%` and `bottom: 5%;` to absolute class, so it's 25% from the right, and 5% from the bottom of the initial viewable area (when it was initially loaded).
