@@ -35,17 +35,16 @@ terminology-special words or expressions used in relation to a particular subjec
 ><table>
 >    <tr><th>flex</th><th>inline-flex</th>
 >    </tr>
->    <tr><td colspan=2><ul><li>they're only added to the parent element<br><br><img src="https://user-images.githubusercontent.com/64577273/153211290-35e5cff3-0144-4284-823f-830d18543c90.png"></li><li>each <b>direct child element</b> within the <b>flex-container</b> is a <b>flex item</b>.<br><br><img src="https://user-images.githubusercontent.com/64577273/153258062-a853820d-1110-4703-9805-a28ca2bda073.png"></li></td>
+>    <tr><td colspan=2>they're only added to the parent element<br><br><img src="https://user-images.githubusercontent.com/64577273/153211290-35e5cff3-0144-4284-823f-830d18543c90.png"></td>
+>    <tr><td colspan=2>each <b>direct child element</b> within the <b>flex-container</b> is a <b>flex item</b>.<br><br><img src="https://user-images.githubusercontent.com/64577273/153258062-a853820d-1110-4703-9805-a28ca2bda073.png"></td>
+>    </tr>
+>    <tr><td colspan=2><b>by default</b>, flex items will automatically<ul><li>be displayed in a row</li><li>have the same size as their content</li></ul>Notice: you can set a specific size for flex items as well</td>
 >    </tr>
 >    <tr><td>flex-container will still span the width of its container<br><br><img src="https://user-images.githubusercontent.com/64577273/153248839-09c320b8-14b2-4735-ae57-efb443d60e46.png"></td><td>the flex-container<ul><li>will span the width of its content, the flex items</li><li>displays inline to other flex-containers</li></ul><img src="https://user-images.githubusercontent.com/64577273/153248613-80fa1c4a-f284-430a-a578-8f567c70d16f.png"><br>-Notice: <code>display: inline-flex;</code> doesn't change how the flex items are displayed. instead, it makes the flex-container display inline.</td>
 >    </tr>
 ></table>
 >
->-<b>by default</b>, flex items will automatically
->* be displayed in a row
->* have the same size as their content
->
->Notice: you can set a specific size for flex items as well
+>-The two axes of flexbox includes
 ><table>
 >    <tr><th>main axis</th><th>cross axis</th>
 >    </tr>
