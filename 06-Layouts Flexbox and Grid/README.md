@@ -68,7 +68,7 @@ lay out-to spread something out, or to arrange things so you can see them easily
 
 perpendicular-At an angle of 90° to the ground; vertical
 ## Flexbox: Orientation and ordering
->-experiment the orientation and ordering on:
+>-experiment the orientation and ordering items on:
 >* `flex-direction: column;` with [this codepen example](https://codepen.io/imahdio/pen/rNYwLBV)
 >* `flex-direction: row;` with [this codepen example](https://codepen.io/imahdio/pen/dyZRXyR)
 >
