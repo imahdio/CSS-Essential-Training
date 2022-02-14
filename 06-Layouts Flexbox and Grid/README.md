@@ -20,7 +20,7 @@ space-the area of the div, so if you have an element with width 400px and height
 
 terminology-special words or expressions used in relation to a particular subject or activity
 ## Introduction to Flexbox
->-create various page layouts with aligning and sizing elements by
+>-create various page layouts, aligning and sizing elements by
 >* historically, float and sometimes displaying position
 >* the flexible box layout or Flexbox for short with flexible layouts over all
 >![image](https://user-images.githubusercontent.com/64577273/153207028-9d8acddd-e8cd-4536-8aa4-54883d359e3c.png)
@@ -29,9 +29,9 @@ terminology-special words or expressions used in relation to a particular subjec
 >
 >float<br>as legacy technique|flexbox
 >-|-
->require additional hacks to make each item<ul><li>the same height as its content</li><li>equal height columns</li></ul>|the height of each flex item automatically adjusts to be the same height as the longest item without adding any additional CSS<br><img src="https://user-images.githubusercontent.com/64577273/153255971-110682d0-214b-42ac-a068-a457760d73fd.png">
+>[require additional CSS hacks](https://github.com/imahdio/CSS-Essential-Training/blob/8888df0011aabde43777a916c98aac974578a81d/05-Introduction%20to%20float/README.md#float-and-collapsed-container) to make each item<ul><li>the same height as its content</li><li>equal height columns</li></ul>|the height of each flex item automatically adjusts to be the same height as the longest item without adding any additional CSS<br>[like this codepen example](https://codepen.io/imahdio/pen/GROWMBB)<br><img src="https://user-images.githubusercontent.com/64577273/153255971-110682d0-214b-42ac-a068-a457760d73fd.png">
 >
->-to use Flexbox, the flex-container must defined with one of these two values:
+>-to use Flexbox, the flex-container must be defined with one of these two values:
 ><table>
 >    <tr><th>flex</th><th>inline-flex</th>
 >    </tr>
@@ -44,7 +44,7 @@ terminology-special words or expressions used in relation to a particular subjec
 >    </tr>
 ></table>
 >
->-The two axes of flexbox includes
+>-The two axis of flexbox includes
 ><table>
 >    <tr><th>main axis</th><th>cross axis</th>
 >    </tr>
@@ -68,7 +68,37 @@ lay out-to spread something out, or to arrange things so you can see them easily
 
 perpendicular-At an angle of 90° to the ground; vertical
 ## Flexbox: Orientation and ordering
->-aa
+>-experiment the orientation and ordering on:
+>* `flex-direction: column;` with [this codepen example](https://codepen.io/imahdio/pen/rNYwLBV)
+>* `flex-direction: row;` with [this codepen example](https://codepen.io/imahdio/pen/dyZRXyR)
+>
+>-The `flex-direction` property determines the direction of the main axis using one of four values:
+><table>
+>    <tr><th colspan=2>1-<code>row</code></th><th colspan=2>3-<code>column</code></th>
+>    </tr>
+>    <tr><td colspan=2><ul><li>It's the default value.</li><li>The main start and main end depends on the writing mode of the document.</li><ul></td><td colspan=2>flex items:<ul><li>stack from top to bottom with vertical direction</li><li>expand the width of its container</li></ul><img src="https://user-images.githubusercontent.com/64577273/153773495-052bb365-55ae-4035-ac69-2f164eb53e43.png"></td>
+>    </tr>
+>    <tr><td><code>dir="rtl"</code><br>right to left language</td><td><code>dir="ltr"</code><br>left to right language</td><td><code>dir="rtl"</code><br>right to left language</td><td><code>dir="ltr"</code><br>left to right language</td>
+>    </tr>
+>    <tr><td>the main start, and the main end, will run right to left.<br><img src="https://user-images.githubusercontent.com/64577273/153773425-33dd8769-3500-450b-a8e2-41077e3ee0cf.png"></td><td>the main start, and the main end, will run left to right.<br><img src="https://user-images.githubusercontent.com/64577273/153773320-089dad74-f047-4cf6-aaab-bd23f30b8f50.png"></td><td>the cross start, and the cross end, will run right to left.</td><td>the cross start, and the cross end, will run left to right.</td>
+>    </tr>
+>    <tr><th colspan=2>2-<code>row-reverse</code></th><th colspan=2>4-<code>column-reverse</code></th>
+>    </tr>
+>    <tr><td colspan=2><ul><li>flip the order of horizontal items by reversing main start and main end</li><li>This re-ordering is only visual. The HTML is not changed.</li></ul></td><td colspan=2><ul><li>flip the order and alignment of the vertical items by reversing main start and main end</li><li>This re-ordering is only visual. The HTML is not changed.</li></ul><img src="https://user-images.githubusercontent.com/64577273/153773826-ed19aa9a-ec48-4911-a92a-9babd29f8b4a.jpg"></td>
+>    </tr>
+></table>
+>-By default, Flexbox only aligns the flex items on a single axis.
+>
+>`flex-wrap: nowrap;`|`flex-wrap: wrap;`|`flex-wrap: wrap-reverse;`
+>-|-|-
+>it's the default value meaning flex items will not wrap.|layout the items over multiple rows|simultaneously wrap and reverse
+>|<ul><li>there will be some space left, if there aren't enough flex items to fit within the whole container</li><img src="https://user-images.githubusercontent.com/64577273/153807221-cbdb60f7-4f00-44b0-98c1-a4f30cbf1a8d.png"><li>the items will automatically shrink to fit into one line, if the total width of the items are larger than the container.<img src="https://user-images.githubusercontent.com/64577273/153807331-f91f7984-08fd-4706-842f-b2b2001116bd.png">|the items will wrap into the next line, if there are more items to fit the container<br>![image](https://user-images.githubusercontent.com/64577273/153807705-ce39273b-de03-462a-9670-9f22ce2808f2.png)|<ul><li>reverse the cross start and cross end</li><li>The items are still in the same order on the main axis</li></ul>![image](https://user-images.githubusercontent.com/64577273/153807883-c973ea43-bd61-41ec-beb6-ee159a2bc4c2.png)
+>
+>-in the next lesson, we'll talk about additional flex properties we can use to determine how items expand and shrink.
+
+orientation-the position of something in relation to its surroundings
+
+flip-turn over with a sudden quick movement
 
 substitute-a person or thing acting or serving in place of another
 
