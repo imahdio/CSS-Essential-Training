@@ -135,8 +135,27 @@ voice over-words that describe or comment on a film, advertisement, or video, wh
 
 link value-*based my study friend opinion*, the values that are linked to other related elements like inherited from the parent component, for example `auto`, `em`, `px`
 ## Flexbox exercise
->-aa
+>-create a basic flexbox layout [with this codepen example](https://codepen.io/imahdio/pen/BamwyGy):
+>1. add `display: flex;` into flex-container to enable the flexbox layout mode.  
+The flex items will now align horizontally.
+>2. add `width: 500px;` into flex-container and `flex: 1 1 100px;` into flex-item.  
+Since the container is 500 pixels, and there are five flex items, the flex-basis value of 100 pixels is applied.
+>3. change `width: 600px;` in flex-container.  
+because the flex-grow amount of one, the items will now be wider to filled up the extra space.
+>4. change `flex: 0 1 100px;` in flex-item.  
+flex-items won't expand, and there will be extra space.
+>5. change `width: 400px;` in flex-container.  
+the items will shrink
+>6. change `flex: 0 0 100px;` in flex-item.  
+the items will not shrink and will be sized to 100 pixels, according to the flex-basis value but will overflow, because the container is smaller than the total width of all the flex items.
+>7. add `flex-wrap: wrap;` into flex-container.  
+The item that doesn't fit, will now wrap onto the next row.
+>8. change `flex: 1 0 100px;` in flex-item.  
+Since it's the only item on the new second row, all the extra space in the row is applied to it.
 
+feel like something-to seem to be something
+
+incorporate-to include something as part of something larger
 ## Flexbox: Alignment
 >-aa
 
