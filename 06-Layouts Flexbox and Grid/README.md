@@ -94,7 +94,9 @@ perpendicular-At an angle of 90° to the ground; vertical
 >it's the default value meaning flex items will not wrap.|layout the items over multiple rows|simultaneously wrap and reverse
 >|<ul><li>there will be some space left, if there aren't enough flex items to fit within the whole container</li><img src="https://user-images.githubusercontent.com/64577273/153807221-cbdb60f7-4f00-44b0-98c1-a4f30cbf1a8d.png"><li>the items will automatically shrink to fit into one line, if the total width of the items are larger than the container.<img src="https://user-images.githubusercontent.com/64577273/153807331-f91f7984-08fd-4706-842f-b2b2001116bd.png">|the items will wrap into the next line, if there are more items to fit the container<br>![image](https://user-images.githubusercontent.com/64577273/153807705-ce39273b-de03-462a-9670-9f22ce2808f2.png)|<ul><li>reverse the cross start and cross end</li><li>The items are still in the same order on the main axis</li></ul>![image](https://user-images.githubusercontent.com/64577273/153807883-c973ea43-bd61-41ec-beb6-ee159a2bc4c2.png)
 >
->-in the next lesson, we'll talk about additional flex properties we can use to determine how items expand and shrink.
+>-in the next lesson, we'll talk about additional flex properties we can use to determine how items expand and shrink.  
+-`flex-flow` is the shorthand property for `flex-wrap` and `flex-direction`:  
+![image](https://user-images.githubusercontent.com/64577273/153808766-6b98bf6f-631c-40b1-a672-fb94bc95a0db.png)
 
 orientation-the position of something in relation to its surroundings
 
@@ -106,11 +108,32 @@ shrink-become or make smaller in size or amount
 
 feel like something-to seem to be something
 ## Flexible sizing
->-aa
+>-there are three properties used together to set the sizing of the flex-items
+><table>
+>    <tr><th>flex-grow</th><th>flex-shrink</th><th>flex-basis</th>
+>    </tr>
+>    <tr><td>determines how items will expand if there is extra space in the container</td><td>determines how items will shrink if there isn't enough space in the container</td><td>sets the initial size of the flex-items</td>
+>    </tr>
+>    <tr><td colspan=3>The W3C recommends using the shorthand property<br><code>flex: grow shrink basis;</code><br><code>flex: 0 1 100px;</code></td>
+>    </tr>
+>    <tr><td colspan=2>defined with a unit-less numeric value</td><td>used either with<ul><li>link values</li><li>percentages</li><li>key words</li></td>
+>    </tr>
+>    <tr><td><ul><li>defaults to zero, means if there's extra space in the container, do not expand to fill the space.</li><li>If change the value to one, all the flex items will expand by the same amount to fill up the space.</li></ul></td><td><ul><li>defaults to one, means if there isn't enough space in the container, shrink all the flex items by the same amount.</li><li>if set it to zero, means it won't shrink at all. So if there's not enough space in the container, it will overflow, unless you set the flex wrap to wrap.</li></ul></td><td><ul><li>It's ideal sizing. If there's enough space, make all the flex items the size declared with this value</li><li>If not, then shrink or grow according to the first two values.</li></ul></td>
+>    </tr>
+>    <tr>
+>    </tr>
+></table>
+>
+>-`flex` property must be applied to the flex items directly, not in the container.
+>to have the same size flex items|to have the different sizes flex items
+>-|-
+>apply the `flex` property to a selector that matches to all the flex items<br>![image](https://user-images.githubusercontent.com/64577273/153820766-6ec7bf86-835f-40d6-b7e1-0379dbde4e84.png)|`flex` property must be applied to the individual flex items.<br>![image](https://user-images.githubusercontent.com/64577273/153820872-b607c2ba-549d-4af5-a1ea-ff860b63f792.png)
+>
+>-[check out the MDM documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/flex) to see many other types of flex values.
 
 voice over-words that describe or comment on a film, advertisement, or video, which are spoken by a person who is not seen
 
-link value-
+link value-*based my study friend opinion*, the values that are linked to other related elements like inherited from the parent component, for example `auto`, `em`, `px`
 ## Flexbox exercise
 >-aa
 
