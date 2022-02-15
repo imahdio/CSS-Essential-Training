@@ -157,7 +157,16 @@ feel like something-to seem to be something
 
 incorporate-to include something as part of something larger
 ## Flexbox: Alignment
->-aa
+>-like already mentioned in [this summary](https://github.com/imahdio/CSS-Essential-Training/blob/f86f00131dfb1ac245975717bbfd7af6d59512a8/03-The%20Box%20Model/README.md#margin-and-layouts), Prior to Flexbox, we used `margin: CustomValue auto;` for center aligning elements horizontally, but  getting elements to align vertically required flexbox.  
+-flexbox has two properties for aligning elements.
+><table>
+>    <tr><th>justify-content</th><th>align-items</th>
+>    </tr>
+>    <tr><td>aligns items on the main axis</td><td>aligns items on the cross axis</td>
+>    </tr><td colspan=2>to center align the item vertically and horizontally, set the values for both properties to center<br><img src="https://user-images.githubusercontent.com/64577273/154042942-79be6510-87b2-4f31-b464-d0f5a8cf8bc9.jpg"></td>
+>    <tr><td>experiment with below values on <a href="https://codepen.io/imahdio/pen/qBVPVNO">this codepen example</a>:<ul><li><code>start</code> : aligns flex items flush to each other at the start of the axis</li><li><code>center</code> : center-align the flex items</li><li><code>space-between</code> : distributes items evenly with the first item at the start of the axis and the last item at the end</li><li><code>space-around</code> : distributes the same space just on the left and right side of each item</li><li><code>Space-evenly</code> : distributes equal space around the items.</li></ul>check full list of possible values <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content">on MDN docs</a></td><td>experiment with below values on <a href="https://codepen.io/imahdio/pen/oNoGozx">this codepen example</a>:<ul><li><code>stretch</code> :  stretches the flex items along the cross axis.</li><li><code>center</code> :  center align items vertically along the cross axis.</li><li><code>start</code> : aligns the items from the top, <b>if the cross axis is vertical</b></li><li><code>end</code> : aligns items from the bottom, <b>if the cross axis is vertical</b></li></ul>check full list of possible values <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items">on MDN docs</td>
+>    </tr>
+></table>
 
 flush-on the same level so that no part is higher or lower or sticks out more than another
 
