@@ -43,8 +43,9 @@ incorporate-take in or contain (something) as part of a whole
 >padding|Although it takes effect visually on all sides but padding top and bottom not be considered as size of element and [be overlapped in vertical direction with surrounded area](https://codepen.io/ma400/pen/zYEMMvE) |✔️|✔️
 >margin|only take effect on right and left side|✔️|✔️
 >margin collapsing|not defined vertical margin|❌|✔️
->horizontal center alignment|❌|❌|✔️
+>horizontal center alignment with<br><code>margin: CustomValue auto;</code>|❌|❌|✔️
 >
+><b>Notice</b>: For any block-level element, I can apply a `text-align: center;` to the element itself or I can add it to the container so all the elements will inherit this style.  
 >-separating content from style means instead of picking an HTML element that looks a particular way, choose the most semantic element for the content, and then change the display with CSS.
 
 stack-a pile of objects, typically one that is neatly arranged

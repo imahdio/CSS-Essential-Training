@@ -157,7 +157,7 @@ feel like something-to seem to be something
 
 incorporate-to include something as part of something larger
 ## Flexbox: Alignment
->-like already mentioned in [this summary](https://github.com/imahdio/CSS-Essential-Training/blob/f86f00131dfb1ac245975717bbfd7af6d59512a8/03-The%20Box%20Model/README.md#margin-and-layouts), Prior to Flexbox, we used `margin: CustomValue auto;` for center aligning elements horizontally, but  getting elements to align vertically required flexbox.  
+>-like already mentioned in [this summary](https://github.com/imahdio/CSS-Essential-Training/blob/f86f00131dfb1ac245975717bbfd7af6d59512a8/03-The%20Box%20Model/README.md#margin-and-layouts) and [this another one](https://github.com/imahdio/CSS-Essential-Training/blob/af46cb01a5f7e3ea419a0885e4a310c329bb569d/04-Typography/README.md#text-decoration-text-align-and-line-height), Prior to Flexbox, we used `margin: CustomValue auto;` and `text-align: center;` for center aligning elements horizontally, but  getting elements to align vertically required flexbox.  
 -flexbox has two properties for aligning elements.
 ><table>
 >    <tr><th>justify-content</th><th>align-items</th>
@@ -172,4 +172,35 @@ flush-on the same level so that no part is higher or lower or sticks out more th
 
 stick out-to go past (beyond) the surface or edge of something
 ## Project: Flexbox alignment
->-aa
+>-use flexbox to style contact info of the exercise file:
+>1. change contact list container to `<ul class="contact-list">` in [index.html](Project-Flexbox-alignment/index.html)
+>2. add below class to contact section of [style.css](Project-Flexbox-alignment/css/styles.css) to remove the bullets and left-side extra space from list.
+>```css
+>.contact-list {
+>    list-style-type: none;
+>    padding: 0;
+>}
+>```
+>3. add `display: flex;` to contact-list class to align items horizontally.
+>4. add `justify-content: center;` to center-align items within the container.  
+Notice: `justify-content: space-between;` will distribute the flex items evenly by adding space between the items.
+>5. add below class to contact section of [style.css](Project-Flexbox-alignment/css/styles.css) to target links.
+>```css
+>.contact-list a {
+>    padding: 15px;
+>    display: inline-block;
+>}
+>```
+>Notice: we choose padding instead of margin to help with accessibility because it will make the click area bigger.  
+>Notcie: links are inline elements. [based last table of this summary](https://github.com/imahdio/CSS-Essential-Training/tree/master/03-The%20Box%20Model#inline-block-and-display), to adjust links position vertically and horizontally when the padding is added, need to change its desplay to `display: inline-block;`
+>
+>6. add `text-align: center;` to footer selector of [style.css](Project-Flexbox-alignment/css/styles.css) to center-align inner contents while won't affect on flex items.  
+>Notice: For any block-level element, I can apply `text-align: center;` to the element itself or I can add it to the container so all the elements will inherit this style.
+>7. add `text-align: center;` to header of [style.css](Project-Flexbox-alignment/css/styles.css) to center-align all of its contents.  
+>Notice: We didn't need to lay out the content in rows or columns or resize them, so there was no need to initiate a Flexbox layout for the header.  
+>
+>-CSS and programming in general is about learning how to use a bunch of different tools and then figuring out which tool is best for each scenario.
+
+space out-position two or more items at an equal distance from one another
+
+lay out-to arrange in a pattern or design
