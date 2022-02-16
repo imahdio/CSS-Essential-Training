@@ -157,7 +157,7 @@ feel like something-to seem to be something
 
 incorporate-to include something as part of something larger
 ## Flexbox: Alignment
->-like already mentioned in [this summary](https://github.com/imahdio/CSS-Essential-Training/blob/f86f00131dfb1ac245975717bbfd7af6d59512a8/03-The%20Box%20Model/README.md#margin-and-layouts) and [this another one](https://github.com/imahdio/CSS-Essential-Training/blob/af46cb01a5f7e3ea419a0885e4a310c329bb569d/04-Typography/README.md#text-decoration-text-align-and-line-height), Prior to Flexbox, we used `margin: CustomValue auto;` and `text-align: center;` for center aligning elements horizontally, but  getting elements to align vertically required flexbox.  
+>-like already mentioned in [this summary](https://github.com/imahdio/CSS-Essential-Training/blob/f86f00131dfb1ac245975717bbfd7af6d59512a8/03-The%20Box%20Model/README.md#margin-and-layouts) and [this another one](https://github.com/imahdio/CSS-Essential-Training/blob/af46cb01a5f7e3ea419a0885e4a310c329bb569d/04-Typography/README.md#text-decoration-text-align-and-line-height), Prior to Flexbox, we used `margin: length auto;` and `text-align: center;` for center aligning elements horizontally, but  getting elements to align vertically required flexbox.  
 -flexbox has two properties for aligning elements.
 ><table>
 >    <tr><th>justify-content</th><th>align-items</th>
