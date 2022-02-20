@@ -213,7 +213,7 @@ lay out-to arrange in a pattern or design
 >    </tr>
 >    <tr><td>broken down into evenly spaced columns and rows<br><img src="https://user-images.githubusercontent.com/64577273/154850962-1013a992-84d7-45ac-9b71-fcd4ea8679d1.png"></td><td>often included to add consistent spacing between columns</td><td>the horizontal and vertical lines that divide the grid into columns and rows<br><img src="https://user-images.githubusercontent.com/64577273/154853967-f93fe406-1c68-47db-b069-7e0d479f0e17.png"></td>
 >    </tr>
->    <tr><td>Page components are arranged within the columns<br><img src="https://user-images.githubusercontent.com/64577273/154851013-35e855cb-c5af-4d8f-9c38-e20eb9fdedc0.png"></td><td></td><td>determine the position of the grid items and are referred to by<ul><li>numerical index</li><li>custom name</li><br><img src="https://user-images.githubusercontent.com/64577273/154854455-efbf9ef2-bca3-4cee-bf20-b8be68be5465.png"></ul>Notice: When using a numerical index, both the vertical and horizontal grid lines start at one.</td>
+>    <tr><td>Page components are arranged within the columns<br><img src="https://user-images.githubusercontent.com/64577273/154851013-35e855cb-c5af-4d8f-9c38-e20eb9fdedc0.png"></td><td></td><td>determine the position of the grid items and are referred to by<ul><li>custom name</li><li>numerical index</li><li>negative numerical index which allows you to reference the opposite end of the grid</li></ul><img src="https://user-images.githubusercontent.com/64577273/154856367-3eb12a58-d25d-4be8-adfe-f5e14ce08e0f.jpg"><br>Notice: When using a numerical index, both the vertical and horizontal grid lines start at one.</td>
 >    </tr>
 ></table>
 >
@@ -222,7 +222,7 @@ lay out-to arrange in a pattern or design
 >* The direct child elements are the grid items.
 >* Grid can be used with two values, grid or inline-grid
 ><table>
->    <tr><th>grid</th><th>inline-grid</th>
+>    <tr><th><code>display: grid;</code></th><th><code>display: inline-grid;</code></th>
 >    </tr>
 >    <tr><td colspan=2><img src="https://user-images.githubusercontent.com/64577273/154852768-3dd4e5ab-ae2c-448f-8f5f-4934cc9a1e91.jpg"></td>
 >    </tr>
@@ -231,7 +231,6 @@ lay out-to arrange in a pattern or design
 >    <tr><td>the container will be displayed as block-level element and stacked on top of other block element<br><img src="https://user-images.githubusercontent.com/64577273/154852492-a32a15ce-ef70-4a48-984e-0e53a8b32eef.png"></td><td>the whole container will display inline next to other inline containers<br><img src="https://user-images.githubusercontent.com/64577273/154852542-b5997efa-cf70-4838-912a-f1a1974949b9.png"></td>
 >    </tr>
 ></table>
->
 
 grid-a pattern or structure made from horizontal and vertical lines crossing each other to form squares
 
