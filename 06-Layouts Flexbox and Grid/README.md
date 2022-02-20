@@ -204,3 +204,60 @@ Notice: `justify-content: space-between;` will distribute the flex items evenly 
 space out-position two or more items at an equal distance from one another
 
 lay out-to arrange in a pattern or design
+## Introduction to CSS Grid
+>-CSS Grid is a layout method that includes new CSS properties and rules.  
+>-prior to it, using grid-based layouts have been a common part of web design for a long time that required hacks and other workarounds.  
+>-Let's go over some grid terminology.  
+><table>
+>    <tr><th>grids</th><th>gutters</th><th>grid lines</th>
+>    </tr>
+>    <tr><td>broken down into evenly spaced columns and rows<br><img src="https://user-images.githubusercontent.com/64577273/154850962-1013a992-84d7-45ac-9b71-fcd4ea8679d1.png"></td><td>often included to add consistent spacing between columns</td><td>the horizontal and vertical lines that divide the grid into columns and rows<br><img src="https://user-images.githubusercontent.com/64577273/154853967-f93fe406-1c68-47db-b069-7e0d479f0e17.png"></td>
+>    </tr>
+>    <tr><td>Page components are arranged within the columns<br><img src="https://user-images.githubusercontent.com/64577273/154851013-35e855cb-c5af-4d8f-9c38-e20eb9fdedc0.png"></td><td></td><td>determine the position of the grid items and are referred to by<ul><li>numerical index</li><li>custom name</li><br><img src="https://user-images.githubusercontent.com/64577273/154854455-efbf9ef2-bca3-4cee-bf20-b8be68be5465.png"></ul>Notice: When using a numerical index, both the vertical and horizontal grid lines start at one.</td>
+>    </tr>
+></table>
+>
+>-Similar to flexbox
+>* the grid container is the parent element.
+>* The direct child elements are the grid items.
+>* Grid can be used with two values, grid or inline-grid
+><table>
+>    <tr><th>grid</th><th>inline-grid</th>
+>    </tr>
+>    <tr><td colspan=2><img src="https://user-images.githubusercontent.com/64577273/154852768-3dd4e5ab-ae2c-448f-8f5f-4934cc9a1e91.jpg"></td>
+>    </tr>
+>    <tr><td>unless specified, the items will span the width of its container</td><td>the items will span the width of its content</td>
+>    </tr>
+>    <tr><td>the container will be displayed as block-level element and stacked on top of other block element<br><img src="https://user-images.githubusercontent.com/64577273/154852492-a32a15ce-ef70-4a48-984e-0e53a8b32eef.png"></td><td>the whole container will display inline next to other inline containers<br><img src="https://user-images.githubusercontent.com/64577273/154852542-b5997efa-cf70-4838-912a-f1a1974949b9.png"></td>
+>    </tr>
+></table>
+>
+
+grid-a pattern or structure made from horizontal and vertical lines crossing each other to form squares
+
+break down-to separate something into smaller parts
+
+consistent-always happening or behaving in a similar way
+
+terminology-special words or expressions used in relation to a particular subject or activity
+
+designate-indicate; show; specify
+
+adjacent-very near
+
+collectively-as a group; as a whole
+
+adaptive-changing quickly to suit different conditions
+## The explicit grid
+>-aa
+
+## The implicit grid
+>-aa
+
+ahead of-in front of
+
+anticipate-regard as probable; expect or predict
+
+anticipate-to imagine or expect that something will happen
+## Grid placement properties
+>-aa
