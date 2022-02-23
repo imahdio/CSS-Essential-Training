@@ -248,8 +248,57 @@ collectively-as a group; as a whole
 
 adaptive-changing quickly to suit different conditions
 ## The explicit grid
->-aa
+>-`grid-template-columns` and `grid-template-rows` create an explicit grid with specific number of grid lines and tracks.  
+>-their values expressed as a track list separated by a space to designate the number of tracks.  
+![image](https://user-images.githubusercontent.com/64577273/155324012-7889d790-1c77-47df-bffa-90528dc9d94d.jpg)  
+-These 2 properties can be defined using a variety of value types, like:
+>
+>fr|repeat()|mixed different units
+>-|-|-
+>represents a fraction of the available space in the grid container|repeat ([number of tracks], [size of tracks])|The repeat function can also be used to repeat part of the track listing
+>the value of `1fr 1fr 1fr` split the grid into three equal columns/rows<br>![image](https://user-images.githubusercontent.com/64577273/155294518-3fcdf397-d7b5-41b8-81af-22776bf7c073.png)|the value of `repeat(3, 1fr)` includes 3 tracks with size of each track `1fr`<br>![image](https://user-images.githubusercontent.com/64577273/155296207-da054df4-2dba-4bce-b035-36d41baaf4cf.png)|the value of `50px repeat(2, 1fr)` makes first track 50px, while next two tracks are equally spaced.<br>![image](https://user-images.githubusercontent.com/64577273/155297920-eb9ebab4-a9ad-4cf4-a329-84f936cb7691.png)
+>the value of `1fr 2fr 1fr` split the grid into three columns/rows while the second track will take up twice the amount of the first and third track<br>![image](https://user-images.githubusercontent.com/64577273/155294479-989e2e5b-3b25-46fb-9556-05e785ec8fd5.png)||
+>
+>-Gutters can also be added between grid items using the gap property.
+><table>
+>    <tr><th>gap</th><th>example</th>
+>    </tr>
+>    <tr><td><ul><li>One value adds the same amount of space between the rows and columns.</li><li>Two values sets the gutter for the rows then the columns.</li></td><td><img src="https://user-images.githubusercontent.com/64577273/155316415-9e384d6a-f99b-4170-b2b6-102f020312ac.png"></td>
+>    </tr>
+>    <tr><td>it can be used with any<ul><li>length unit</li><li>percentage</li><li>the calc function</li><li>but not the fr unit</li></ul></td><td><img src="https://user-images.githubusercontent.com/64577273/155299878-7f5b3b50-422e-48a4-a1e3-b30dcb82139a.png"></td>
+>    </tr>
+>    <tr><td>support longhand properties include <code>row-gap</code> and <code>column-gap</code></td><td><img src="https://user-images.githubusercontent.com/64577273/155301979-c99c13db-3075-4695-b056-a35ab33505b5.png"></td>
+>    </tr>
+>    <tr><td>When grid first shipped, in browsers the <code>column-gap</code>, <code>row-gap</code> and <code>gap</code> were prefixed with the <code>grid-</code> prefix as <code>grid-column-gap</code>, <code>grid-row-gap</code> and <code>grid-gap</code> respectively.<br>they have been updated to be used for both Flexbox and grid.</td><td><img src="https://user-images.githubusercontent.com/64577273/155320543-7e97ddce-384e-4d7d-9fcc-7677d5c05383.png"></td>
+>    </tr>
+></table>
+>
+>-All of these properties are declared in the grid container
+>```css
+>.grid-container {
+>    display: grid;
+>    grid-template-columns: 100px 100px 100px;
+>    grid-template-rows: 100px 100px;
+>    gap: 10px 20px;
+>}
+>```
+>-experiment with [this codepen example](https://codepen.io/imahdio/pen/qBVKKNO):
+>1. add `display: grid;` into grid-container to apply the grid properties
+>2. add `grid-template-columns: 100px 100px 100px;` into grid-container to add three columns set to 100 pixels in width.
+>3. add `grid-template-rows: 100px 100px;` into grid-container to add two rows set to 100 pixels each.
+>4. update columns with `grid-template-columns: repeat(3, 100px);`  
+Notice: The grid should look the same since we're only changing the way we set the value.  
+Notice: To add or remove columns, just change the first value of `repeat` function.
+>5. update columns with `grid-template-columns: repeat(3, 1fr);` to split the space into three equal and flexible parts.  
+Notice: resize the view port to see how it scales.
+>6. update columns with `grid-template-columns: 100px repeat(2, 1fr);` so the first column has a fixed size of 100 pixels, then the remaining space could be split evenly into two columns.
+>7. update rows with `grid-template-rows: 100px;`. now the second row is the same height of its content because we've only declared one explicit row.
+>
+>-Any items that are within the grid container but are placed outside of the explicit grid will be placed into an implicit grid and will be sized according to those explicit rules which we'll discuss in the next lesson.
 
+express-to show a feeling, opinion, or fact; convey (a thought or feeling) in words or by gestures and conduct
+
+fraction-a number that results from dividing one whole number by another
 ## The implicit grid
 >-aa
 
