@@ -300,7 +300,17 @@ express-to show a feeling, opinion, or fact; convey (a thought or feeling) in wo
 
 fraction-a number that results from dividing one whole number by another
 ## The implicit grid
->-aa
+>explicit grid|implicit grid
+>-|-
+>defines a fixed number of tracks in a grid layout using<ul><li>`grid-template-rows`</li><li>`grid-template-columns`</li></ul>![explicit-grid](https://user-images.githubusercontent.com/64577273/155834651-3dd8664a-5434-481f-9373-2339d7ddba6a.jpg)|defines the size of grid tracks in a grid layout using<ul><li>`grid-auto-rows`</li><li>`grid-auto-columns`</li></ul>![image](https://user-images.githubusercontent.com/64577273/155837916-eb5afd63-f295-4a84-914d-d2d5ee53840b.png)
+>use it if<ul><li>YOU know how many items there are to display</li><li>YOU know the minimum amount of grid items you could use an explicit and implicit grid together</li></ul>|<ul><li>use it if<ul><li>YOU don't know how many items your grid needs to display</li><li>YOU know the minimum amount of grid items, you could use an explicit and implicit grid together</li></ul></li><li>grid container will generate it automatically once<ul><li>there are more grid items than the number of explicit tracks</li><li>no explicit grid has been defined</li></ul></li></ul>
+>if don't have enough items to fill that grid, it will still take up the space that has been defined<br>![image](https://user-images.githubusercontent.com/64577273/155833861-8fabffec-be9c-4d95-a57f-343ff6df2f5c.png)|can be used in dynamic content like a news feed, search results or a list of comments
+>
+>-Let's continue with [the pen used in the previous lesson](https://codepen.io/imahdio/pen/zYPJpQL)
+>1. We had six grid items but only three columns and one row defined in the explicit grid. That means the last three items are placed within the implicit grid.
+>2. Items four to six in this example are the same width of the columns defined in the explicit grid. But since only one explicit row has been defined, the items in the implicit row will adjust to the height of the content contained within.
+>3. add `grid-auto-rows: 200px;` in grid-container to set the height for implicit grid.
+
 
 ahead of-in front of
 
