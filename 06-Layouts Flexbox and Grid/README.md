@@ -321,4 +321,30 @@ anticipate-regard as probable; expect or predict
 
 anticipate-to imagine or expect that something will happen
 ## Grid placement properties
+>-So far, we've been looking at properties that are applied to the grid-container. These properties define the structure of the grid.  
+![image](https://user-images.githubusercontent.com/64577273/156116769-ab1b72ad-8ed3-4f60-a4a2-58df209eaf60.png)  
+-Position-based properties must be applied to the grid items to determine their placement within the grid. The properties used for placing grid items are
+><table>
+>    <tr><th>grid-column</th><th>grid-row</th>
+>    </tr>
+>    <tr><td>shorthand for<ul><li>grid-column-start</li><li>grid-column-end</li></ul></td><td>shorthand for<ul><li>grid-row-start</li><li>grid-row-end</li></ul></td>
+>    </tr>
+>    <tr><td colspan=2><ul><li>A number value is used to specify the the start and end of the grid-item's position based on the grid lines.</li><li>When using the shorthand property, the value start and end value must be separated with a forward slash.</li></ul></td>
+>    </tr>
+>    <tr><td>Grid items, by default, start on line one and span the size of one grid cell. To change them, use:<ul><li><code>grid-column-start</code> to change the start position</li><li><code>grid-column-end</code> to make the grid items span more than one column</li></ul><img src="https://user-images.githubusercontent.com/64577273/156119877-58022c96-8ecb-47ef-834e-f6f2c01e91f5.png"></td><td>for the positioning of the grid items within rows, use:<ul><li><code>grid-row-start</code></li><li><code>grid-row-end</code></li></ul><img src="https://user-images.githubusercontent.com/64577273/156121083-1ad0833f-068d-4872-b836-74845fb8507a.png"></td>
+>    </tr>
+></table>
+>
+>-in previous lesson, We were able to see how grid items were displayed in the implicit rows. in this lesson, we'll have to use `grid-column` to specifically place an item into the implicit grid. Let's continue with [the pen used in the previous lesson](https://codepen.io/imahdio/pen/GROwRXy):  
+>1. add `example` class to 3th grid item in html to change its default placement.
+>2. add `grid-column: 4;` to example class to star it on line 4 and automatically end on line 5.  
+Notcie: This column is now showing with a width of 50 pixels which is what we declared at `grid-auto-columns`. This property sets the width of the columns for the implicit grid.
+>3. update implicit column with `grid-column: 4 / 6;` to span across two implicit columns.
+>
+>-explore more of what grid has to offer on [this MDN resource](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids).
+# Project: Grid columns and Firefox Grid Inspector
 >-aa
+
+toggle-to switch a feature on a computer on and off by pressing the same button or key
+
+overlay grid-
