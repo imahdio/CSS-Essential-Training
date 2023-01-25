@@ -6,7 +6,7 @@
 -[on W3C table of CSS specifications](https://www.w3.org/Style/CSS/current-work) You may see some marked as Level 3 if it's an update from CSS2. New modules such as flexbox start out at Level 1. There are others marked at Level 4. So these levels have no relation to the version of CSS. So while CSS3 basically refers to any updates after CSS Level 2, there's really no need to make the distinction. It's all just CSS. [check here for more info](https://dev.to/afif/when-we-will-have-css4-o9o)  
 -All of the past, current, and working drafts are published on the W3C website. Status codes are included to indicate what phase the particular module is at. [status code reference](https://www.w3.org/Style/CSS/current-work)  
 ><table>
-><tr><td><img src="https://user-images.githubusercontent.com/64577273/147824363-2c93a478-70f3-4743-a6b3-8df8baef41b5.png"></td><th>First Public Working Draft</th><td rowspan=2>they're still experimental and may not be supported by all browsers and are subject to be changed or even removed altogether. </td>
+><tr><td><img src="https://user-images.githubusercontent.com/64577273/147824363-2c93a478-70f3-4743-a6b3-8df8baef41b5.png"></td><th>First Public Working Draft</th><td rowspan=2>they're still experimental and may not be supported by all browsers and are subject to be changed or even removed altogether.</td>
 ></tr>
 ><tr><td><img src="https://user-images.githubusercontent.com/64577273/147824456-9558d0c8-a455-476d-ac1e-c6edb464e08b.png"></td><th>Working Draft</th>
 ></tr>
@@ -19,7 +19,7 @@
 ><tr><td><img src="https://user-images.githubusercontent.com/64577273/147824696-a7d92b6e-d318-4876-b8e3-d3f3bb200db4.png"></td><th>Superseded Recommendation</th><td>It is a spec that has been replaced by a newer version</td>
 ></tr>
 ></table>
->-in this course , you learn core concepts for writing CSS so it's good to have a few go-to resources. I recommend the Mozilla Developer Network's CSS Guide.
+>-in this course, you learn core concepts for writing CSS so it's good to have a few go-to resources. I recommend the Mozilla Developer Network's CSS Guide.
 
 member organizations-*based on my study friend opinion and me* participated organzations
 
@@ -51,7 +51,7 @@ proposed-suggested as a possible plan or action for people to consider
 
 set to-to start doing something in a determined or enthusiastic way
 
-formalize-to make something official , give (something) legal or formal status
+formalize-to make something official, give (something) legal or formal status
 
 supersede-to replace something, especially something older or more old-fashioned
 
@@ -113,13 +113,15 @@ experimental-relating to tests, especially scientific ones
 >
 >-[codeguide.co](https://codeguide.co/) is one of the many code style guides you can refer to.
 
+CSS property-It's a characteristic (like color) whose associated value defines one aspect of how the browser should display the element
+
 syntax-the structure of statements or elements in a computer language
 
 terminology-special words or expressions used in relation to a particular subject or activity
 
 countless-very many
 
-debate-to discuss a subject in a formal way,to try to make a decision about something
+debate-argue about (a subject), especially in a formal manner to make a decision about something
 
 consistent-always behaving or happening in a similar, especially positive way
 
@@ -236,7 +238,7 @@ upcoming-about to happen; forthcoming
 
 best practice-a working method, or set of working methods, that is officially accepted as being the best to use in a particular business or industry
 
-sparingly-in an economical or limited way,in a restricted or infrequent manner; in small quantities
+sparingly-in an economical or limited way, in a restricted or infrequent manner; in small quantities
 
 too general-not specific enough
 ## Class and ID selectors
@@ -248,7 +250,7 @@ too general-not specific enough
 >The value of the class becomes the selector and must begin with a leading period.<br>![image](https://user-images.githubusercontent.com/64577273/147904902-6ffc26b8-7b9b-4eed-9f64-df50a1c9f641.png)|the CSS selector for IDs has a different syntax. ID selectors begin with a number sign (#) symbol.<br>![image](https://user-images.githubusercontent.com/64577273/147906427-c411042c-7414-4410-ae3b-6110cd65c2fd.png)
 >Class selectors can be reused throughout the document. Add the class to any element to apply the style.<br>![image](https://user-images.githubusercontent.com/64577273/147905302-1fd476dd-67c5-4d01-85fe-37b7f9b71b13.png)|there is a good convention that ID selectors are not reusable and highly recommend only be used once per page.<br>![image](https://user-images.githubusercontent.com/64577273/147906510-4d201e93-0426-464a-ac44-df7ed8f71933.png)
 >You can also use more than one class in the same element by adding another class name to the value. The values must be separated with a space and contained within the quotes.<br>![image](https://user-images.githubusercontent.com/64577273/147905536-37605ca9-c13b-40f4-a8a6-ecf354ae6bd8.png)|`id` is a global attribute that is similar to `class` but we’re only allowed to use one specific id in each HTML element. <br>[for more example check here](https://github.com/imahdio/HTML-Essential-Training/blob/ddf4faedd53a8157ce1037e28706f01821649c7e/03-Understanding%20the%20Power%20of%20HTML/README.md#html-attributes)
->With multiple classes, you can apply styles to each class independent of each other or apply a style only when all of the classes are included.<br>![image](https://user-images.githubusercontent.com/64577273/147905811-d8231f80-5e07-4594-b42b-d555681c7e4e.png)|
+>With multiple classes, you can apply styles to each class independent of each other or apply a style only when all of the classes are included. [code exmaple](https://codepen.io/imahdio/pen/vYajXVp)<br>![image](https://user-images.githubusercontent.com/64577273/147905811-d8231f80-5e07-4594-b42b-d555681c7e4e.png)|
 >
 >-IDs can be used for in-page linking by using the ID value in the link's href attribute. When you click the link it will automatically scroll down or up to the matching element on the page.  
 ![image](https://user-images.githubusercontent.com/64577273/147907489-b3ad864b-4c7c-4d9f-9128-a5098c7dbbe4.png)

@@ -14,10 +14,10 @@ throughout-in every part, or during the whole period of time
 ## Browser developer tools
 >-every modern browser includes a set of browser developer tools, which can be used to inspect the HTML, CSS and JavaScript on any webpage.  
 -you can access developer tools a few different ways, but the most consistent way across browsers is to right click anywhere on the page and select inspect element. The HTML will appear on the left, and the CSS will appear on the right.  
->-in Safari and Chrome, the default styles are listed under, User Agent Style Sheet. This refers to the browsers style sheet. The one custom style I added was to this `<h1>` Heading. We can see color green listed under example.html. Which refers to the file name where the CSS is located.  
-![image](https://user-images.githubusercontent.com/64577273/147471314-0aa650fc-cddd-4df1-b550-24b376549459.png)  
+>-in Safari and Chrome, the default styles are listed under, User Agent Style Sheet. This refers to the browsers style sheet. The one custom style I added was to this `<h1>` Heading. We can see color green listed under [example.html](Browser-developer-tools/example.html) which refers to the file name where the CSS is located.  
+![](https://user-images.githubusercontent.com/64577273/147471314-0aa650fc-cddd-4df1-b550-24b376549459.png)  
 -The Dev tools in Firefox is a little bit different, but you can access it in the same way. The HTML displays on the left, but the default styles displays in this third panel under layout. The custom CSS is shown in this middle panel. You can also select the specified arrow icon, to collapse last two panels together then Rules tab for the custom CSS and layout tab for the default. Also notice that instead of showing that the custom CSS is located in the example.html file, it just says inline, which means that the CSS is in the same file as the html file.  
-![image](https://user-images.githubusercontent.com/64577273/147471657-f380466e-e008-4050-a872-85b54df51c83.png)  
+![](https://user-images.githubusercontent.com/64577273/147471657-f380466e-e008-4050-a872-85b54df51c83.png)  
 -for more information about developer tools, [check out this article](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools) from the Mozilla Developer Network, or MDN for short.
 
 daunting-to make someone feel slightly frightened or worried about his or her ability to achieve something; to discourage
@@ -141,7 +141,7 @@ revise-to change or correct something, esp. a piece of writing
 >2. cropping image to appropriate size width
 >
 >-apple's Retina display is a trademarked term coined by Apple, and is used to describe their high pixel density screens. Other manufacturers have their own high pixel density screens.  
--pixel density refers to how many pixels are contained within a space , usually measured by pixels per inch, or PPI for short (**which determine actual resolution**), and sometimes referred to as dots per inch or DPI. 
+-pixel density refers to how many pixels are contained within a space, usually measured by pixels per inch, or PPI for short (**which determine actual resolution**), and sometimes referred to as dots per inch or DPI. 
 >- [more info about PPI calculation method is in here](https://www.calculatorsoup.com/calculators/technology/ppi-calculator.php)
 >- [this source demonstrate PPI(actual resolution) vs DPI(*in my point of view , common or general resolution*) concepts for each specific mobile phone.](https://devhints.io/resolutions)
 >
@@ -158,19 +158,21 @@ coin-invent (a new word or phrase)
 crisp-a crisp sound or image is very clear
 
 apparent-able to be seen or understood
+
+swap out-to exchange (something) for (something else)
 ## Project: Relative paths
 >-Building websites often involves linking different files together, such as embedding an image in the html, or referencing a css file. When linking to files within the same project, use a relative path.  
 -in following image, the index file is in the same folder as the css and image files. So, from index.html, the file path can map directly to the corresponding file names.  
 ![image](https://user-images.githubusercontent.com/64577273/147644997-f484cf98-5dfa-4ed4-8766-8d6bfa8227cd.png)  
 -if the file you're linking to is contained within a folder, like the following image, the folder name must also be included in the file path.  
 ![image](https://user-images.githubusercontent.com/64577273/147645180-4acba4ed-5435-4bfb-aa66-5a1177ba2501.png)  
--in this lesson , we do the following modifications
+-in this lesson, we do the following modifications
 >* from [index.html](Project-Relative-paths\index.html) update the image `src` value and `alt` attribute as well to provide a description for screen readers and make the images accessible.  
 >```html
 ><img src="images/project-courses.jpg" alt="Lynda & LinkedIn Learning course list">
 >```
 >Notice: Once your file path is updated to point to the correct image file, open it in your browser.  
-Notice: By default, images are displayed in the same dimensions as the file size which is currently 600 pixels wide.
+Notice: By default, images are displayed in the same dimensions as the file size which is currently 600 pixels wide.  
 >* create a css file to resize the images. It can be named anything, but some common conventions are simply styles, or global, or the project name, like portfolio. I'm going to call mine `styles.css` and save it to CSS folder.
 >* let's add a `<link>` tag in the `<head>` section of [index.html](Project-Relative-paths\index.html). It can go anywhere in the `<head>` section, but I like to put mine just before the closing tag like this:
 >```html
@@ -184,13 +186,15 @@ Notice: By default, images are displayed in the same dimensions as the file size
 >}
 >```
 >
->Notice: in above code snippet , `img` select the images in [index.html](Project-Relative-paths\index.html)
+>Notice: in above code snippet, `img` select the images in [index.html](Project-Relative-paths\index.html)
 
 embed-to include text, sound, images, video, etc. in a computer file, email message, or on a website
 
 declaration-when you declare something, you just tell what it is. [Check here for more info](https://stackoverflow.com/a/48892360)
 
 definition-when you provide how it actually works, that's the definition of it. [Check here for more info](https://stackoverflow.com/a/48892360)
+
+to be hard to miss-to be easy to notice
 
 miss-to not see or hear something or someone , to not notice someone or something
 
@@ -205,7 +209,7 @@ there we go-We have performed an action successfully
 >-embedding external image resources into your own pages is called hotlinking and should be avoided. Hotlinking is known as the act of stealing someone's bandwidth by linking directly to their website's assets, such as images or videos. The only time it is acceptable is when services are created for the purpose of hosting web resources for people to use.
 >```html
 ><a href="http://notmywebsite.com"></a> //common linking is OK
-><img src="http://notmywebsite.com/images/photo.jpg"></a> //Hot linking , Not Ok!
+><img src="http://notmywebsite.com/images/photo.jpg"></a> //Hot linking, Not suit!
 >```
 >-with placeholder image services Instead of using a relative path that references a file in your project directory, an absolute path can be used to link directly to a hosted image.  
 -most placeholder services will include options and usage instructions for setting the width and height, picking a specific image and more.  
