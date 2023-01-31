@@ -119,7 +119,8 @@ hyphen-a short line sign (-) used to join words and to separate syllables of a s
 
 escape character-It's a backslash \ followed by the character you want to insert [more info](https://www.w3schools.com/python/gloss_python_escape_characters.asp)
 ## Font-weight and font-style
->-The `font-weight` property sets the weight (or boldness) of the font through following values ([great explanations on W3C](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/#propdef-font-weight)):
+>-The `font-weight` property sets the weight (or boldness) of the font through following values ([great explanations on W3C](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/#propdef-font-weight)):  
+>![](https://user-images.githubusercontent.com/64577273/215693358-27ca350a-062c-4809-a009-ec7504972e65.png)
 >* numbers, ranging from 100 to 900, [like this example font](https://fonts.google.com/specimen/Montserrat?query=montserr)
 >```css
 >font-weight: 100;  /* lightest or thinnest */
@@ -189,7 +190,7 @@ correspond-to match or be similar or equal
 >}
 >```
 >Notice: if `url` functional datatype contains any special characters like the parenthesis, commas, white space, single quotes, or double quotes it must be enclosed in quotes or escaped with a backslash.  
-![image](https://user-images.githubusercontent.com/64577273/150672242-a2673faf-3ad0-49b0-a917-b6c7fbd4e3a0.png)
+![](https://user-images.githubusercontent.com/64577273/215725153-24b6387f-e2c4-475d-a0e2-d6f1c6d8043d.png)
 >
 >2. set specified font-family name to the html elements
 >```html
@@ -329,6 +330,8 @@ precision-It's the closeness of the measurements to each other.
 >![shorthand-longhand](https://user-images.githubusercontent.com/64577273/151174986-78beed17-3c70-429c-b272-9e4410c17933.jpg)  
 >-to find more information, [review the font properties on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font).
 
+variant-slightly different from other similar things
+
 precede-to be or go before in order or position
 
 proceed-move forward, to continue as planned
@@ -350,14 +353,14 @@ get the hang of something-to learn how to do something, esp. when it is not simp
 ></table>
 >
 >![shorthand-longhand](https://user-images.githubusercontent.com/64577273/151306956-da54d182-d36f-48f6-82f0-c606a3f65ed2.jpg)  
->-the `text-align` property can be used to align content within a block element.You can add it to the HTML element itself, or set the property in the parent element, so the style can be inherited.  
+>-the `text-align` property can be used to align content within a block element. You can add it to the HTML element itself, or set the property in the parent element, so the style can be inherited.  
 -`line-height` property sets the amount of space between the lines of the content. It can be used with length values(e.g. px, rem), unitless numeric values, or percentages.  
 >-experiment with [this example](https://codepen.io/christinatruong/pen/YggdKN?editors=1100):
 >1. center align the `<h1>` heading using `h1` selector.  
 Notice: this only works for `block` elements, not `inline` or `inline-block` elements, unless you use the `display` property to change the behavior.
 >2. add `text-align` to the `header` selector and set it to `right`, `center`, `left` or `justify`. all the nested elements will inherit this style, including images, blocks, and inline elements.  
 **Notice:** `justify` add spacing between the words to evenly space the text to the left and right of the containing element. this style is usually used for text displayed in narrower columns. But it can be hard to read for wider blocks of text.
->3. add `line-height` property. cons of absolute values is problem of no space or overlapping between the lines when font-size vary. So, to be more flexible to changes, use a relative unit, such as a percentage or uniyless values.  
+>3. add `line-height` property. cons of absolute values is problem of no space or overlapping between the lines when font-size vary. So, to be more flexible to changes, use a relative unit, such as a percentage or unitless values.  
 **Notice:** if I set this value to 150%, it will always be 150% of whatever the font-size is. if I set this value to 1.5, it will also be one and a half times the size of the font size.
 
 evenly-covering or affecting all parts of something equally [Great definition](https://www.mathsisfun.com/definitions/divide-evenly.html)

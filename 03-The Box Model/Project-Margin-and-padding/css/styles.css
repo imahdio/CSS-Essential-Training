@@ -53,7 +53,7 @@ header {
   text-decoration: none;
   padding: 8px;
   border-radius: 4px;
-  display: inline-block;
+  /* display: inline-block; */
 }
 .projects .btn:hover {
   background: rgba(47, 48, 97, 80%);

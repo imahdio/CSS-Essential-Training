@@ -276,7 +276,7 @@ explanatory-serving to explain something; giving an explanation about something
 
 get good-or GIT GUD , improve yourself
 ## Class and ID selector exercise 
->-Using the previous code pen exercise, [let's practice using class and ID selectors](https://codepen.io/imahdio/pen/dyVmxQL?editors=1100):
+>-by using the previous code pen exercise, [let's practice using class and ID selectors](https://codepen.io/imahdio/pen/dyVmxQL?editors=1100):
 >1. make a change to just the first h2 element by adding a class attribute
 ><table>
 >    <tr><th>html</th><th>css</th><th>result</th>
@@ -450,7 +450,7 @@ rule of thumb-a broadly accurate guide or principle, based on practice rather th
 Notice: when using descendant selectors, make sure to declare the full combination.
 >grouping selectors|➜|expand to
 >-|-|-
->`section h1, h2 {}`|➜|<code>section h1 {}<br>h2 {}</code>
+>`section h1, h2 {}`|➜|`section h1 {}`<br>`h2 {}`
 >`section h1, section h2 {}`|➜|`section h1 {}`<br>`section h2 {}`
 >
 >-❸ combining Selectors
@@ -468,7 +468,7 @@ whereas-compared with the fact that; but
 >-CSS styles can be inherited from the ancestor to descendant elements. So defining some broad styles as the base font color can be added using the `body` selector. All of the descendant elements nested within the `<body>` tag will inherit this style.  
 ![image](https://user-images.githubusercontent.com/64577273/148176447-8ff0d94b-11ba-45a7-90b7-fedeedd60664.png)  
 -[The W3C has a list of which properties can and can't be inherited.](https://www.w3.org/TR/CSS21/propidx.html)  
--Specificity determines how browsers decide which [CSS rule](https://djnmarti.com/foothill/coin65/week_02/basicsReview_rulesAnatomy.html) takes precedence when there are conflicting declarations.The hierarchy is based on the selector type. [check how they rank from lowest to highest in here.](https://www.w3schools.com/css/css_specificity.asp)  
+-Specificity determines how browsers decide which [CSS rule](https://djnmarti.com/foothill/coin65/week_02/basicsReview_rulesAnatomy.html) takes precedence when there are conflicting declarations. The hierarchy is based on the selector type. [check how they rank from lowest to highest in here.](https://www.w3schools.com/css/css_specificity.asp)  
 -[experiment with the following code snippet](https://codepen.io/imahdio/pen/ZEXoqBo) to see how specificity affects these selectors.
 >```html
 ><section>
@@ -478,7 +478,7 @@ whereas-compared with the fact that; but
 ></section>
 >```
 >1. The universal selector has the lowest specificity value and can only override the inherited styles. In this example, the color declared by the universal selector overrides the color inherited from the `section` selector.  
-![image](https://user-images.githubusercontent.com/64577273/148213327-59e66efd-6916-4379-9bda-853f1583301a.png)
+>![image](https://user-images.githubusercontent.com/64577273/148213327-59e66efd-6916-4379-9bda-853f1583301a.png)  
 >2. type selector, will override the universal selector.  
 ![image](https://user-images.githubusercontent.com/64577273/148213406-56402c30-2668-4d05-b56c-2a517a041883.png)
 >3. the class selector will override both the universal and the type selector.  
@@ -489,7 +489,7 @@ whereas-compared with the fact that; but
 ![image](https://user-images.githubusercontent.com/64577273/148213564-f4100122-7840-4602-9b42-73616502c6b6.png)
 >
 >-there are 2 ways to Calculate Specificity:  
->1. in my point of view , [this is most reasonabe and easy to use method with great examples on w3school](https://www.w3schools.com/css/css_specificity.asp)  
+>1. *in my point of view*, [this is most reasonabe and easy to use method with great examples on w3school](https://www.w3schools.com/css/css_specificity.asp)  
 >2. The count is broken down into three buckets:  
 ![image](https://user-images.githubusercontent.com/64577273/148215712-3fd3877f-6806-4aca-b00f-92b1c7e33109.png)  
 a, count the number of ID selectors.  
@@ -528,8 +528,8 @@ less is more-smaller quantity could be of higher quality
 
 bear on sth-to be connected or related to something
 ## The cascade and importance
->-The cascade in Cascading Style Sheets refer to how style rules are applied based on source order , specificity and `!important` keyword.
->1. source order: if two rules are applied to the same element and have the same specificity value, the declaration that was loaded last , will take precedence.
+>-The cascade in Cascading Style Sheets refer to how style rules are applied based on source order, specificity and `!important` keyword.
+>1. source order: if two rules are applied to the same element and have the same specificity value, the declaration that was loaded last, will take precedence.
 ><table>
 >    <tr><td><img src="https://user-images.githubusercontent.com/64577273/148253691-8d609862-6911-47d1-a525-5bb52bf26f44.png"></td><td><img src="https://user-images.githubusercontent.com/64577273/148253815-b1596c8c-a50d-4b11-93c6-51467c154fa9.png"></td>
 >    </tr>
@@ -537,7 +537,7 @@ bear on sth-to be connected or related to something
 >
 >2. specificity: Styles with a higher specificity value will take precedence regardless of the order.  
 ![image](https://user-images.githubusercontent.com/64577273/148254471-4b526a4b-d0f9-44f9-a343-b164e3c55e8c.png)  
->3. `!important` keyword overrides source order and specificity. it's useful to know how `!important` works but it's generally considered bad practice because it doesn't really adhere to any rules.  
+>3. `!important` keyword overrides source order and specificity. It's added to the end of the style declaration but just before the semicolon. It's generally considered bad practice because it doesn't really adhere to any rules.  
 >![image](https://user-images.githubusercontent.com/64577273/148255261-e4590a42-7086-4ecc-91e0-0ab002fe0c2f.png)
 The only way you can override a style declaration with `!important` is to use a selector with a higher specificity and the `!important` keyword.  
 ![image](https://user-images.githubusercontent.com/64577273/148255474-f1af5cd8-cb2e-4ed0-99fb-df54b86a5a65.png)  
@@ -614,15 +614,15 @@ moves back and forth-move in one direction and then in the opposite direction
 >-pseudo class selectors are often dynamic, meaning they require some action from the person interacting with your webpage.  
 -pseudo classes are combined with other selectors using a colon and no spaces.  in this lesson, we're just going to focus on the ones that can be used with hyperlinks.  
 -By default, unvisited links are styled as blue, and previously visited links are purple.  
--once click on a link in [this code snippet](https://codepen.io/christinatruong/pen/MxrVOd) all the links change to purple. that's because they all have the same `href` value.  
->-[in this code snippet:](https://codepen.io/christinatruong/pen/MxrVOd)
+-once click on a link in [this code snippet](https://codepen.io/imahdio/pen/qByYyoG) all the links change to purple. that's because they all have the same `href` value.  
+>-[in this code snippet:](https://codepen.io/imahdio/pen/qByYyoG)
 >1. `a:link` pseudo class change default blue color of unvisited links
 >2. `a:visited` pseudo class change default purple color of visited links
 >
->Notice: `a:link` and `a:visited` will only select anchor tags that have an `href` value. So there is no style applied to anchor tag without href value.  
+>Notice: `a:link` and `a:visited` and other pseudo classes of anchor tag will only select anchor tags that have an `href` value. So there is no style applied to anchor tag without href value.  
 Notice: Styling a visited state are useful for search results and help you filter through the results a little more quickly.
 >
->3. `a` style will be applied to all anchor tags, regardless of whether it has an href attribute or not. if `a:link` and `a:visited` states don't specifically declare , it changes **default colors** of both href and visited links.  
+>3. `a` style will be applied to all anchor tags, regardless of whether it has an href attribute or not. if `a:link` and `a:visited` and other pseudo classes of anchor tag states don't specifically declare, it changes **default colors** links in all states.  
 ![image](https://user-images.githubusercontent.com/64577273/148502404-d0d29d54-dfd8-484c-b669-54042286c376.png)
 >4. `focus` pseduo class is applied when the element comes into focus, usually when navigating a website with the keyboard <kbd>Tab</kbd> key but in some browsers when the user clicks or taps on an element. by default It's displayed as either a glowing blue outline, or a dotted line. you can change this style using the outline property Which takes a value of the **outline width**, the **outline style**, as well as the **outline color**.
 >```css
@@ -648,17 +648,15 @@ split second-a very brief moment of time
 >-[In this project update](Project-Styling-links/css/styles.css), let's change the color of the initial state of the links.
 >1. add yellow color to all links on the page  
 ![image](https://user-images.githubusercontent.com/64577273/148499478-4af3effc-3870-4924-9b5d-d387b25c7330.png)  
->
 >Notice: We could've used the `a:link` pseudo selector which specifically applies to links with an `href` attribute but it's not very common to use an anchor tag without the `href`. So generally, using `a` selector works fine to style the initial state.
->
->2. add hover style underneath above anchor tag. it removes the default underline.
+>2. add hover style to remove default underline from anchor tag.
 >```css
 >a:hover {
 >    text-decoration: none;
 >}
 >```
 >3. use a descendant selector to change the **link color** and **background color** and remove **underline** and add **padding** and **rounded corners** just for project section to make its links look like a button. Basically padding will add space inside an element.  
-![image](https://user-images.githubusercontent.com/64577273/148508297-5f344bfe-a5de-44dc-a8cb-57f163b5704c.png)
+![image](https://user-images.githubusercontent.com/64577273/148508297-5f344bfe-a5de-44dc-a8cb-57f163b5704c.png)  
 >4. change the opacity of project section buttons on hover by adding an alpha channel. you can use online tools to convert hex values into RGB or vice versa.
 >```css
 >.projects a:hover {
@@ -685,6 +683,8 @@ split second-a very brief moment of time
 >    <tr><td><img src="https://user-images.githubusercontent.com/64577273/148551896-dd6b522f-c233-4898-9fea-b56e26df6821.png"></td><td><img src="https://user-images.githubusercontent.com/64577273/148551744-f7126d41-3f68-4bcf-9b6e-72747568a7dc.png"></td>
 >    </tr>
 ></table>
+
+enhancement-an increase or improvement in quality
 
 in due time-eventually at the right time
 

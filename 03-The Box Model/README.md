@@ -9,16 +9,16 @@
 >4. margin
 >5. border 
 
-incorporate-take in or contain (something) as part of a whole
+incorporate-to include something as part of something larger
 ## Inline, block, and display
 >-there are two main types of HTML elements: inline and block-level  
->-❶ inline elements like `<a> `, `<span>` , `<strong>`
+>-❶ inline elements like `<a>`, `<span>`, `<strong>`
 >1. take up the same space as the content contained within their tags.
 >2. are displayed in a line, side by side, starting from the left.
 >3. The element's content will only wrap to the next line if the content can't fit on the same line within its container(parent element or viewport).
 >
->-❷ block elements like `<p>` , `<h1>` , `<article>` , `<section>`
->1. same height as content , same width as container(parent element or viewport)
+>-❷ block elements like `<p>`, `<h1>`, `<article>`, `<section>`
+>1. same height as content, same width as container(parent element or viewport)
 >2. always starts on a new line and stack on top of each other
 >3. the majority of elements are block-level.
 >
@@ -26,13 +26,13 @@ incorporate-take in or contain (something) as part of a whole
 ><table>
 >    <tr><th>add two elements next to each other</th><th>add a background color to the element</th><th>add<code>width</code>and<code>height</code>or<code>margine</code></th>
 >    </tr>
->    <tr><td><ul><li>if start another line is block level</li><li>if it displays on the same line is inline level</li></ul></td><td><ul><li>if the color stretches all the way across the container(parent element or viewport), it's a block element</li><li>If it only spans the width of the actual content, then it's an inline element.</li></ul></td><td><ul><li><code>width</code>and<code>height</code>change the size of the element for block elements and<code>margine</code>take effect absolutly</li><li>adding<code>width</code>and<code>height</code>has no effect for inline elements ,<code>margine</code>only take effect on right and left side of the inline elements</li></ul></td>
+>    <tr><td><ul><li>if start another line is block level</li><li>if it displays on the same line is inline level</li></ul></td><td><ul><li>if the color stretches all the way across the container(parent element or viewport), it's a block element</li><li>If it only spans the width of the actual content, then it's an inline element.</li></ul></td><td><ul><li><code>width</code>and<code>height</code>change the size of the element for block elements and<code>margine</code>take effect absolutly</li><li>adding<code>width</code>and<code>height</code>has no effect for inline elements, <code>margine</code>only take effect on right and left side of the inline elements</li></ul></td>
 >    </tr>
 ></table>
 >
 >-the `display` property change the default behavior of inline and block-level elements, using a value of `block`, `inline`, or `inline-block`.  
->* [characteristics of different element types with line wrapping, width, height, padding, margin, margin collapsing (sample code 1)](https://codepen.io/ma400/pen/gOGQjgV)
->* [characteristics of different element types with horizontal center alignment (sample code 2)](https://codepen.io/ma400/pen/vYeQajq)
+>* [characteristics of different element types with line wrapping, width, height, padding, margin, margin collapsing (sample code1)](https://codepen.io/ma400/pen/gOGQjgV)
+>* [characteristics of different element types with horizontal center alignment (sample code2)](https://codepen.io/ma400/pen/vYeQajq)
 ><a name="characteristic-table-of-diffrent-element-types"></a>
 >
 >-|`display: inline;`|`display: inline-block;`|`display: block;`
@@ -40,13 +40,14 @@ incorporate-take in or contain (something) as part of a whole
 >line wrapping|element's content will only wrap to the next line|whole element will wrap to the next line|not defined
 >width|❌|✔️|✔️
 >height|❌|✔️|✔️
->padding|Although it takes effect visually on all sides but padding top and bottom not be considered as size of element and [be overlapped in vertical direction with surrounded area](https://codepen.io/ma400/pen/zYEMMvE) |✔️|✔️
+>padding|Although it takes effect visually on all sides but padding top and bottom not be considered as size of element and [be overlapped in vertical direction with surrounded area](https://codepen.io/ma400/pen/zYEMMvE)|✔️|✔️
 >margin|only take effect on right and left side|✔️|✔️
 >margin collapsing|not defined vertical margin|❌|✔️
->horizontally center box element with<br><code>margin: length auto;</code>|❌|❌|✔️
+>horizontally center a element with<br><code>margin: length auto;</code>|❌|❌|✔️
 >
 ><b>Notice</b>: For any block-level element, I can apply a `text-align: center;` to the element itself or I can add it to the container so all the elements will inherit this style.  
->-separating content from style means instead of picking an HTML element that looks a particular way, choose the most semantic element for the content, and then change the display with CSS.
+>-[This is a good resources for Horizontal & Vertical Alignment](https://www.w3schools.com/css/css_align.asp)  
+>-**separating content from style means instead of picking an HTML element that looks a particular way, choose the most semantic element for the content, and then change the display with CSS.**
 
 stack-a pile of objects, typically one that is neatly arranged
 
@@ -54,7 +55,9 @@ majority-the larger number or part of something
 
 span-the full extent of something from end to end
 
-container-*in my point of view* parentelement or viewport
+container-*in my point of view* parent element or viewport
+
+margine collapsing- The top and bottom margins of blocks are sometimes combined (collapsed) into a single margin whose size is the largest of the individual margins. [check MDN documentation for more info](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
 ## The box model properties
 >-The CSS box model describes the rectangular boxes that are generated for each HTML element which consist of:
 >1. content box: contains the actual content added between the HTML tags, such as text or an image includes 2 following properties:
@@ -121,17 +124,17 @@ contribute-If something contributes to an event or situation, it is one of the c
 **Notice:** there is no default margin space on the left and right side of above demonstrated margin box, and that's why the values say zero in it.  
 **Notice:** You can even edit CSS properties values to experiment right in the browser. Refresh the browser to reset the changes that you made in the Dev tool.  
 -if you hover over the various properties on visual demonstartion of box model, it will highlight the color-coded corresponding areas, which is super helpful when debugging.  
--<a name="margin-collapsing"></a>margin collapsing **only affects on the top and the bottom margins**. [When I hover over the `H1` in the HTML panel](https://user-images.githubusercontent.com/64577273/148741291-3cf926bc-f48c-4ab2-96d5-b70dc2b4c2a7.png), you can see that there is margin on the top and bottom of the element. The margin bottom space stops right above the content box of the `H2`, but [if I hover over the `H2` element](https://user-images.githubusercontent.com/64577273/148741731-02a093d1-aebf-4347-9b15-47b70b447bbe.png), the margin top stops right below the content box of `H1`. Both of these margins are occupying the same space, even though they're coming from two different elements.
+-<a id="margin-collapsing"></a>margin collapsing **only affects on the top and the bottom margins**. [When I hover over the `H1` in the HTML panel](https://user-images.githubusercontent.com/64577273/148741291-3cf926bc-f48c-4ab2-96d5-b70dc2b4c2a7.png), you can see that there is margin on the top and bottom of the element. The margin bottom space stops right above the content box of the `H2`, but [if I hover over the `H2` element](https://user-images.githubusercontent.com/64577273/148741731-02a093d1-aebf-4347-9b15-47b70b447bbe.png), the margin top stops right below the content box of `H1`. Both of these margins are occupying the same space, even though they're coming from two different elements.
 
 collapse-the process of hiding something or reducing its size, so it's not visible
 
-margine collapsing- The top and bottom margins of blocks are sometimes combined (collapsed) into a single margin. [check MDN documentation for more info](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
+margine collapsing- The top and bottom margins of blocks are sometimes combined (collapsed) into a single margin whose size is the largest of the individual margins. [check MDN documentation for more info](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
 ## Padding, margin, and border
 >-there are 2 ways to distinguish between margin and padding
 >1. inspecting each element with developer tools
 >2. adding a background color or border to each element
 >
-><a name="element-total-size"></a>**IMPORTANT Notice**: margin isn't included in the total size of the element. It does push all the surrounding elements away, so it is included in the total area that the element occupies.
+><a name="element-total-size"></a>**IMPORTANT Notice**: margin isn't included in the total size of the element. It does push all the surrounding elements away, so it is included in the total area that the element occupies.  
 >-experiment with [this code snippet](https://codepen.io/ma400/pen/RwLeowy):
 >* the space between the first and second paragraph is created by margin collapsing.
 >* following CSS declarations remove any margine between first 2 paragraphs:
@@ -161,18 +164,20 @@ as if-in such a way that something seems to be true
 
 would need to-*in my point of view* only expressing hope and wish
 
-So aside from aesthetics, another time you would need to remove the space as if you were using inline elements that were a specific width within a specific container size-*in my point of view* another time you want to remove the space of inline elements with a specific width and container size , regradless of attending to appreciation of beauty , use the taught direction of this lesson. [check here for more info](https://github.com/imahdio/CSS-Essential-Training/issues/10)
+So aside from aesthetics, another time you would need to remove the space as if you were using inline elements that were a specific width within a specific container size-*in my point of view* another time you want to remove the space of inline elements with a specific width and container size, regradless of attending to appreciation of beauty, use the taught direction of this lesson. [check here for more info](https://github.com/imahdio/CSS-Essential-Training/issues/10)
 ## Margin and layouts
 >-Here are 2 ways that margin can be used for layouts:  
 >1. use negative margine values to nudge block element just a little bit outside of its default stacking position.  
 >Notice: if you need to move an element to a completely different position on the document, reorder the HTML or use another layout technique.
+>![](https://user-images.githubusercontent.com/64577273/215525102-3f7cbc5f-919c-4701-9802-227e787c661c.png)
 >
 >2. center align block level elements horizontally with defining a width for the element and the margins left and right values are set to auto. this technique is often used to keep the page content from spanning all the way across viewport. try it out on [this example](https://codepen.io/ma400/pen/oNGaRPd) with these steps:
 >    1. add a width. Any value to make it smaller than the container. If the element spans all the way across, then there would be no need to center align it.
 >    2. top and bottom margin can be any value. then set the left and right values to auto. The remaining space is split evenly between the left and right margins which will center align it.  
 >Notice: if set the top and bottom to auto as well, it will not align the element vertically. aligning elements vertically can be achieved with flexbox.
+>![](https://user-images.githubusercontent.com/64577273/215527460-905abb7a-bffe-4c1a-8ee2-b51b09ed4590.png)
 >
->-with the following steps , set background color to expand the entire width of the page, but keep the page content from spanning all the way across viewport
+>-with the following steps, set background color to expand the entire width of the page, but keep the page content from spanning all the way across viewport
 >1. for aligning content, add a `<div>` container with a class around the html content then add `width` and `margin` styles.  
 Notice: `<div>` is used here because it has no semantic meaning. It's just being used as a hook for styling purposes.
 >2. add `background` style to the whole section  
@@ -195,7 +200,7 @@ ensnare-to catch or get control of something or someone
 >-autocomplete feature write the HTML syntax a little faster. for example, just type in the element name div, without the angled brackets and press <kbd>Tab</kbd>, it will complete it as well as add a class attribute.  
 -code collapsing feature is useful for temporarily hiding long blocks of code in IDE to make the file easier to read. click the caret symbol beside line number of any code block, to collapse to code and click to open it again.  
 Notice: the feature only works when the code is indented properly.  
--to expand content block only to a width of 800 pixels and stays aligned in the center of the page, while the background color still spans all the way across , follow these steps:
+-to expand content block only to a width of 800 pixels and stays aligned in the center of the page, while the background color still spans all the way across, follow these steps:
 >1. go over to [index.html](Project-adding-content-wrappers/index.html) and add `<div>` content wrapper with the `content-wrap` class inside of header and all sections but around the content. I'm using a `<div>` here because this container has no semantic meaning. We're just adding it for styling purposes in [styles.css](Project-adding-content-wrappers/css/styles.css)  
 **Notice:** you can use any other descriptive class name if you'd like.  
 **Notice:** Make sure to put the `<div>` just inside of the `<header>` and `<section>` tag and close it just before their closing tag.  
@@ -223,11 +228,11 @@ line up someone or something-arrange a number of people or things in a straight 
 >![image](https://user-images.githubusercontent.com/64577273/149151077-54625289-329b-4ec5-b019-b8e3324f8d41.png)|![image](https://user-images.githubusercontent.com/64577273/149151303-b983f4e5-ae21-4f37-a964-1e243f3cc842.png)
 >
 >**Notice:** *based on my test and tries* every html element has default margine in top and bottom directions of it which can be manipulated by assigning any custom margin. the comparison of paragraph element in different states:
->default margin|`margin: 10px 0;`|`padding: 20px 0;`
+>default margin|`margin: 10px 0;`|`margin: 20px 0;`
 >-|-|-
 >![image](https://user-images.githubusercontent.com/64577273/149141398-fd5e354d-3b0d-4491-894a-599e30c6343d.png)|![image](https://user-images.githubusercontent.com/64577273/149141467-3e6fab75-df50-4c8c-aa94-019816581aa8.png)|![image](https://user-images.githubusercontent.com/64577273/149141534-8c4a9867-56a7-47b1-bd4f-b9357ada55aa.png)
 >
->**Notice:** [as already mentioned](#element-total-size) margin only determine total area that the element occupies. *based on my test and tries* if add any amount of padding to a parent element , padding start right after total occupied area of nested elements. try it out on [this code example](https://codepen.io/ma400/pen/YzrRxvp) or check the results in here:
+>**Notice:** [as already mentioned](#element-total-size) margin only determine total area that the element occupies. *based on my test and tries* if add any amount of padding to a parent element, padding start right after total occupied area of nested elements. try it out on [this code example](https://codepen.io/ma400/pen/YzrRxvp) or check the results in here:
 >
 >without padding|with padding
 >-|-
@@ -256,13 +261,13 @@ Notice: although `padding` takes effect visually on all sides of inline elements
 >-|-
 >![image](https://user-images.githubusercontent.com/64577273/149312662-4bf8e0d4-642e-46c9-ae83-c4ace1524d4d.png)|![image](https://user-images.githubusercontent.com/64577273/149312514-b34bdaf7-20ad-4c20-98e3-ab60b62a6425.png)
 >
->-*in my point of view, it's better to keep spacing of every elements in its natural flow*, but due to instruction of this lesson, to make the `content-wrapper` padding space look more consistent all the way around, remove the margin from the `h2` heading
+>-*in my point of view, it's better to keep spacing of every elements in its natural flow*, but due to instruction of this lesson, to make the `content-wrapper` padding space, look more consistent all the way around, remove the margin from the `h2` heading
 >```css
 >h2 {
 >    margin: 0;
 >}
 >```
->-reset style sheet removes the default spaces and styles and lets us starting with a clean slate. [for more info , check out cssreset.com](https://cssdeck.com/blog/what-is-a-css-reset/)
+>-reset style sheet removes the default spaces and styles and lets us starting with a clean slate. [for more info, check out cssreset.com](https://cssdeck.com/blog/what-is-a-css-reset/)
 
 squish-to crush something that is soft
 
