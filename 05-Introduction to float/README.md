@@ -20,8 +20,20 @@ sidebar-a vertical or horizontal column placed to the right or left of a webpage
 >1. uncomment `float: left;` to the image. This will place the image to the left side of its container. The text in the following paragraphs will fill the available area and line up right to the edge of the image.
 >2. uncomment `margin: 10px;` to the image. it adds some margin in, to create a little space between the image and the text.
 >3. comment out long html paragraph. Now the remaining two paragraphs will flow around the image since they both fit within its space.
->4. add clear class to the second paragraph to return it back to its normal flow.   
-Notice: `clear` property clear the float of each element to return the normal flow. The values for `clear` can be `left` , `right` or `both` to specifically clear a left , right or left and right floats.
+>4. add `clear: both;` class to the second paragraph to return it back to its normal flow. 
+>
+>-`clear` property specifies what should happen with the element that is next to a floating element. The values for `clear` can be:
+>
+><table>
+><tr><th>Value</th><th>Desciption</th><th>Experiment</th>
+></tr>
+><tr><td>left</td><td>The element is pushed below of the left floated elements</td><td rowspan=3><a href="https://www.w3schools.com/cssref/playdemo.php?filename=playcss_clear&preval=left">preview</a></td>
+></tr>
+><tr><td>right</td><td>The element is pushed below of the right floated elements</td>
+></tr>
+><tr><td>both</td><td>The element is pushed below of both left and right floated elements</td>
+></tr>
+></table>
 
 realize-become fully aware of (something) as a fact; understand clearly.
 
@@ -51,7 +63,7 @@ flow across (something)-To move across something in a smooth, fluid manner, as o
 ><table>
 >    <tr><th>height</th><th>both height and width</th>
 >    </tr>
->    <tr><td>If all the elements within the parent is floated, the height of the parent container will collapse to zero.<br><img src="https://user-images.githubusercontent.com/64577273/151859367-75204b9f-f8ac-4600-bf74-921512044ac4.png"></td><td><ul><li>The parent does not recognize the height of the floated element, and will only wrap around the non-floated child elements the paragraph, in this example.</li><li>the paragraph area does not fully recognize the weight of the floated elements, and its background stretchs alongside of images. <a href="https://codepen.io/imahdio/pen/PoOPgVZ">codepen example</a><img src="https://user-images.githubusercontent.com/64577273/151862516-f62fe8ec-d110-47c9-9766-0bc00305bce6.png">or<img src="https://user-images.githubusercontent.com/64577273/151858989-874408ad-094d-4b83-b723-7f0c6925ceb5.png"><br>or<br><img src="https://user-images.githubusercontent.com/64577273/151859969-7995fa6d-a5fd-46b2-a1ce-5d21e6698d18.png"></li></ul></td>
+>    <tr><td>If all the elements within the parent is floated, the height of the parent container will collapse to zero.<br><img src="https://user-images.githubusercontent.com/64577273/151859367-75204b9f-f8ac-4600-bf74-921512044ac4.png"></td><td><ul><li>The parent does not recognize the height of the floated element, and will only wrap around the non-floated child elements the paragraph, in this example.</li><li>the paragraph area does not fully recognize the width of the floated elements. Although its paragraph is jammed but its background stretchs alongside of images. <a href="https://codepen.io/imahdio/pen/PoOPgVZ">codepen example</a><img src="https://user-images.githubusercontent.com/64577273/151862516-f62fe8ec-d110-47c9-9766-0bc00305bce6.png">or<img src="https://user-images.githubusercontent.com/64577273/151858989-874408ad-094d-4b83-b723-7f0c6925ceb5.png"><br>or<br><img src="https://user-images.githubusercontent.com/64577273/151859969-7995fa6d-a5fd-46b2-a1ce-5d21e6698d18.png"></li></ul></td>
 >    </tr>
 >    <tr><td colspan=2><b>self-clearing option 1:</b><br><code>overflow: hidden;</code> or <code>overflow: auto;</code> property is a common technique for self-clearing floats.<br><img src="https://user-images.githubusercontent.com/64577273/151918836-78e7d4cf-8294-40f0-b400-eefd29994209.png"></td>
 >    </tr>
@@ -119,7 +131,7 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-</pre></code>Notice: The asterisk (&midast;) is known as the CSS universal selectors. It can be used to select any and all types of elements in an HTML page.</td>
+</pre></code>Notice: The asterisk (&midast;) is known as the CSS universal selectors. It can be used to select any and all types of elements in an HTML page.<br>Notice: the property of <code>box-sizing</code> is not inherited by default, but it can be applied to <b>all elements AND any pseudo-elements</b> using<br><code>&midast;, &midast;::after, &midast;::before { box-sizing:border-box; }</code></td>
 >    </tr>
 ></table>
 >
@@ -176,15 +188,15 @@ point out-to direct someone's attention to (someone or something) by pointing
 >    </tr>
 >    <tr><td><ul><li>default and initial value</li><li>elements not positioned</li></ul></td><td>relative to current position</td><td><ol><li>relative to its closest positioned ancestor element</li><li>if a positon not defined, it will be relative to the body element.</li><li>if body element not positioned, relative to initial viewable area (doesn't move along with page scrolling)</li></ol></td><td><ul><li>relative to the view port</li><li>stays in the same spot even on page scroll</li></ul></td><td><ul><li>relative to containing elements and viewport</li><li>it's still in the working draft phase and not recommendation</li><li>partial support in most modern browsers</li></ul></td>
 >    </tr>
->    <tr><td></td><td colspan=4>any of the the top, right, bottom, or left properties must also be used to specify the placement of the positioned elements.</td>
+>    <tr><td></td><td colspan=4>any of the the top, right, bottom, or left values must also be used to specify the placement of the positioned elements.</td>
 >    </tr>
->    <tr><td></td><td><ul><li>does not affect the flow of the other elements at all</li><li>remain in the same spot until define any offset properties</li></ul></td><td><ul><li>remove from the normal flow once be declared</li><li>remain in the same spot until define any offset properties</li><li>it's relative to its nearest positioned container</li></ul></td><td><ul><li>remove from the normal flow once be declared</li><li>not affected by any positioned ancestor elements</li></td><td><ul><li>does not affect the flow of the other elements at all</li><li>stays in the initial spot until scroll the page then it becomes fixed when the value in the offset property has been met</li><li>will no longer be fixed once you scroll past its containing element</li></ul></td>
+>    <tr><td></td><td><ul><li>does not affect the flow of the other elements at all</li><li>remain in the same spot until define any offset properties</li></ul></td><td><ul><li>remove from the normal flow once be declared</li><li>remain in the same spot until define any offset properties</li><li><b>it's relative to its nearest positioned container</b></li></ul></td><td><ul><li>remove from the normal flow once be declared</li><li>not affected by any positioned ancestor elements</li></td><td><ul><li>does not affect the flow of the other elements at all</li><li>stays in the initial spot until scroll the page then it becomes fixed when the value in the offset property has been met</li><li>will no longer be fixed once you scroll past its containing element</li></ul></td>
 >    </tr>
 >    <tr>
 >    </tr>
 ></table>
 >
->-experiment with above values on [this codepen example](https://codepen.io/christinatruong/pen/zXLemj):  
+>-experiment with above values on [this codepen example](https://codepen.io/imahdio/pen/vYaQRWp):  
 >1. scroll down to the relative class, and add in `position: relative;`. add `top: 10px;` and `right: 30px;` will push the box 10 pixels away from the top of its current position, and 30 pixels away from the right of its current position.
 >2. add `position: absolute;` to the absolute class.
 >
@@ -204,14 +216,14 @@ tempt-to encourage someone to want to have or do something, esp. something unnec
 # Position and z-index
 >-[this article](https://webdesign.tutsplus.com/articles/what-you-may-not-know-about-the-z-index-property--webdesign-16892) provides great definition for stacking context and stacking level  
 -an element with a higher stack level is rendered in front of the element with the lower stack level. to see how the elements stack on the z-index, overlap them on each other.  
--experiment with [this codepen example](https://codepen.io/imahdio/pen/RwjoJJE):
+-This is the results of experimenting with [THIS CODEPEN EXAMPLE](https://codepen.io/imahdio/pen/RwjoJJE):
 >
 >default stacking order|corresponding selector|explanation
 >-|-|-
 >5-positioned elements|`div.position`|
 >4-inline elements, non-positioned|`span.inline`
 >3-floated elements, non-positioned|`div.float`
->2-block level elements|`div.block 1`, `div.block2`|block 2 displays on top of block 1 because it comes after it in the HTML
+>2-block level elements|`div.block1`, `div.block2`|block 2 displays on top of block 1 because it comes after it in the HTML
 >1-html and body||they are always at the bottom of the stack because all other elements are always nested within these tags. 
 >
 >-`z-index` property changes the default stacking order. it only works if the element has some type of position applied to it.
